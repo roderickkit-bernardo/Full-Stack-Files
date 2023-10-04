@@ -1,0 +1,19 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS attribute selector demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Matches anchor tags that has attribute target equal to "_blank" */
+a[target="_blank"] {
+  font-weight: bolder;
+  text-decoration: none;
+}

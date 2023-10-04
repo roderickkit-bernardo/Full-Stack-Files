@@ -1,0 +1,34 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: CSS descendant selector demo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Demo</title>
+    <!-- Link to a stylesheet file -->
+    <!-- href value is the location of the file -->
+    <!-- Can be absolute or relative -->
+    <link rel="stylesheet" href="./assets/css/07cssDescendantSelector.css" />
+  </head>
+  <body>
+    <h1>Some common <strong>idioms</strong>:</h1>
+
+    <ul>
+      <li>The <strong>ball</strong> is in your <strong>court</strong>.</li>
+      <li>Break a <strong>leg</strong>.</li>
+      <li>It's the best thing since <strong>sliced bread</strong>.</li>
+      <li>Jump on the <strong>bandwagon</strong>.</li>
+      <li>
+        Works even it is nested because the strong tag is a descendant of ul tag
+        <ul>
+          <li>The <strong>ball</strong> is in your <strong>court</strong>.</li>
+          <li>Break a <strong>leg</strong>.</li>
+          <li>It's the best thing since <strong>sliced bread</strong>.</li>
+          <li>Jump on the <strong>bandwagon</strong>.</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

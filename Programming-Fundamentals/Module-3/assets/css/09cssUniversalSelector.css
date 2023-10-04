@@ -1,0 +1,31 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS universal selector demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+  Match any element with this class name
+  This is the implicit version 
+*/
+
+.universalSelector01 {
+  color: steelblue;
+}
+
+/* 
+  Match any element with this class name 
+  This is the explicit version
+*/
+
+*.universalSelector02 {
+  color: sienna;
+}

@@ -1,0 +1,23 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS child selector demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Descendant selector => Does not need to be a direct descendant to match */
+p em {
+  background-color: yellow;
+}
+
+/* Child selector => Needs to be a direct descendant to match */
+p > em {
+  background-color: lightsalmon;
+}

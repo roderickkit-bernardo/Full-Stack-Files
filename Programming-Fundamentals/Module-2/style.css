@@ -1,0 +1,63 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS definitions for module 2 
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tableBorder {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.tableBorder tr,
+.tableBorder th,
+.tableBorder td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.tableBorder caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.headerCustom {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.navCustom {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navCustom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.mainCustom {
+  background-color: coral;
+  padding: 10px;
+}
+
+.footerCustom {
+  font-style: italic;
+  background-color: deeppink;
+  padding: 10px;
+}

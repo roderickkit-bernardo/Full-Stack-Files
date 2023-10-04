@@ -1,0 +1,161 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: Tables demo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Table</h1>
+
+    <h2>Default table</h2>
+
+    <table>
+      <caption>
+        Employee List
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </tr>
+
+      <tr>
+        <td>Bill Gates</td>
+        <td>CEO</td>
+        <td>$ 100,000.00</td>
+      </tr>
+
+      <tr>
+        <td>Mark Zuckerberg</td>
+        <td>President</td>
+        <td>$ 99,000.00</td>
+      </tr>
+
+      <tr>
+        <td>Elon Musk</td>
+        <td>Security Guard</td>
+        <td>$ 30,000.00</td>
+      </tr>
+    </table>
+
+    <h2>Table with CSS</h2>
+
+    <table class="tableBorder">
+      <caption>
+        Employee List
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </tr>
+
+      <tr>
+        <td>Bill Gates</td>
+        <td>CEO</td>
+        <td class="rightAlign">$ 100,000.00</td>
+      </tr>
+
+      <tr>
+        <td>Mark Zuckerberg</td>
+        <td>President</td>
+        <td class="rightAlign">$ 99,000.00</td>
+      </tr>
+
+      <tr>
+        <td>Elon Musk</td>
+        <td>Security Guard</td>
+        <td class="rightAlign">$ 30,000.00</td>
+      </tr>
+    </table>
+
+    <h2>Table with rowspan and colspan</h2>
+
+    <table class="tableBorder">
+      <caption>
+        GBC Casaloma Room 101 Schedule
+      </caption>
+      <tr>
+        <th>Time</th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <td>08:00 AM - 09:00 AM</td>
+        <td rowspan="2">MTH 101 LEC</td>
+        <td>CHM 101 LAB</td>
+        <td rowspan="2">MTH 101 LEC</td>
+        <td>CHM 101 LAB</td>
+        <td rowspan="2">MTH 101 LEC</td>
+        <td>CHM 101 LAB</td>
+        <td rowspan="3">Open LAB</td>
+      </tr>
+      <tr>
+        <td>09:00 AM - 10:00 AM</td>
+        <td>PHY 101 LAB</td>
+        <td>PHY 101 LAB</td>
+        <td>PHY 101 LAB</td>
+      </tr>
+      <tr>
+        <td>10:00 AM - 11:00 AM</td>
+        <td>HIS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>HIS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>HIS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+      </tr>
+      <tr>
+        <td>12:00 PM - 01:00 PM</td>
+        <td colspan="7" class="centerAlign">LAB is closed for break time</td>
+      </tr>
+      <tr>
+        <td>01:00 PM - 02:00 PM</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+        <td rowspan="4">OPEN LAB</td>
+      </tr>
+      <tr>
+        <td>02:00 PM - 03:00 PM</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+      </tr>
+      <tr>
+        <td>03:00 PM - 04:00 PM</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+        <td>SOC 101 LEC</td>
+        <td>PSY 101 LEC</td>
+      </tr>
+      <tr>
+        <td>04:00 PM - 05:00 PM</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+        <td>GEO 101 LEC</td>
+        <td>MUS 101 LEC</td>
+      </tr>
+    </table>
+  </body>
+</html>

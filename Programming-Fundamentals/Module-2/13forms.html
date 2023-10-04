@@ -1,0 +1,175 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: Forms demo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tag Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <h2>Form with GET</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
+      Username: <br />
+      <input type="text" name="userName" /> <br /><br />
+      Password: <br />
+      <input type="password" name="password" /> <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with POST</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      Username: <br />
+      <input type="text" name="userName" />
+      <br /><br />
+      Password: <br />
+      <input type="password" name="password" /> <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with checkbox</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <input type="checkbox" name="banana" id="banana" checked />
+      <label for="banana">Banana</label>
+      <br />
+      <input type="checkbox" name="apple" id="apple" />
+      <label for="apple">Apple</label>
+      <br />
+      <input type="checkbox" name="orange" id="orange" />
+      <label for="orange">Orange</label>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with radio button</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <input type="radio" name="fruits" value="banana" id="banana" checked />
+      <label for="banana">Banana</label>
+      <br />
+      <input type="radio" name="fruits" value="apple" id="apple" />
+      <label for="apple">Apple</label>
+      <br />
+      <input type="radio" name="fruits" value="orange" id="orange" />
+      <label for="orange">Orange</label>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with text area</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <label for="reviews">Amazon item 123 review:</label><br />
+      <textarea name="reviews" id="reviews" cols="50" rows="5"></textarea>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with drop down menu</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <p>Toronto Teams</p>
+      <select name="torontoTeams">
+        <option value="Argos">Argos</option>
+        <option value="Blue Jays">Blue Jays</option>
+        <option value="Leafs">Leafs</option>
+        <option value="Raptors">Raptors</option>
+      </select>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with list box</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <p>Toronto Teams</p>
+      <select name="torontoTeams" size="3" multiple>
+        <option value="Argos">Argos</option>
+        <option value="Blue Jays">Blue Jays</option>
+        <option value="Leafs">Leafs</option>
+        <option value="Raptors">Raptors</option>
+      </select>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with fieldset and legend</h2>
+    <fieldset>
+      <legend>Toronto Teams</legend>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <p>Choose a Toronto team from the list</p>
+        <select name="torontoTeams" size="3" multiple>
+          <option value="Argos">Argos</option>
+          <option value="Blue Jays">Blue Jays</option>
+          <option value="Leafs">Leafs</option>
+          <option value="Raptors">Raptors</option>
+        </select>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </fieldset>
+
+    <h2>Form with date picker</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <label for="birthday">Birthday</label> <br />
+      <br />
+      <input type="date" name="birthday" id="birthday" />
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with color picker</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <label for="color">Favorite color</label> <br />
+      <br />
+      <input type="color" name="color" id="color" />
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with number input</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <label for="number">Choose a number from 1 to 5</label> <br />
+      <br />
+      <input type="number" name="number" id="number" min="1" max="5" />
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with range</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <label for="range">Choose a number from 1 to 5</label> <br />
+      <br />
+      <input type="range" name="range" id="range" value="3" min="1" max="5" />
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with combo box</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <p>Choose a Toronto team from the list</p>
+      <input list="torontoTeams" />
+
+      <datalist id="torontoTeams">
+        <option value="Argos">Argos</option>
+        <option value="Blue Jays">Blue Jays</option>
+        <option value="Leafs">Leafs</option>
+        <option value="Raptors">Raptors</option>
+      </datalist>
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+
+    <h2>Form with specialized text</h2>
+    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      Enter your telephone:
+      <input type="tel" name="tel" placeholder="(###) - ### - ####" />
+      <br /><br />
+      Enter your email:
+      <input type="email" name="email" placeholder="username@emaildomain.com" />
+      <br /><br />
+      <input type="submit" name="submit" />
+    </form>
+  </body>
+</html>

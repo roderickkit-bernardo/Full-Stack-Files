@@ -1,0 +1,138 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Flexbox demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* flex container */
+.flexContainerDefault {
+  display: flex;
+  border: 1px blueviolet solid;
+  padding: 5px;
+}
+
+.flexContainerDefault > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerRowReverse {
+  display: flex;
+  border: 1px blueviolet solid;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.flexContainerRowReverse > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerColumn {
+  display: flex;
+  border: 1px blueviolet solid;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.flexContainerColumn > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerColumnReverse {
+  display: flex;
+  border: 1px blueviolet solid;
+  flex-direction: column-reverse;
+  padding: 5px;
+}
+
+.flexContainerColumnReverse > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerDefaultGap {
+  display: flex;
+  border: 1px blueviolet solid;
+  padding: 5px;
+  gap: 5px;
+}
+
+.flexContainerDefaultGap > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerColumnGap {
+  display: flex;
+  border: 1px blueviolet solid;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+}
+
+.flexContainerColumnGap > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerDefaultJustify {
+  display: flex;
+  border: 1px blueviolet solid;
+  padding: 5px;
+  gap: 5px;
+  /* Posible values */
+  /* 
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+*/
+  justify-content: flex-start;
+}
+
+.flexContainerDefaultJustify > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+.flexContainerDefaultWrap {
+  display: flex;
+  border: 1px blueviolet solid;
+  padding: 5px;
+  gap: 5px;
+  flex-wrap: wrap;
+  /* Posible values */
+  /* 
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+*/
+  justify-content: space-around;
+}
+
+.flexContainerDefaultWrap > div {
+  border: 1px red solid;
+  padding: 5px;
+}
+
+/* For flexbox items */
+/*
+flex: 0 1 auto; 
+is the same as:
+flex-grow: 0; flex-shrink: 1; flex-basis: auto;
+*/

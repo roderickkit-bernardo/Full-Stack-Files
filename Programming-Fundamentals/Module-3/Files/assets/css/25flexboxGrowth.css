@@ -1,0 +1,39 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Flexbox growth demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+      Declaration block composed of one or more 
+      Property: Value;
+    */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  background-color: gray;
+  color: white;
+  font-size: 20px;
+}
+
+.item1 {
+  flex-grow: 2; /* This item will take up twice as much space as other items */
+  background-color: green;
+  padding: 5px;
+}
+
+.item2 {
+  flex-grow: 1;
+  background-color: indigo;
+  padding: 5px;
+}
+
+.item3 {
+  flex-grow: 1;
+  background-color: maroon;
+  padding: 5px;
+}

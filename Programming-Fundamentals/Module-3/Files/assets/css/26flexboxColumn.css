@@ -1,0 +1,31 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Flexbox column demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Make the container fill the viewport height */
+  /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.item {
+  border-radius: 10px;
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 100px;
+}

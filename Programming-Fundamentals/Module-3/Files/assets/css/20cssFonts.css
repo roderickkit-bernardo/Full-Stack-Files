@@ -1,0 +1,50 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS font properties demo
+*/
+
+/* Feel free to modify */
+/* Font properties */
+.customFont {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.customFont1 {
+  color: blue;
+  font-size: xx-large;
+}
+
+.customFont2 {
+  color: blueviolet;
+  font-size: x-large;
+}
+
+.customFont3 {
+  color: brown;
+  font-size: larger;
+}
+
+.customFont4 {
+  color: red;
+  font-size: large;
+}
+
+.customFont5 {
+  color: salmon;
+  font-size: medium;
+}
+
+.customFont6 {
+  color: seagreen;
+  font-size: small;
+}
+
+.customFont7 {
+  color: maroon;
+  font-size: smaller;
+}

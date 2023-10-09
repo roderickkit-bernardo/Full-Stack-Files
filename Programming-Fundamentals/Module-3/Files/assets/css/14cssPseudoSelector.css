@@ -41,8 +41,3 @@ body {
   background-color: #ffcc00; /* Yellow background color */
   color: #000; /* Black text color */
 }
-
-a[target="_blank"] {
-  font-weight: bolder;
-  text-decoration: none;
-}

@@ -1,0 +1,45 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: HTML layout using Flexbox
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+header,
+footer {
+  background: darkviolet;
+  padding: 5px;
+}
+
+#container {
+  display: flex;
+}
+
+nav {
+  flex: 0 1 20%;
+  background-color: darkolivegreen;
+  padding: 5px;
+}
+
+main {
+  flex: 0 1 60%;
+  background-color: darksalmon;
+  padding: 5px;
+}
+
+aside {
+  flex: 0 1 20%;
+  background-color: darkslateblue;
+  padding: 5px;
+}

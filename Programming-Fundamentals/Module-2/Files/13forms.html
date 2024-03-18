@@ -63,7 +63,7 @@
     <h2>Form with text area</h2>
     <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
       <label for="reviews">Amazon item 123 review:</label><br />
-      <textarea name="reviews" id="reviews" cols="50" rows="5"></textarea>
+      <textarea name="reviews" id="reviews" cols="50" rows="10"></textarea>
       <br /><br />
       <input type="submit" name="submit" />
     </form>
@@ -149,7 +149,7 @@
     <h2>Form with combo box</h2>
     <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
       <p>Choose a Toronto team from the list</p>
-      <input list="torontoTeams" />
+      <input name="torontoTeams" list="torontoTeams" />
 
       <datalist id="torontoTeams">
         <option value="Argos">Argos</option>

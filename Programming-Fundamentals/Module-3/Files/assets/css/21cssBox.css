@@ -49,6 +49,7 @@ div {
   border: 1px solid black;
 }
 
+/* Margins apply to left and right for this span */
 span {
   margin: 10px;
   background: black;

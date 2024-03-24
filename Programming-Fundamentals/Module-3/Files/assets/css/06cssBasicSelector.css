@@ -24,7 +24,7 @@ div {
 
 /* Class selector */
 .classSelector {
-  border: 5px solid blueviolet; /* Set the border thickness, style and color */
+  border: 5px dashed blueviolet; /* Set the border thickness, style and color */
   border-radius: 10px; /* Rounded edges */
   padding: 5px; /* 5px padding around */
   width: 200px; /* Width of the container */

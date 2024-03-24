@@ -21,7 +21,6 @@ body {
   font-weight: bold; /* Weight of the font */
   text-align: center; /* Alignment of the text */
   text-decoration: none; /* Removes the text decoration like underlines */
-  cursor: pointer; /* Type of pointer on mouse hover */
   border: 3px solid gray; /* Border defintion short form */
   border-radius: 5px; /* Rounded corner */
   color: white; /* Font color */
@@ -32,6 +31,7 @@ body {
 .button:hover {
   background-color: white; /* Darker blue on hover */
   color: black; /* Font color */
+  cursor: pointer; /* Type of pointer on mouse hover */
 }
 
 table {

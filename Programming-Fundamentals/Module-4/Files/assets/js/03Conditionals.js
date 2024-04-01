@@ -14,7 +14,7 @@ if (numberOfCourses >= 3) {
 
 if (numberOfCourses < 3) {
   console.log(
-    "You are taking " + numberOfCourses + " which is full time load."
+    "You are taking " + numberOfCourses + " which is part time load."
   );
 }
 
@@ -25,7 +25,7 @@ if (numberOfCourses >= 3) {
   );
 } else {
   console.log(
-    "You are taking " + numberOfCourses + " which is full time load."
+    "You are taking " + numberOfCourses + " which is part time load."
   );
 }
 

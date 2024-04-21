@@ -3,13 +3,19 @@
   Purpose: XMLHttpRequest demo
 */
 
+// Same function as the following apps:
+// FetchAsyncAwait
+// FetchPromise
+// XMLHttpRequest
 function addEventListener() {
+  // Register the input event
   document.getElementById("userId").addEventListener("input", (event) => {
     if (
-      event.target.value < 0 ||
+      event.target.value < 1 ||
       event.target.value > 10 ||
       event.target.value === ""
     ) {
+      // Default value when invalid inputs are entered
       event.target.value = 1;
     }
 
@@ -24,6 +30,7 @@ function getData(id = 1) {
   xmlHttpRequest.open("GET", `${restEndpoint}/${id}`, true);
 
   xmlHttpRequest.addEventListener("load", () => {
+    console.log("I am here 3 load()...");
     if (xmlHttpRequest.status >= 200 && xmlHttpRequest.status < 400) {
       let data = JSON.parse(xmlHttpRequest.responseText);
       displayData(data);
@@ -35,13 +42,19 @@ function getData(id = 1) {
   });
 
   xmlHttpRequest.addEventListener("error", () => {
+    console.log("I am here 3 error()...");
     console.error("Network Error");
   });
 
   xmlHttpRequest.send();
 }
 
+// Same function as the following apps:
+// FetchAsyncAwait
+// FetchPromise
+// XMLHttpRequest
 function displayData(data) {
+  // Updating the values of the html elements by getting their ids
   document.getElementById("name").innerText = data["name"];
   document.getElementById("username").innerText = data["username"];
   document.getElementById("email").innerText = data["email"];

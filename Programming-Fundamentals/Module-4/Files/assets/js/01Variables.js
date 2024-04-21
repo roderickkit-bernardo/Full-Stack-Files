@@ -20,7 +20,7 @@ console.log("courseName: " + courseName);
 courseName = "Programming Fundametals";
 
 // Display the value of the variable on the browser console
-console.log("courseName:", courseName);
+console.log("courseName: ", courseName);
 
 // Variable naming styles
 // Starts with a lowercase letter and then capitalizes the first letter of each subsequent word
@@ -38,15 +38,15 @@ const salary = 100000;
 // Data Types
 // string - Group of characters delimited with 'single' or "double" quotes
 let dogName = "waffles";
-console.log("dogName Type: " + typeof dogName + " dogName Value:" + dogName);
+console.log("dogName Type: " + typeof dogName + " dogName Value: " + dogName);
 
 // number	- Numbers with or without decimal places
 let quantity = 100;
 let price = 8.5;
 console.log(
-  "quantity Type: " + typeof quantity + " quantity Value:" + quantity
+  "quantity Type: " + typeof quantity + " quantity Value: " + quantity
 );
-console.log("price Type: " + typeof price + " price Value:" + price);
+console.log("price Type: " + typeof price + " price Value: " + price);
 
 // boolean - true or false
 let isStudent = true;
@@ -61,7 +61,7 @@ let courses = [
   "Frontend Development",
 ];
 
-console.log("courses Type: " + typeof courses + " courses Value:" + courses);
+console.log("courses Type: " + typeof courses + " courses Value: " + courses);
 
 // object	- Collection of property and value pairs
 let book = {
@@ -71,14 +71,14 @@ let book = {
   ISBN13: "978-0694003617",
 };
 
-console.log("book Type: " + typeof courses + " book Value:" + courses);
+console.log("book Type: " + typeof courses + " book Value: " + courses);
 
 // undefined - Variable that has not been assigned a value
 let message;
 
-console.log("message Type: " + typeof message + " message Value:" + message);
+console.log("message Type: " + typeof message + " message Value: " + message);
 
 // null	- Intentionally absent of any object value
 let petName = null;
 
-console.log("petName Type: " + typeof petName + " petName Value:" + petName);
+console.log("petName Type: " + typeof petName + " petName Value: " + petName);

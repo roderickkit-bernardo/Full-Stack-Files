@@ -11,6 +11,7 @@ let stateCapitals = {
 };
 
 console.log("CO capital is " + stateCapitals["CO"]);
+console.log(`CO capital is ${stateCapitals["CO"]}`);
 console.log("Before:", stateCapitals);
 console.log("Adding TX");
 // Adding a new element
@@ -20,9 +21,9 @@ console.log("After:", stateCapitals);
 // Use the for in loop to iterate
 // This will return the key,
 // which you can use to access the map
-for (let stateCapital in stateCapitals) {
-  console.log("Key:", stateCapital);
-  console.log("Value:", stateCapitals[stateCapital]);
+for (let stateCapitalKey in stateCapitals) {
+  console.log("Key:", stateCapitalKey);
+  console.log("Value:", stateCapitals[stateCapitalKey]);
 }
 
 let stateCapitalsMap = {
@@ -46,10 +47,12 @@ delete stateCapitalsMap["NM"];
 // Evaluates false
 if ("NM" in stateCapitalsMap) {
   console.log("NM exists");
+} else {
+  console.log("NM does not exists");
 }
 
-// Outputs undefined
-console.log(stateCapitalsMap["NM"]);
+// Outputs undefined, NM does not exists
+console.log(`stateCapitalsMap["NM"]: ${stateCapitalsMap["NM"]}`);
 
 // Map object declaration using the new keyword
 let canadianProvinces = new Map();
@@ -57,13 +60,13 @@ canadianProvinces.set("ON", "Ontario");
 canadianProvinces.set("AB", "Alberta");
 canadianProvinces.set("QC", "Quebec");
 
-console.log("Size of map is " + canadianProvinces.size);
+console.log(`Size of map is ${canadianProvinces.size}`); // 3
 
 if (canadianProvinces.has("ON")) {
-  console.log("using .get('ON') ON is " + canadianProvinces.get("ON"));
+  console.log(`using .get('ON') ON is ${canadianProvinces.get("ON")}`);
 }
 
-console.log("All provinces:");
+console.log(`All provinces:`);
 for (let [provinceCode, provinceName] of canadianProvinces) {
-  console.log(provinceCode + " is " + provinceName);
+  console.log(`provinceCode: ${provinceCode} is provinceName: ${provinceName}`);
 }

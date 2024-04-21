@@ -1,0 +1,40 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: JSON.parse() and JSON.stringify() Demo
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Demo</title>
+    <link rel="stylesheet" href="./assets/css/bulma.css" />
+    <script defer src="./assets/js/25JsonParseAndStringify.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">
+          JSON.parse() and JSON.stringify() Demo
+        </h1>
+
+        <div class="box">
+          <p class="subtitle">See the browser console to see the results:</p>
+          <p class="subtitle">const jsonString = `{"user": "Bill Gates"}`;</p>
+          <p class="subtitle">
+            console.log(`${typeof jsonString} jsonString: ${jsonString}`);
+          </p>
+          <p class="subtitle">const jsonObject = JSON.parse(jsonString);</p>
+          <p class="subtitle">
+            console.log(`${typeof jsonObject} jsonObject: ${jsonObject.user}`);
+          </p>
+          <p class="subtitle">
+            console.log(`${typeof jsonObject} jsonObject:
+            ${JSON.stringify(jsonObject)}`);
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

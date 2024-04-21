@@ -9,6 +9,7 @@ function sayGreeting() {
 }
 
 // Function call
+console.log(`Calling function sayGreeting();`);
 sayGreeting();
 
 // Function without a return but with parameters
@@ -17,6 +18,7 @@ function displayName(firstName, lastName) {
 }
 
 // Function call
+console.log(`Calling function displayName("Bill", "Gates");`);
 displayName("Bill", "Gates");
 
 // Function with a return statement and parameters
@@ -27,6 +29,7 @@ function addNumbers(a, b) {
 
 // Function call
 const sum = addNumbers(1, 2);
+console.log(`Calling function and assigning const sum = addNumbers(1, 2);`);
 console.log(sum);
 
 // Function expression
@@ -36,6 +39,7 @@ const calculateAreaFE = function (length, width) {
 };
 
 // Function call
+console.log(`Calling function expression calculateAreaFE(5, 5);`);
 console.log(calculateAreaFE(5, 5));
 
 // Arrow function
@@ -45,4 +49,5 @@ const calculateAreaAF = (length, width) => {
 };
 
 // Function call
+console.log(`Calling arrow function calculateAreaAF(5, 5);`);
 console.log(calculateAreaAF(5, 5));

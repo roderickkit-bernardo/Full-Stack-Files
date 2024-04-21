@@ -92,12 +92,10 @@ console.log("2" + 3); // => "2" + "3" => "23"
 console.log("2" * 3); // => 2 * 3 => 6
 
 let pi = parseFloat("3.14");
-console.log(pi);
-console.log(isNaN(pi));
+console.log(pi, isNaN(pi));
 
 let salary = parseInt("50000");
-console.log(salary);
-console.log(isNaN(salary));
+console.log(salary, isNaN(salary));
 
 let shoeBrand = "Nike";
-console.log(isNaN(shoeBrand));
+console.log(shoeBrand, isNaN(shoeBrand));

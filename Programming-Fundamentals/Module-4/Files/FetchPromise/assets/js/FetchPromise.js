@@ -3,13 +3,19 @@
   Purpose: Fetch Promise demo
 */
 
+// Same function as the following apps:
+// FetchAsyncAwait
+// FetchPromise
+// XMLHttpRequest
 function addEventListener() {
+  // Register the input event
   document.getElementById("userId").addEventListener("input", (event) => {
     if (
-      event.target.value < 0 ||
+      event.target.value < 1 ||
       event.target.value > 10 ||
       event.target.value === ""
     ) {
+      // Default value when invalid inputs are entered
       event.target.value = 1;
     }
 
@@ -23,7 +29,8 @@ function getData(id = 1) {
   fetch(`${restEndpoint}/${id}`)
     .then((response) => {
       if (response.status >= 200 && response.status < 400) {
-        return response.json();
+        const data = response.json();
+        return data;
       } else {
         throw new Error(
           `Server Response: status: ${response.status} statusText: ${response.statusText}`
@@ -38,7 +45,12 @@ function getData(id = 1) {
     });
 }
 
+// Same function as the following apps:
+// FetchAsyncAwait
+// FetchPromise
+// XMLHttpRequest
 function displayData(data) {
+  // Updating the values of the html elements by getting their ids
   document.getElementById("name").innerText = data["name"];
   document.getElementById("username").innerText = data["username"];
   document.getElementById("email").innerText = data["email"];

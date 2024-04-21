@@ -63,3 +63,31 @@ console.log(xLet);
 
 // console.log(yLet);
 // console.log(zLet);
+
+// Using var
+function varExample() {
+  var x = 10;
+
+  if (true) {
+    var x = 20; // This re-declares the variable x
+    console.log("Var Inside if block - x:", x); // Outputs 20
+  }
+
+  console.log("Var Outside if block - x:", x); // Outputs 20
+}
+
+varExample();
+
+// Using let
+function letExample() {
+  let y = 10;
+
+  if (true) {
+    let y = 20; // This declares a new variable y local to this block
+    console.log("Let Inside if block - y:", y); // Outputs 20
+  }
+
+  console.log("Let Outside if block - y:", y); // Outputs 10
+}
+
+letExample();

@@ -7,7 +7,7 @@ try {
   // Division by zero error
   const x = 1n;
   const y = 0n;
-  const quotient = x / y;
+  const quotient = x / y; // This will result in an error
   console.log(quotient);
 } catch (error) {
   console.error(error);
@@ -27,8 +27,9 @@ function findSum(numbers, startIndex, endIndex) {
 
   return sum;
 }
-
+//          0  1  2  3
 let nums = [1, 2, 3, 4];
+
 // This is ok
 console.log(findSum(nums, 0, 2));
 
@@ -45,6 +46,8 @@ function exceptionTest() {
     throw "crash!!!";
 
     // Skips because exception is thrown
+    // Also the editor makes the font gray
+    // Which means that code will not be executed
     console.log("after throw");
   } catch (exception) {
     console.log("catch");

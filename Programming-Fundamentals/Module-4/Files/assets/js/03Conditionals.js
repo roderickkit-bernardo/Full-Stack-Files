@@ -3,66 +3,71 @@
   Purpose: JS Conditionals demo
 */
 
-// Logic using if
+// Logic using if, not efficient since all of the conditions will be checked
 let numberOfCourses = 5;
 
 if (numberOfCourses >= 3) {
   console.log(
+    "Condition: numberOfCourses >= 3",
     "You are taking " + numberOfCourses + " which is full time load."
   );
 }
 
 if (numberOfCourses < 3) {
   console.log(
+    "Condition: numberOfCourses < 3",
     "You are taking " + numberOfCourses + " which is part time load."
   );
 }
 
-// Logic using if else
+// Logic using if else, better because it will only execute
+// one code block
 if (numberOfCourses >= 3) {
   console.log(
+    "Condition: numberOfCourses >= 3",
     "You are taking " + numberOfCourses + " which is full time load."
   );
 } else {
   console.log(
+    "Condition: numberOfCourses < 3",
     "You are taking " + numberOfCourses + " which is part time load."
   );
 }
 
 // == Equality
-console.log(2 == 2); // true
-console.log("bat" == "bat"); // true
+console.log(`2 == 2`, 2 == 2); // true
+console.log(`"bat" == "bat"`, "bat" == "bat"); // true
 
 // !=	Inequality
-console.log(2 != 3); // true
-console.log("bat" != "zoo"); // true
+console.log(`2 != 3`, 2 != 3); // true
+console.log(`"bat" != "zoo"`, "bat" != "zoo"); // true
 
 // ===	Identity
-console.log(2 === 2); // true
-console.log("2" === 2); // false
+console.log(`2 === 2`, 2 === 2); // true
+console.log(`"2" === 2`, "2" === 2); // false
 
 // !==	Non-identity
-console.log(2 !== 2); // false
-console.log("2" !== 2); // true
+console.log(`2 !== 2`, 2 !== 2); // false
+console.log(`"2" !== 2`, "2" !== 2); // true
 
 // < Less than
-console.log(2 < 3); // true
-console.log("bat" < "zoo"); // true
+console.log(`2 < 3`, 2 < 3); // true
+console.log(`"bat" < "zoo"`, "bat" < "zoo"); // true
 
 // <=	Less than or equal
 console.log(2 <= 3); // true
-console.log("bat" <= "bat"); // true
+console.log(`"bat" <= "bat"`, "bat" <= "bat"); // true
 
 // >	Greater than
 console.log(3 > 2); // true
-console.log("zoo" > "bat"); // true
+console.log(`"zoo" > "bat"`, "zoo" > "bat"); // true
 
 // >=	Greater than or equal
 console.log(3 >= 2); // true
-console.log("zoo" >= "zoo"); // true
+console.log(`"zoo" >= "zoo"`, "zoo" >= "zoo"); // true
 
 const birthYear = 1959;
-console.log("Birth year " + birthYear + " is:");
+console.log("Nested logic Birth year " + birthYear + " is:");
 
 if (birthYear >= 2010) {
   console.log("Alpha");
@@ -86,6 +91,8 @@ if (birthYear >= 2010) {
   }
 }
 
+console.log("Non Nested logic Birth year " + birthYear + " is:");
+
 if (birthYear >= 2010) {
   console.log("Alpha");
 } else if (birthYear >= 1997) {
@@ -101,62 +108,64 @@ if (birthYear >= 2010) {
 }
 
 // Truthy
+console.log("Truthy");
 const myObject = {};
 const myArray = [];
 
 if (32) {
-  console.log(true);
+  console.log(`32 is`, true);
 } else {
   console.log(false);
 }
 
 if ("cat") {
-  console.log(true);
+  console.log(`"cat is"`, true);
 } else {
   console.log(false);
 }
 
 if (myObject) {
-  console.log(true);
+  console.log(myObject, `is`, true);
 } else {
   console.log(false);
 }
 
 if (myArray) {
-  console.log(true);
+  console.log(myArray, `is`, true);
 } else {
   console.log(false);
 }
 
 // Falsy
+console.log("Falsy");
 if (0) {
   console.log(true);
 } else {
-  console.log(false);
+  console.log(`0 is`, false);
 }
 
 if ("") {
   console.log(true);
 } else {
-  console.log(false);
+  console.log(`""`, false);
 }
 
 if (NaN) {
   console.log(true);
 } else {
-  console.log(false);
+  console.log(`NaN`, false);
 }
 
 if (undefined) {
   console.log(true);
 } else {
-  console.log(false);
+  console.log(`undefined`, false);
 }
 
 if (null) {
   console.log(true);
 } else {
-  console.log(false);
+  console.log(`null`, false);
 }
 
 // Ternary

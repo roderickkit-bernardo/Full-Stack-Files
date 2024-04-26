@@ -1,0 +1,842 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: Frontend Development Course Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Development Course Website</title>
+    <link href="../css/bulma.min.css" rel="stylesheet" />
+  </head>
+
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-menu">
+        <div class="navbar-start is-size-5">
+          <a class="navbar-item" href="../index.html"> Home </a>
+          <a class="navbar-item is-active" href="#"> Server Side JS </a>
+          <a class="navbar-item" href="jsFrontendFrameworks.html">
+            JS Frontend Frameworks
+          </a>
+          <a class="navbar-item" href="appDeployment.html"> App Deployment </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="content">
+        <h1 class="is-size-3">Server Side JS</h1>
+        <div class="box">
+          <h2 class="is-size-4">
+            <a href="https://nodejs.org/" target="_blank">Node JS</a>
+          </h2>
+          <ul>
+            <li>
+              Open-source, cross-platform JavaScript runtime environment that
+              executes JavaScript code outside of a web browser.
+            </li>
+            <li>
+              It allows developers to use JavaScript to write server-side
+              applications, enabling them to build scalable and high-performance
+              network applications.
+            </li>
+            <li>
+              Built on Chrome's V8 JavaScript engine and uses an event-driven,
+              non-blocking I/O model, making it efficient and lightweight for
+              handling concurrent connections and I/O-intensive operations.
+            </li>
+          </ul>
+        </div>
+        <blockquote>
+          <p>
+            Node JS is not the only JS runtime,
+            <a href="https://deno.com/" target="_blank">deno</a> and
+            <a href="https://bun.sh/" target="_blank">bun</a> are alternative JS
+            runtimes.
+          </p>
+        </blockquote>
+        <div class="box">
+          <h2 class="is-size-4">Node JS Features</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">Asynchronous and Event-Driven:</h3>
+              <ul>
+                <li>
+                  Node.js operates on a non-blocking, event-driven architecture.
+                </li>
+                <li>
+                  This means that it can handle a large number of concurrent
+                  connections efficiently, making it ideal for building scalable
+                  network applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Single-threaded but Highly Scalable:</h3>
+              <ul>
+                <li>
+                  Although Node.js runs on a single-threaded event loop, it can
+                  handle thousands of concurrent connections without the need
+                  for spawning new threads for each connection.
+                </li>
+                <li>
+                  This makes it highly efficient in terms of resource
+                  utilization.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">NPM (Node Package Manager):</h3>
+              <ul>
+                <li>
+                  Node.js comes with npm, a package manager that hosts over a
+                  million packages of reusable code.
+                </li>
+                <li>
+                  This vast ecosystem of libraries and modules simplifies the
+                  process of building applications by providing ready-made
+                  solutions for common tasks.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Cross-Platform:</h3>
+              <ul>
+                <li>
+                  Node.js is cross-platform and can run on various operating
+                  systems such as Windows, macOS, and Linux, making it versatile
+                  for developers working on different environments.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Fast Execution:</h3>
+              <ul>
+                <li>
+                  Node.js is known for its fast execution speed due to the V8
+                  engine, which compiles JavaScript into machine code before
+                  executing it.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Streaming Data:</h3>
+              <ul>
+                <li>
+                  Node.js provides built-in support for streaming data, allowing
+                  developers to process files and network streams efficiently in
+                  chunks, which reduces memory consumption and improves
+                  performance.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Server-side Web Development:</h3>
+              <ul>
+                <li>
+                  Node.js is commonly used for server-side web development. With
+                  frameworks like Express.js, developers can quickly build
+                  robust and scalable web applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Microservices Architecture:</h3>
+              <ul>
+                <li>
+                  Node.js is well-suited for a microservices architecture, where
+                  applications are broken down into smaller, independent
+                  services that communicate with each other through APIs.
+                </li>
+                <li>
+                  Its lightweight nature and support for asynchronous operations
+                  make it an excellent choice for microservices.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Real-time Applications:</h3>
+              <ul>
+                <li>
+                  Node.js is often used for building real-time applications such
+                  as chat applications, online gaming platforms, and
+                  collaborative tools due to its ability to handle simultaneous
+                  connections efficiently.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Community and Support:</h3>
+              <ul>
+                <li>
+                  Node.js has a vibrant and active community of developers,
+                  which contributes to its ongoing development, provides support
+                  through forums and communities, and creates a wealth of
+                  resources for learning and troubleshooting.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">
+            <a href="https://www.npmjs.com/" target="_blank"
+              >Node Package Manager (npm)</a
+            >
+          </h2>
+          <ul>
+            <li>
+              Package manager for Node.js that comes bundled with the Node.js
+              runtime environment.
+            </li>
+            <li>
+              It serves as a central repository for downloading and managing
+              JavaScript libraries and tools.
+            </li>
+            <li>
+              npm allows developers to easily install, share, and manage
+              dependencies for their Node.js projects.
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">Node Package Manager (npm) Features</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">Package Installation:</h3>
+              <ul>
+                <li>
+                  npm provides a command-line interface (CLI) that allows
+                  developers to install packages from the npm registry.
+                </li>
+                <li>
+                  Developers can install packages globally (accessible from any
+                  project) or locally (specific to a project).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Dependency Management:</h3>
+              <ul>
+                <li>
+                  npm simplifies the process of managing dependencies for
+                  Node.js projects.
+                </li>
+                <li>
+                  Developers can specify dependencies and their versions in a
+                  package.json file, and npm automatically installs the required
+                  packages and their dependencies.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Version Management:</h3>
+              <ul>
+                <li>
+                  npm allows developers to specify version ranges for
+                  dependencies in the package.json file.
+                </li>
+                <li>
+                  This enables developers to specify a minimum and maximum
+                  version, ensuring compatibility with other packages while
+                  allowing for updates.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Publishing Packages:</h3>
+              <ul>
+                <li>
+                  Developers can publish their own packages to the npm registry,
+                  making them available for others to use.
+                </li>
+                <li>
+                  This allows developers to share reusable code and contribute
+                  to the Node.js ecosystem.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Scoping:</h3>
+              <ul>
+                <li>
+                  npm supports scoped packages, which allow developers to
+                  organize packages under a specific namespace.
+                </li>
+                <li>
+                  Scoped packages help prevent naming conflicts and make it
+                  easier to manage related packages.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Scripts:</h3>
+              <ul>
+                <li>
+                  npm allows developers to define custom scripts in the
+                  package.json file.
+                </li>
+                <li>
+                  These scripts can be executed using the npm CLI, enabling
+                  tasks such as running tests, building the project, or
+                  deploying the application.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Security:</h3>
+              <ul>
+                <li>
+                  npm includes built-in security features to help protect
+                  against malicious packages.
+                </li>
+                <li>
+                  It performs vulnerability scans on packages during
+                  installation and provides warnings for known security issues.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Versioning and SemVer:</h3>
+              <ul>
+                <li>
+                  npm follows Semantic Versioning (SemVer), which specifies
+                  version numbers in a structured format (major.minor.patch).
+                </li>
+                <li>
+                  This helps developers understand the impact of updates and
+                  ensures compatibility between versions.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Registry Mirroring:</h3>
+              <ul>
+                <li>
+                  Organizations can set up private npm registries or mirror the
+                  public npm registry to host packages internally.
+                </li>
+                <li>
+                  This allows teams to manage proprietary code and dependencies
+                  within their network.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">
+            <a href="https://expressjs.com/" target="_blank">Express JS</a>
+          </h2>
+          <ul>
+            <li>
+              Is a minimal and flexible web application framework for Node.js.
+            </li>
+            <li>
+              It provides a robust set of features for building web and mobile
+              applications, as well as APIs (Application Programming
+              Interfaces).
+            </li>
+            <li>
+              One of the most popular frameworks for Node.js due to its
+              simplicity, flexibility, and performance.
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">Express JS Features</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">Middleware:</h3>
+              <ul>
+                <li>Middleware functions are at the core of Express.js.</li>
+                <li>
+                  They are functions that have access to the request object
+                  (req), the response object (res), and the next middleware
+                  function in the application's request-response cycle.
+                </li>
+                <li>
+                  Middleware functions can perform tasks such as logging,
+                  authentication, data parsing, and error handling.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Routing:</h3>
+              <ul>
+                <li>
+                  Express provides a simple yet powerful routing mechanism that
+                  allows developers to define routes based on HTTP methods (GET,
+                  POST, PUT, DELETE, etc.) and URL patterns.
+                </li>
+                <li>
+                  Routes can handle requests and return responses, making it
+                  easy to create RESTful APIs and web applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">HTTP Utilities:</h3>
+              <ul>
+                <li>
+                  Express provides utility methods and properties to work with
+                  HTTP requests and responses more efficiently.
+                </li>
+                <li>
+                  These include methods for setting HTTP headers, sending status
+                  codes, redirecting requests, and sending various types of
+                  responses (JSON, HTML, etc.).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Static Files Serving:</h3>
+              <ul>
+                <li>
+                  Express makes it easy to serve static files such as HTML, CSS,
+                  JavaScript, images, and other assets.
+                </li>
+                <li>
+                  Developers can use the express.static middleware to serve
+                  files from a specified directory, making it suitable for
+                  serving client-side resources in web applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Templating Engines:</h3>
+              <ul>
+                <li>
+                  Although Express itself does not include a built-in templating
+                  engine, it allows developers to integrate popular templating
+                  engines such as EJS (Embedded JavaScript), Handlebars, Pug
+                  (formerly known as Jade), and Mustache.
+                </li>
+                <li>
+                  Templating engines enable the dynamic generation of HTML
+                  content based on data.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Error Handling:</h3>
+              <ul>
+                <li>
+                  Express provides built-in error handling mechanisms to catch
+                  and handle errors that occur during the request-response
+                  cycle.
+                </li>
+                <li>
+                  Developers can define error-handling middleware functions to
+                  centralize error handling logic and improve code
+                  maintainability.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Modularity and Extensibility:</h3>
+              <ul>
+                <li>
+                  Express is designed to be modular and extensible, allowing
+                  developers to add additional functionality through third-party
+                  middleware and plugins.
+                </li>
+                <li>
+                  This modularity makes it easy to integrate with other Node.js
+                  modules and frameworks, enhancing the capabilities of
+                  Express-based applications.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Community and Ecosystem:</h3>
+              <ul>
+                <li>
+                  Express has a large and active community of developers who
+                  contribute to its ongoing development, create middleware
+                  packages, and provide support through forums, documentation,
+                  and tutorials.
+                </li>
+                <li>
+                  This vibrant ecosystem makes it easier for developers to build
+                  and maintain Express.js applications.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">HTTP Method</h2>
+          <ul>
+            <li>
+              HTTP (Hypertext Transfer Protocol) methods are verbs that define
+              the actions that can be performed on a given resource.
+            </li>
+            <li>
+              They are an essential part of the HTTP protocol, used for
+              communication between clients (such as web browsers) and servers.
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">HTTP Method List</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">GET:</h3>
+              <ul>
+                <li>The GET method requests data from a specified resource.</li>
+                <li>
+                  It should only retrieve data and not cause any other side
+                  effects.
+                </li>
+                <li>
+                  It is a safe and idempotent method, meaning that multiple
+                  identical requests should have the same effect as a single
+                  request.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">POST:</h3>
+              <ul>
+                <li>
+                  The POST method submits data to be processed to a specified
+                  resource.
+                </li>
+                <li>
+                  It is often used to create new resources or to send data to a
+                  server for processing, such as submitting a form or uploading
+                  a file.
+                </li>
+                <li>
+                  Unlike GET, POST requests may have side effects on the server
+                  and are not idempotent.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">PUT:</h3>
+              <ul>
+                <li>
+                  The PUT method is used to update a resource or create a new
+                  resource if it does not exist at the specified URL.
+                </li>
+                <li>
+                  It is idempotent, meaning that multiple identical requests
+                  should have the same effect as a single request.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">DELETE:</h3>
+              <ul>
+                <li>
+                  The DELETE method is used to request the removal of a
+                  specified resource.
+                </li>
+                <li>
+                  It is idempotent, meaning that multiple identical requests
+                  should have the same effect as a single request.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <blockquote>
+          <p>
+            We are only covering 4 HTTP methods, here is a complete list of
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+              target="_blank"
+              >HTTP methods.</a
+            >
+          </p>
+        </blockquote>
+        <div class="box">
+          <h2 class="is-size-4">CSS Frameworks</h2>
+          <ul>
+            <li>
+              CSS frameworks are pre-prepared libraries that contain
+              standardized, pre-written code to help developers quickly and
+              efficiently build web applications or websites.
+            </li>
+            <li>
+              They provide a set of CSS files that include a grid system,
+              typography styles, form layouts, button styles, and other UI
+              components.
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">CSS Frameworks Features</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">Grid System:</h3>
+              <ul>
+                <li>
+                  Most CSS frameworks come with a grid system that simplifies
+                  layout creation.
+                </li>
+                <li>
+                  This grid system allows developers to create responsive
+                  layouts easily, ensuring that web pages look good on various
+                  devices and screen sizes.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Typography:</h3>
+              <ul>
+                <li>
+                  CSS frameworks often include predefined typography styles for
+                  headings, paragraphs, lists, and other text elements.
+                </li>
+                <li>
+                  These styles ensure consistency and readability across the
+                  website.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">UI Components:</h3>
+              <ul>
+                <li>
+                  Frameworks typically offer ready-to-use UI components such as
+                  buttons, forms, navigation bars, modals, and more.
+                </li>
+                <li>
+                  These components are styled consistently and can be easily
+                  customized to match the design of the website.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Cross-browser Compatibility:</h3>
+              <ul>
+                <li>
+                  CSS frameworks handle cross-browser compatibility issues,
+                  ensuring that styles render consistently across different web
+                  browsers.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Customization:</h3>
+              <ul>
+                <li>
+                  While CSS frameworks provide pre-styled components, they also
+                  allow developers to customize styles according to their
+                  specific needs.
+                </li>
+                <li>
+                  Most frameworks provide variables or configuration options to
+                  customize colors, spacing, typography, and other design
+                  aspects.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Responsive Design:</h3>
+              <ul>
+                <li>
+                  With the proliferation of mobile devices, responsive design
+                  has become essential.
+                </li>
+                <li>
+                  CSS frameworks facilitate the creation of responsive layouts
+                  through their grid systems and responsive utility classes.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">Popular CSS Frameworks</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a
+                >:
+              </h3>
+              <ul>
+                <li>
+                  One of the most widely used CSS frameworks, Bootstrap provides
+                  a comprehensive set of UI components and a responsive grid
+                  system.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://bulma.io/" target="_blank">Bulma</a>:
+              </h3>
+              <ul>
+                <li>Bulma is a modern CSS framework based on Flexbox.</li>
+                <li>
+                  It emphasizes simplicity and modularity, making it easy to
+                  customize and use.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://tailwindcss.com/" target="_blank"
+                  >Tailwind CSS</a
+                >:
+              </h3>
+              <ul>
+                <li>
+                  Unlike traditional CSS frameworks, Tailwind CSS provides
+                  utility classes that directly apply styles to HTML elements.
+                </li>
+                <li>
+                  It offers a highly customizable and functional approach to
+                  styling web interfaces.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <blockquote>
+          <p>
+            The CSS framework used for this class will be
+            <a href="https://bulma.io/" target="_blank">bulma</a>
+            and
+            <a href="https://github.com/oxalorg/sakura" target="_blank"
+              >sakura</a
+            >. Feel free to use any CSS framework of your preference.
+          </p>
+        </blockquote>
+        <div class="box">
+          <h2 class="is-size-4">JS Templating Language</h2>
+          <ul>
+            <li>
+              JavaScript templating languages are used to generate HTML markup
+              dynamically on the client-side or server-side using JavaScript.
+            </li>
+            <li>
+              These languages provide a way to structure and organize HTML
+              templates with placeholders that can be filled in with data during
+              runtime.
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2 class="is-size-4">Popular JS Templating Languages</h2>
+          <ul>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://handlebarsjs.com/" target="_blank"
+                  >Handlebars.js</a
+                >:
+              </h3>
+              <ul>
+                <li>
+                  Handlebars.js is a popular templating engine that allows you
+                  to build semantic templates using a simple syntax.
+                </li>
+                <li>
+                  It uses double curly braces {{ }} for placeholders and
+                  supports helpers and partials for more complex templating
+                  needs.
+                </li>
+                <li>
+                  Handlebars.js is often used in conjunction with client-side
+                  frameworks like Ember.js or server-side frameworks like
+                  Express.js.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://github.com/janl/mustache.js" target="_blank"
+                  >Mustache.js</a
+                >:
+              </h3>
+              <ul>
+                <li>
+                  Mustache.js is a logic-less templating engine that follows the
+                  mustache syntax for placeholders, which consists of double
+                  curly braces {{ }}.
+                </li>
+                <li>
+                  It is lightweight and easy to use, making it suitable for
+                  various JavaScript applications.
+                </li>
+                <li>
+                  Mustache.js supports partials, lambdas, and sections for
+                  conditional rendering.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://ejs.co/" target="_blank"
+                  >EJS (Embedded JavaScript)</a
+                >:
+              </h3>
+              <ul>
+                <li>
+                  EJS is a simple templating language that allows you to embed
+                  JavaScript code directly within HTML markup.
+                </li>
+                <li>
+                  It uses delimiter tags <% %> to execute JavaScript code and
+                  <%= %> to output values.
+                </li>
+                <li>
+                  EJS is often used with Node.js frameworks like Express.js for
+                  server-side rendering.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">
+                <a href="https://pugjs.org/" target="_blank">Pug</a>:
+              </h3>
+              <ul>
+                <li>
+                  Pug is a high-performance templating engine for Node.js and
+                  browsers that uses indentation-based syntax instead of HTML
+                  markup.
+                </li>
+                <li>
+                  It allows you to write concise and readable templates with
+                  fewer characters.
+                </li>
+                <li>
+                  Pug supports features like mixins, includes, and filters for
+                  creating modular and reusable templates.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <blockquote>
+          <p>
+            The JS templating engine used for this class will be
+            <a href="https://ejs.co/" target="_blank"
+              >EJS (Embedded JavaScript)</a
+            >. Feel free to use any templating engine of your preference.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Web App</strong> by:
+          <a href="https://github.com/roderickkit-bernardo/" target="_blank"
+            >Roderick Bernardo</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

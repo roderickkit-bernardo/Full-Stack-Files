@@ -171,6 +171,91 @@
                   make it an excellent choice for microservices.
                 </li>
               </ul>
+              <blockquote>
+                <p><b>Application Architecture Types:</b></p>
+                <article class="message is-info">
+                  <p><b>Monolith:</b></p>
+                  <div class="message-body">
+                    <article class="message is-success">
+                      <p><b>Pros:</b></p>
+                      <div class="message-body">
+                        In a monolithic architecture, the entire application is
+                        built as a single, self-contained unit. All components
+                        of the application, including the user interface,
+                        business logic, and data access layer, are tightly
+                        integrated. Monolithic architectures are relatively
+                        simple to develop and deploy initially, as there is only
+                        one codebase to manage.
+                      </div>
+                    </article>
+                    <article class="message is-danger">
+                      <p><b>Cons:</b></p>
+                      <div class="message-body">
+                        Monolithic applications can become difficult to maintain
+                        and scale as they grow larger, because any change to one
+                        part of the application may require redeploying the
+                        entire monolith.
+                      </div>
+                    </article>
+                  </div>
+                </article>
+                <article class="message is-info">
+                  <p><b>Microservices:</b></p>
+                  <div class="message-body">
+                    <article class="message is-success">
+                      <p><b>Pros:</b></p>
+                      <div class="message-body">
+                        Microservices architecture decomposes an application
+                        into smaller, loosely coupled services that are
+                        independently deployable and scalable. Each microservice
+                        is responsible for a specific business function and
+                        communicates with other services through APIs. This
+                        approach offers flexibility, scalability, and
+                        resilience, as individual services can be developed,
+                        deployed, and scaled independently.
+                      </div>
+                    </article>
+                    <article class="message is-danger">
+                      <p><b>Cons:</b></p>
+                      <div class="message-body">
+                        Microservices introduce complexity in terms of managing
+                        communication between services, ensuring consistency
+                        across services, and monitoring and debugging
+                        distributed systems.
+                      </div>
+                    </article>
+                  </div>
+                </article>
+                <article class="message is-info">
+                  <p><b>Serverless:</b></p>
+                  <div class="message-body">
+                    <article class="message is-success">
+                      <p><b>Pros:</b></p>
+                      <div class="message-body">
+                        Serverless, also known as Function as a Service (FaaS),
+                        abstracts away the infrastructure management from
+                        developers. Developers focus on writing small,
+                        single-purpose functions that are triggered by events
+                        (e.g., HTTP requests, database changes). With
+                        serverless, developers don't need to provision or manage
+                        servers; the cloud provider automatically scales the
+                        infrastructure based on demand. Serverless architectures
+                        can be cost-effective, as users are only charged for the
+                        compute resources consumed by their functions.
+                      </div>
+                    </article>
+                    <article class="message is-danger">
+                      <p><b>Cons:</b></p>
+                      <div class="message-body">
+                        Serverless may not be suitable for all types of
+                        applications, and there may be limitations in terms of
+                        execution duration, resource constraints, and cold start
+                        latency.
+                      </div>
+                    </article>
+                  </div>
+                </article>
+              </blockquote>
             </li>
             <li>
               <h3 class="is-size-5">Real-time Applications:</h3>
@@ -196,6 +281,46 @@
             </li>
           </ul>
         </div>
+        <blockquote>
+          <p><b>Essential terminal commands for Node JS development:</b></p>
+          <p><b>PowerShell:</b></p>
+          <ul>
+            <li>
+              <b>ls or dir</b> - Display a list of the files and subfolders
+              contained in a folder.
+            </li>
+            <li><b>clear or cls</b> - Clears the screen.</li>
+            <li><b>cd</b> - Change the current directory.</li>
+          </ul>
+          <p><b>Windows Command Prompt:</b></p>
+          <ul>
+            <li>
+              <b>dir</b> - Display a list of the files and subfolders contained
+              in a folder.
+            </li>
+            <li><b>cls</b> - Clears the screen.</li>
+            <li><b>cd</b> - Change the current directory.</li>
+          </ul>
+          <p><b>Mac or Linux Terminal:</b></p>
+          <ul>
+            <li>
+              <b>ls</b> - Display a list of the files and subfolders contained
+              in a folder.
+            </li>
+            <li><b>clear</b> - Clears the screen.</li>
+            <li><b>cd</b> - Change the current directory.</li>
+          </ul>
+        </blockquote>
+        <blockquote>
+          <p><b>Basic Node JS commands:</b></p>
+          <ul>
+            <li><b>node --version</b> - Display the version of Node JS.</li>
+            <li>
+              <b>node NODE_JS_FILE_NAME</b> - Run the Node JS NODE_JS_FILE_NAME
+              app. ie: <b>node index.js</b>, Will run the index.js app.
+            </li>
+          </ul>
+        </blockquote>
         <div class="box">
           <h2 class="is-size-4">
             <a href="https://www.npmjs.com/" target="_blank"
@@ -342,6 +467,26 @@
             </li>
           </ul>
         </div>
+        <blockquote>
+          <p><b>Basic NPM commands:</b></p>
+          <ul>
+            <li><b>npm init</b> - Initialize a Node JS app.</li>
+            <li>
+              <b>npm init -y</b> - Initialize a Node JS app and accept the
+              defaults.
+            </li>
+            <li>
+              <b>npm i NAME_OF_PACKAGE</b> or
+              <b>npm install NAME_OF_PACKAGE</b> - Installs NAME_OF_PACKAGE
+              package. ie: <b>npm i express</b> or <b>npm install express</b>,
+              will install the express package.
+            </li>
+            <li>
+              <b>npm i</b> or <b>npm install</b> - to install the packages
+              listed under dependencies.
+            </li>
+          </ul>
+        </blockquote>
         <div class="box">
           <h2 class="is-size-4">
             <a href="https://expressjs.com/" target="_blank">Express JS</a>

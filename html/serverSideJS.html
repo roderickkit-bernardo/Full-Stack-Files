@@ -482,8 +482,8 @@
               will install the express package.
             </li>
             <li>
-              <b>npm i</b> or <b>npm install</b> - to install the packages
-              listed under dependencies.
+              <b>npm i</b> or <b>npm install</b> - Install the packages listed
+              under package.json dependencies list.
             </li>
           </ul>
         </blockquote>
@@ -523,6 +523,50 @@
                   authentication, data parsing, and error handling.
                 </li>
               </ul>
+
+              <blockquote>
+                <p><b>Useful Middleware Functions:</b></p>
+                <ul>
+                  <li>
+                    <b><code>app.use(express.static('public'));</code></b> -
+                    Built in middleware that serves static files such as HTML,
+                    CSS, JavaScript, images, and other assets.
+                  </li>
+                  <li>
+                    <b><code>app.use(express.json());</code></b> - Built in
+                    middleware that parses the incoming request body if it
+                    contains JSON data and populates the req.body property with
+                    the parsed JSON object. This makes it easier to work with
+                    JSON data in your Express routes.
+                  </li>
+                  <li>
+                    <b
+                      ><code
+                        >app.use(express.urlencoded({ extended: true }));</code
+                      ></b
+                    >
+                    - Built in middleware that parses the incoming request body
+                    if it contains URL-encoded data (e.g., data submitted from
+                    an HTML form) and populates the req.body property with the
+                    parsed data.
+                  </li>
+                  <li>
+                    <b
+                      ><a
+                        href="https://expressjs.com/en/resources/middleware.html"
+                        target="_blank"
+                        >Third party middleware</a
+                      ></b
+                    >
+                    - Middleware functions or modules that are developed by the
+                    community or third-party developers to extend the
+                    functionality of Express applications. These third-party
+                    middleware modules can be installed via npm and then
+                    integrated into your Express application using app.use()
+                    just like built-in middleware.
+                  </li>
+                </ul>
+              </blockquote>
             </li>
             <li>
               <h3 class="is-size-5">Routing:</h3>
@@ -983,6 +1027,98 @@
             >. Feel free to use any templating engine of your preference.
           </p>
         </blockquote>
+        <div class="box">
+          <h2 class="is-size-4">JS Modules</h2>
+          <p>
+            ES6 modules and CommonJS are both mechanisms for modularizing
+            JavaScript code, but they have some differences in syntax, behavior,
+            and usage.
+          </p>
+          <ul>
+            <li>
+              <h3 class="is-size-5">Syntax:</h3>
+              <ul>
+                <li>
+                  <b>ES6 Modules:</b> Use import and export keywords to define
+                  dependencies and exports.
+                  <blockquote>
+                    <p>Importing a module</p>
+                    <p>
+                      <code
+                        >import { function1, function2 } from
+                        './module.js';</code
+                      >
+                    </p>
+                    <p>Exporting from a module</p>
+                    <p><code>export { function1, function2 };</code></p>
+                  </blockquote>
+                </li>
+                <li>
+                  <b>CommonJS:</b> Uses require() to import modules and
+                  module.exports or exports to export values.
+                  <blockquote>
+                    <p>Importing a module</p>
+                    <p>
+                      <code>const module = require('./module');</code>
+                    </p>
+                    <p>Exporting from a module</p>
+                    <p>
+                      <code>module.exports = { function1, function2 };</code>
+                    </p>
+                  </blockquote>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Dynamic vs Static:</h3>
+              <ul>
+                <li>
+                  <b>ES6 Modules:</b> Are statically analyzable, meaning imports
+                  and exports are resolved at compile time. This allows for
+                  better optimization and tree-shaking (removing unused code) by
+                  build tools.
+                </li>
+                <li>
+                  <b>CommonJS:</b> Are loaded dynamically at runtime, which can
+                  make it harder for build tools to perform optimizations like
+                  tree-shaking.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Browser vs Node.js:</h3>
+              <ul>
+                <li>
+                  <b>ES6 Modules:</b> Natively supported in modern browsers
+                  using import and export syntax. In Node.js, ES6 modules are
+                  supported since version 12 but must be used with the .mjs file
+                  extension or by configuring package.json.
+                </li>
+                <li>
+                  <b>CommonJS:</b> Are the standard in Node.js and are also
+                  widely used in server-side JavaScript applications. In
+                  browsers, they require tools like Browserify or Webpack to
+                  bundle them for use.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="is-size-5">Top-level Scope:</h3>
+              <ul>
+                <li>
+                  <b>ES6 Modules:</b> Each ES6 module has its own top-level
+                  scope, meaning variables and functions declared inside the
+                  module are not visible outside unless explicitly exported.
+                </li>
+                <li>
+                  <b>CommonJS:</b> Modules share the same scope, so variables
+                  and functions declared in one module can be accessed by other
+                  modules unless explicitly scoped.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

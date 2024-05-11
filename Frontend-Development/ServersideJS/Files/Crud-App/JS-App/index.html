@@ -1,0 +1,159 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: CRUD demo
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album-App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="albumForm" action="" method="POST">
+      <section class="section">
+        <div class="container">
+          <div class="box">
+            <div class="field">
+              <label for="albumName" class="label">Album Name:</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="albumName"
+                  id="albumName"
+                  placeholder="Enter the album name"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="artistName" class="label">Artist Name:</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="artistName"
+                  id="artistName"
+                  placeholder="Enter the artist name"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="year" class="label">Year:</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="year"
+                  id="year"
+                  placeholder="Enter the year"
+                />
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link" name="submit">Submit</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light" name="cancel">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <table class="table mx-auto">
+              <thead>
+                <tr>
+                  <th>Album Name</th>
+                  <th>Artist Name</th>
+                  <th>Year</th>
+                  <th>List Operations</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <div id="modal-update" class="modal">
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+        <form id="albumFormUpdate" action="" method="POST">
+          <section class="section">
+            <div class="container">
+              <div class="box">
+                <div class="field">
+                  <input
+                    class="input"
+                    type="hidden"
+                    name="idUpdate"
+                    id="idUpdate"
+                  />
+                  <label for="albumNameUpdate" class="label">Album Name:</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      name="albumNameUpdate"
+                      id="albumNameUpdate"
+                      placeholder="Enter the album name"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="artistNameUpdate" class="label"
+                    >Artist Name:</label
+                  >
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      name="artistNameUpdate"
+                      id="artistNameUpdate"
+                      placeholder="Enter the artist name"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="yearUpdate" class="label">Year:</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      name="yearUpdate"
+                      id="yearUpdate"
+                      placeholder="Enter the year"
+                    />
+                  </div>
+                </div>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link" name="submit">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light" name="cancel">
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </form>
+      </div>
+
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>

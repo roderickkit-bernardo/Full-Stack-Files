@@ -1,0 +1,20 @@
+{
+  "name": "password-utils",
+  "version": "1.0.0",
+  "description": "Password hasher and verifier app written as ES6 and CommonJS, set the type to the proper value (commonjs | ES6) when using the app.",
+  "main": "index.js",
+  "_type": "module",
+  "type": "commonjs",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  }
+}

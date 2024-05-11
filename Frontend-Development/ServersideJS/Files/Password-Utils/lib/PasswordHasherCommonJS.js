@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: CommonJS module demo
+
 const bcrypt = require("bcrypt");
 
 // Define a function to hash a password

@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: Express Microservice Backend app for user authentication
+
 const Users = require("./lib/Users");
 const cors = require("cors");
 const express = require("express");
@@ -8,10 +11,6 @@ const APP_NAME = "Basic-Backend-App";
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.send(users);
-});
 
 app.get("/verifyUserName/:userName", (req, res) => {
   res.send(Users.verifyUserName(req.params.userName));

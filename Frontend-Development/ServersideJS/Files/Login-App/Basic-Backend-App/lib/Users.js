@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: User account module
+
 const PasswordHasherCommonJS = require("./PasswordHasherCommonJS");
 
 const users = [

@@ -5,9 +5,14 @@ const Users = require("./lib/Users");
 const cors = require("cors");
 const express = require("express");
 const app = express();
-const port = 3000;
-const APP_NAME = "Basic-Backend-App";
 
+// Load .env file
+require("dotenv").config();
+// Use the .env file to set the following
+const PORT = parseInt(process.env.PORT);
+const APP_NAME = process.env.APP_NAME;
+
+// Required Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -28,6 +33,6 @@ app.get("*", (req, res) => {
   res.status(401).send({ status: 401, message: `Url: ${req.url} not found.` });
 });
 
-app.listen(port, () => {
-  console.log(`${APP_NAME} listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`${APP_NAME} listening on PORT ${PORT}`);
 });

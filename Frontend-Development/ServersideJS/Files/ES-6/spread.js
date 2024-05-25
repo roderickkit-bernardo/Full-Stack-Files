@@ -38,3 +38,16 @@ console.log(header);
 console.log(content);
 console.log(footer);
 console.log(index);
+
+let courseObject = {
+  courseName: "courseName",
+  courseDescription: "courseDescription",
+  courseCRN: "courseCRN",
+};
+
+console.log(courseObject);
+
+// Can be used to update just one element
+courseObject = { ...courseObject, courseName: "courseNameUpdated" };
+
+console.log(courseObject);

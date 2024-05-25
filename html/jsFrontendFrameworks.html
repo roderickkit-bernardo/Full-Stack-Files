@@ -317,6 +317,333 @@
             </div>
           </article>
         </blockquote>
+
+        <div class="box">
+          <h2 class="is-size-4">ES6</h2>
+          <ul>
+            <li>
+              ECMAScript 6 (ES6), also known as ECMAScript 2015, brought
+              significant improvements to JavaScript, which have had a profound
+              impact on the development of React applications.
+            </li>
+          </ul>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Classes</h3>
+              <ul>
+                <li>
+                  ES6 classes provide a more intuitive and cleaner syntax for
+                  defining objects and handling inheritance, which is especially
+                  beneficial in the context of React components.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Arrow Functions</h3>
+              <ul>
+                <li>
+                  Arrow functions provide a shorter syntax for writing
+                  functions.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Map function</h3>
+              <ul>
+                <li>
+                  The .map() method is a powerful array method in JavaScript
+                  that is commonly used in React to transform arrays of data
+                  into arrays of React elements.
+                </li>
+                <li>
+                  This method is particularly useful when rendering lists of
+                  components.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Destructuring</h3>
+              <ul>
+                <li>
+                  Destructuring allows for easier extraction of values from
+                  arrays or properties from objects, which is particularly handy
+                  when working with React props and state.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Spread operator</h3>
+              <ul>
+                <li>
+                  The spread operator (...) is a powerful feature in JavaScript,
+                  introduced in ES6, that allows for the expansion of iterable
+                  elements (such as arrays and strings) and properties of
+                  objects into individual elements.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Module</h3>
+              <ul>
+                <li>
+                  ES6 modules allow for a modular approach to organizing code,
+                  making it easier to manage and reuse components in React.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">JSX</h2>
+          <ul>
+            <li>
+              JSX, or JavaScript XML, is a syntax extension for JavaScript
+              commonly used with React to describe what the UI should look like.
+            </li>
+            <li>JSX may resemble HTML, but it has full power of JavaScript.</li>
+            <li>
+              It is compiled down to JavaScript by tools like Babel before being
+              executed in the browser.
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Components</h2>
+          <ul>
+            <li>
+              React components are the fundamental building blocks of a React
+              application.
+            </li>
+            <li>
+              They encapsulate pieces of the user interface and manage their own
+              state, making it easier to build complex UIs by breaking them down
+              into smaller, reusable parts.
+            </li>
+          </ul>
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Function components</h3>
+              <ul>
+                <li>
+                  Function components are the simplest way to write components
+                  in React.
+                </li>
+                <li>
+                  They are JavaScript functions that accept props as an argument
+                  and return JSX.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Class components</h3>
+              <ul>
+                <li>
+                  Class components are more feature-rich and allow you to use
+                  additional React features such as local state and lifecycle
+                  methods.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="message is-danger">
+            <div class="message-body">
+              <h3 class="is-size-5">
+                Function components are preferred over Class components
+              </h3>
+              <ul>
+                <li>
+                  Function components are simpler and more concise than class
+                  components. They eliminate the need for boilerplate code such
+                  as the constructor and the render method.
+                </li>
+                <li>
+                  Hooks, introduced in React 16.8, allow you to use state and
+                  other React features in function components. Hooks like
+                  useState, useEffect, useContext, and others provide powerful
+                  capabilities that were previously only available in class
+                  components.
+                </li>
+                <li>
+                  Function components can have a smaller memory footprint
+                  compared to class components because they don’t require an
+                  instance of a component to be created.
+                </li>
+                <li>
+                  Function components don’t use the this keyword, which avoids
+                  common pitfalls related to its usage and binding. This makes
+                  the code easier to understand and debug.
+                </li>
+                <li>
+                  Function components are easier to test because they are plain
+                  JavaScript functions. They don’t require complex setup and
+                  teardown that might be needed for class components.
+                </li>
+                <li>
+                  Hooks promote better composition and reuse of stateful logic.
+                  Custom hooks allow you to extract component logic into
+                  reusable functions.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Props</h2>
+          <ul>
+            <li>
+              Are a fundamental concept in React that allow you to pass data
+              from a parent component to a child component.
+            </li>
+            <li>
+              Props are read-only and help make components reusable by allowing
+              them to receive dynamic data.
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Events</h2>
+          <ul>
+            <li>
+              Handling events in React is similar to handling events in plain
+              JavaScript, but with some syntactic and functional differences.
+            </li>
+            <li>
+              React events are named using camelCase, and you pass event handler
+              functions as props to elements.
+            </li>
+          </ul>
+
+          <article class="message is-info">
+            <div class="message-body">
+              <h3 class="is-size-5">Event Types</h3>
+              <ul>
+                <li>
+                  Clipboard events:
+                  <code class="has-text-weight-bold">onCopy</code>
+                  <code class="has-text-weight-bold">onCut</code>
+                  <code class="has-text-weight-bold">onPaste</code>
+                </li>
+                <li>
+                  Form events:
+                  <code class="has-text-weight-bold">onChange</code>
+                  <code class="has-text-weight-bold">onInput</code>
+                  <code class="has-text-weight-bold">onSubmit</code>
+                </li>
+                <li>
+                  Keyboard events:
+                  <code class="has-text-weight-bold">onKeyDown</code>
+                  <code class="has-text-weight-bold">onKeyPress</code>
+                  <code class="has-text-weight-bold">onKeyUp</code>
+                </li>
+                <li>
+                  Mouse events:
+                  <code class="has-text-weight-bold">onClick</code>
+                  <code class="has-text-weight-bold">onDoubleClick</code>
+                  <code class="has-text-weight-bold">onMouseDown</code>
+                  <code class="has-text-weight-bold">onMouseEnter</code>
+                  <code class="has-text-weight-bold">onMouseLeave</code>
+                  <code class="has-text-weight-bold">onMouseMove</code>
+                  <code class="has-text-weight-bold">onMouseOut</code>
+                  <code class="has-text-weight-bold">onMouseOver</code>
+                  <code class="has-text-weight-bold">onMouseUp</code>
+                </li>
+                <li>
+                  Touch events:
+                  <code class="has-text-weight-bold">onTouchCancel</code>
+                  <code class="has-text-weight-bold">onTouchEnd</code>
+                  <code class="has-text-weight-bold">onTouchMove</code>
+                  <code class="has-text-weight-bold">onTouchStart</code>
+                </li>
+                <li>
+                  Focus events:
+                  <code class="has-text-weight-bold">onFocus</code>
+                  <code class="has-text-weight-bold">onBlur</code>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Conditionals</h2>
+          <ul>
+            <li>
+              The logical && operator can be used to conditionally include an
+              element or component. If the condition is true, the element after
+              && will be rendered.
+            </li>
+            <li>
+              The ternary operator can be used to conditionally render one of
+              two elements.
+            </li>
+            <li>
+              An if statement and checking the value of a variables can be used
+              to render elements.
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Lists</h2>
+          <ul>
+            <li>
+              The map() method allows you to iterate over an array and return a
+              new array of React elements.
+            </li>
+            <li>
+              Each child in a list should have a unique "key" prop to help React
+              identify which items have changed, added, or removed. This
+              improves performance by aiding React in efficient DOM updates.
+            </li>
+            <li>
+              If your data contains unique identifiers, otherwise use array
+              indices as the keys instead.
+            </li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2 class="is-size-4">Forms</h2>
+          <ul>
+            <li>
+              In React, form elements like
+              <code class="has-text-weight-bold">input</code>,
+              <code class="has-text-weight-bold">textarea</code>, and
+              <code class="has-text-weight-bold">select</code> typically
+              maintain their own state based on user input. However, you can
+              also control the state of these form elements by making them
+              controlled components. Controlled components allow React to have
+              full control over the form elements' state.
+            </li>
+            <li>
+              Reack hook useRef can be used to get a reference to a DOM element,
+              which can be useful for managing focus, text selection, or
+              triggering imperative animations.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 

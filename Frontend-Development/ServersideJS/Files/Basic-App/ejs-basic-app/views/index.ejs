@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ejs-basic-app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <!-- Use prettier-ignore to preserve the formatting -->
+    <!-- prettier-ignore -->
+    <%- include ('hero', {title:appConfig.title, description:appConfig.description}); %>
+    <!-- prettier-ignore -->
+    <%- include ('content', {internetPackages: appConfig.internetPackages}); %>
+    <!-- prettier-ignore -->
+    <%- include ('footer', {}); %>
+  </body>
+</html>

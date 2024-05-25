@@ -1,0 +1,80 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: Simple login similar to google login
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login-App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="loginForm" action="" method="POST">
+      <section class="section">
+        <div class="container">
+          <div class="box">
+            <article class="message">
+              <div class="message-body">
+                <div class="block">
+                  <p>
+                    This app requires a backend app: <b>Basic-Backend-App</b>.
+                    If the backend app is deployed to the cloud, update the
+                    value of <b>REST_END_POINT_BASE_URL</b> to the appropriate
+                    url.
+                  </p>
+                </div>
+                <div class="block">
+                  <article class="message is-info">
+                    <div class="message-body">
+                      <p>
+                        For testing, either use:
+                        <code class="has-text-weight-bold">elon.musk</code> or
+                        <code class="has-text-weight-bold">bill.gates</code> as
+                        the user name and
+                        <code class="has-text-weight-bold">password</code> as
+                        the password.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </article>
+            <div class="field">
+              <label class="label">User Name:</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  placeholder="Enter your User Name"
+                />
+              </div>
+            </div>
+            <div class="field" id="passwordDiv">
+              <label class="label">Password:</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </div>
+            <!-- Simple way to display the error message -->
+            <div class="notification is-danger is-light" id="messageDiv"></div>
+          </div>
+        </div>
+      </section>
+    </form>
+  </body>
+</html>

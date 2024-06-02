@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fileName = window.location.pathname.split("/").pop();
   buildMenuTop(fileName);
   buildMenuSide(fileName);
+  buildFooter();
 });
 
 function scrollToElement(elementId, stickyHeaderHeight) {
@@ -84,6 +85,11 @@ function buildMenuTop(fileName) {
   menuTop.innerHTML = innerHTML;
 }
 
+function buildFooter() {
+  const footer = document.getElementById("footer");
+  footer.innerHTML = `<div class="content has-text-centered"><p><strong>Web App by:</strong><a href="https://github.com/roderickkit-bernardo/" target="_blank"> Roderick Bernardo</a>.</p></div>`;
+}
+
 const menuSideItemsMap = new Map();
 menuSideItemsMap.set("serverSideJS.html", [
   "Node JS",
@@ -125,8 +131,4 @@ function buildMenuSide(fileName) {
       });
     });
   }
-
-  /*
-,
-  */
 }

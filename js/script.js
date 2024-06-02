@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const fileName = window.location.pathname.split("/").pop();
-  console.log(window.location.pathname);
   buildMenuTop(fileName);
   buildMenuSide(fileName);
 });
@@ -56,7 +55,6 @@ function buildMenuTop(fileName) {
   let innerHTML = "";
 
   menuTopItems.forEach((menuTopItem) => {
-    console.log(`${fileName?.length}`, menuTopItem);
     let link = "";
 
     if (

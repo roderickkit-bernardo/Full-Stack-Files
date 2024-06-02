@@ -1,6 +1,7 @@
 // Developer: Roderick Bernardo
 // Purpose: React router demo
 
+import "bulma/css/bulma.min.css";
 import AppV5 from "./AppV5";
 import AppV6 from "./AppV6";
 

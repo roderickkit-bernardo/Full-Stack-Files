@@ -3,6 +3,7 @@
 
 import ProductList from "./components/ProductList";
 import ProductListV1 from "./components/ProductListV1";
+import "bulma/css/bulma.min.css";
 
 function App() {
   const productHeadings = [

@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let stickyHeaderHeight = document.querySelector(
-    ".navbar.is-fixed-top"
-  ).offsetHeight;
-
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -22,20 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const ulElement = document.querySelector(".menu-list.is-size-5");
-
-  // Select all <li> elements inside the <ul> with class "menu-list is-size-5"
-  const listItems = ulElement.querySelectorAll("li");
-
-  // Loop through each <li> element
-  listItems.forEach((item, index) => {
-    // Setting id based on index to be use for the target element
-    item.childNodes[0].setAttribute("id", `link${index + 1}`);
-    item.addEventListener("click", (event) => {
-      // item.childNodes[0].classList.toggle("is-active");
-      scrollToElement(`${event.target.id}Element`, stickyHeaderHeight);
-    });
-  });
+  const fileName = window.location.pathname.split("/").pop();
+  buildMenuTop(fileName);
+  buildMenuSide(fileName);
 });
 
 function scrollToElement(elementId, stickyHeaderHeight) {
@@ -46,4 +31,93 @@ function scrollToElement(elementId, stickyHeaderHeight) {
     top: targetOffset,
     behavior: "smooth",
   });
+}
+
+const menuTopItems = [
+  { link: "index.html", label: " Home " },
+  {
+    link: "serverSideJS.html",
+    label: " Server Side JS ",
+  },
+  {
+    link: "jsFrontendFrameworks.html",
+    label: " JS FrontendFrameworks ",
+  },
+  {
+    link: "appDeployment.html",
+    label: " App Deployment ",
+  },
+];
+
+function buildMenuTop(fileName) {
+  const menuClass = "navbar-item";
+  const menuTop = document.getElementById("menuTop");
+  let innerHTML = "";
+
+  menuTopItems.forEach((menuTopItem) => {
+    let link = "";
+
+    if (fileName == "index.html" && menuTopItem.label == " Home ") {
+      link = menuTopItem.link;
+    } else if (fileName == "index.html" && menuTopItem.label != " Home ") {
+      link = `./html/${menuTopItem.link}`;
+    } else if (fileName != "index.html" && menuTopItem.label == " Home ") {
+      link = `../${menuTopItem.link}`;
+    } else {
+      link = menuTopItem.link;
+    }
+
+    innerHTML = `${innerHTML}<a class="${menuClass}${
+      menuTopItem.link == fileName ? " is-active" : ""
+    }" href="${link}">${menuTopItem.label}</a>`;
+  });
+
+  menuTop.innerHTML = innerHTML;
+}
+
+const menuSideItemsMap = new Map();
+menuSideItemsMap.set("serverSideJS.html", [
+  "Node JS",
+  "Node Package Manager",
+  "Express JS",
+  "HTTP Method",
+  "CSS Frameworks",
+  "JS Templating Language",
+  "JS Modules",
+]);
+
+function buildMenuSide(fileName) {
+  if (menuSideItemsMap.has(fileName)) {
+    let stickyHeaderHeight = document.querySelector(
+      ".navbar.is-fixed-top"
+    ).offsetHeight;
+
+    const listItems = menuSideItemsMap.get(fileName);
+    const menuSide = document.getElementById("menuSide");
+    let innerHTML = "";
+    listItems.forEach((listItem) => {
+      innerHTML = `${innerHTML}<li><a>${listItem}</a></li>`;
+    });
+
+    menuSide.innerHTML = innerHTML;
+
+    const ulElement = document.querySelector(".menu-list.is-size-5");
+
+    // Select all <li> elements inside the <ul> with class "menu-list is-size-5"
+    const listItemElements = ulElement.querySelectorAll("li");
+
+    // Loop through each <li> element
+    listItemElements.forEach((item, index) => {
+      // Setting id based on index to be use for the target element
+      item.childNodes[0].setAttribute("id", `link${index + 1}`);
+      item.addEventListener("click", (event) => {
+        // item.childNodes[0].classList.toggle("is-active");
+        scrollToElement(`${event.target.id}Element`, stickyHeaderHeight);
+      });
+    });
+  }
+
+  /*
+,
+  */
 }

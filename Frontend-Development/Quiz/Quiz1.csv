@@ -1,0 +1,104 @@
+NewQuestion,TF,
+QuestionText,"Node.js is proprietary, platform-specific JavaScript interpreter that executes JavaScript code exclusively within a web browser."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Node.js operates on a blocking, synchronous architecture."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Node.js runs on a multi-threaded event loop."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Node.js is primarily suited for monolithic architectures."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Developers cannot publish their own packages to the npm registry."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"npm does not support scoped packages."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"npm does not perform vulnerability scans on packages during installation."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Middleware in Node.js does not have access to the request and response objects."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Express does not support serving static files."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Express includes a built-in templating engine."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"The GET method does not request data from a specified resource."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"The GET method can cause side effects and modify data on the server."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"The POST method cannot submit data to be processed."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"The PUT method is used to delete a resource."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"The DELETE method is used to update a resource."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CSS frameworks do not provide a grid system."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Grid systems do not aid in creating responsive layouts."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CSS frameworks do not include predefined typography styles."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CSS frameworks typically do not offer ready-to-use UI components."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CSS frameworks do not allow developers to customize styles."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CSS Frameworks do not provide ready-to-use UI components such as buttons, forms, navigation bars, modals, and other elements."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Responsive design is not important in modern web development."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Bootstrap is rarely used as a CSS framework."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Bulma is not based on Flexbox."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"Tailwind CSS does not provide utility classes."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"JavaScript templating languages are not used to generate HTML markup dynamically."
+TRUE,0
+FALSE,100

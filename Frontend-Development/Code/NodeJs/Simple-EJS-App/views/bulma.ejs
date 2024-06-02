@@ -1,0 +1,37 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: Bulma EJS template
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bulma demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <!-- Use prettier-ignore to preserve the formatting -->
+    <!-- prettier-ignore -->
+    <% if(config.header) { %> 
+    <%- include ('./bulma/header', { header: config.header }); %> 
+    <% } %>
+
+    <!-- Use prettier-ignore to preserve the formatting -->
+    <!-- prettier-ignore -->
+    <% if(config.content) { %> 
+    <%- include ('./bulma/content', { listTitle: config.content.listTitle, 
+                                      listItems: config.content.listItems });%> 
+    <% } %>
+
+    <!-- Use prettier-ignore to preserve the formatting -->
+    <!-- prettier-ignore -->
+    <% if(config.footer) { %> 
+    <%- include ('./bulma/footer', { text: config.footer });%> 
+    <% } %>
+  </body>
+</html>

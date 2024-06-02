@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-1"><%= header.brandText %></a>
+    <div class="d-inline-flex gap-2">
+      <!-- Use prettier-ignore to preserve the formatting -->
+      <!-- prettier-ignore -->
+      <% header.navItems.forEach((navItem) => { %>
+      <!-- prettier-ignore -->
+      <a class="<%= navItem.styleBootstrap %>" href="<%= navItem.href %>"><%= navItem.label %></a>
+      <% }); %>
+    </div>
+  </div>
+</nav>

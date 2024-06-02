@@ -1,0 +1,105 @@
+NewQuestion,TF,
+QuestionText,"EJS is a simple templating language that allows you to embed JavaScript code directly within HTML markup."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"EJS uses delimiter tags <% %>."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"EJS can be customized to use any character for delimiters."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"<%- 'Scriptlet' tag, for control-flow, no output."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"<% Outputs the value into the template (HTML escaped)."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"<%= Outputs the unescaped value into the template."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CommonJS Importing a module: import { function1, function2 } from './module.js';"
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CommonJS Exporting from a module: export { function1, function2 };"
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"ES6 Importing a module: const module = require('./module');"
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"ES6 Exporting from a module: module.exports = { function1, function2 };"
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"This tag includes the template named: show from the folder <%- include('user/show'); %>"
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"ES6 Importing a module: import { function1, function2 } from './module.js';"
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"ES6 Exporting from a module: export { function1, function2 };"
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"CommonJS Importing a module: const module = require('./module');"
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"CommonJS Exporting from a module: module.exports = { function1, function2 };"
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"CommonJS imports and exports are resolved at compile time."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"ES6 Modules are loaded dynamically at runtime."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CommonJS Modules are natively supported in modern browsers using import and export syntax."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"CommonJS modules are supported since version 12 but must be used with the .mjs file extension or by configuring package.json."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"ES6 modules are the standard in Node.js."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"ES6 modules, in browsers, require tools like Browserify or Webpack to bundle them for use."
+TRUE,0
+FALSE,100
+NewQuestion,TF,
+QuestionText,"type: 'module': This indicates that the package is an ECMAScript module (ES module)."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"
+type: 'commonjs': This indicates that the package is a CommonJS module."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"Common.js-style modules can have a .js or .cjs extension."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"ES6-style modules can have a .js or .mjs extension."
+TRUE,100
+FALSE,0
+NewQuestion,TF,
+QuestionText,"CommonJS is asynchronous, while ES6 is synchronous."
+TRUE,0
+FALSE,100

@@ -1,0 +1,18 @@
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item is-size-1" href="#"><%= header.brandText %></a>
+  </div>
+
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <!-- Use prettier-ignore to preserve the formatting -->
+        <!-- prettier-ignore -->
+        <% header.navItems.forEach((navItem) => { %>
+        <!-- prettier-ignore -->
+        <a class="<%= navItem.styleBulma %>" href="<%= navItem.href %>"><%= navItem.label %></a>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</nav>

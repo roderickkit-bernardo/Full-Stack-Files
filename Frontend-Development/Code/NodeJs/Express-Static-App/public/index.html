@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Express With HTML</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/sakura.css" rel="stylesheet" id="cssTheme" />
+    <link href="./css/custom.css" rel="stylesheet" />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <p>
+          Current Theme:&nbsp;
+          <select name="theme" id="theme">
+            <option value="sakura">Sakura Default</option>
+            <option value="sakura-dark">Sakura Dark</option>
+            <option value="sakura-dark-solarized">Sakura Dark Solarized</option>
+            <option value="sakura-earthly">Sakura Earthly</option>
+            <option value="sakura-ink">Sakura Ink</option>
+            <option value="sakura-pink">Sakura Pink</option>
+            <option value="sakura-vader">Sakura Vader</option>
+          </select>
+        </p>
+      </div>
+      <div class="headerFlexContainer">
+        <div>
+          <img src="./images/headerLogo.png" class="headerLogoStyle" />
+        </div>
+        <div>
+          <h1 class="headerTextStyle">Header text</h1>
+        </div>
+      </div>
+      <nav>
+        <div class="navItems">
+          <a href="#home">Home</a> | <a href="#experience">Experience</a> |
+          <a href="#skills">Skills</a> | <a href="#contact">Contact</a> |
+          <a href="#image">Image Gallery</a>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1>
+        Hey there, I'm First name and last name <br />
+        Fullstack Web Developer
+      </h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut
+        ante vitae justo malesuada luctus. Sed dignissim eros a sem auctor
+        pharetra. Nullam tristique commodo metus. Cras dictum, sem at egestas
+        vulputate, leo neque porttitor nisi, et blandit nisi purus ac enim.
+        Phasellus a vulputate mi, lobortis sagittis lorem. Mauris sed nisl nibh.
+        Aliquam at mauris velit.
+      </p>
+      <p>
+        View my repositories on
+        <a href="https://github.com" target="_blank">Github</a>
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Language</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Google</td>
+            <td>Fullstack Developer</td>
+            <td>HTML, CSS, and JS</td>
+            <td>Jan 2020 - Present</td>
+          </tr>
+          <tr>
+            <td>Netflix</td>
+            <td>Frontend Developer</td>
+            <td>HTML, CSS, and JS</td>
+            <td>Jan 2017 - Dec 2019</td>
+          </tr>
+          <tr>
+            <td>Apple</td>
+            <td>Backend Developer</td>
+            <td>JS</td>
+            <td>Jan 2015 - Dec 2018</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>Intern</td>
+            <td>HTML, CSS, and JS</td>
+            <td>Jan 2014 - Dec 2014</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>These are some of the technologies I have used.</p>
+
+      <div>
+        <h3>Programming Languages:</h3>
+
+        <ol>
+          <li>C / C++</li>
+          <li>Java</li>
+          <li>JavaScript / TypeScript</li>
+        </ol>
+      </div>
+
+      <div>
+        <h3>Databases:</h3>
+
+        <ol>
+          <li>Oracle</li>
+          <li>SQL Server</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ol>
+      </div>
+
+      <div>
+        <h3>JS Libraries / Frameworks:</h3>
+
+        <ol>
+          <li>Node JS</li>
+          <li>Express JS</li>
+          <li>EJS</li>
+          <li>React</li>
+        </ol>
+      </div>
+
+      <div>
+        <h3>CSS Libraries / Frameworks:</h3>
+
+        <ol>
+          <li>Bootstrap</li>
+          <li>Bulma</li>
+          <li>Sakura</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <form method="post">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="name"
+            name="name"
+            placeholder="Enter your name"
+            required="true"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required="true"
+          />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="Enter your message"
+            required="true"
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="reset">Clear</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="image">
+      <h2>Image Gallery</h2>
+      <br />
+      <div class="imageGalleryFlexContainer">
+        <div>
+          <img src="./images/1.jpg" />
+        </div>
+        <div>
+          <img src="./images/2.jpg" />
+        </div>
+        <div>
+          <img src="./images/3.jpg" />
+        </div>
+        <div>
+          <img src="./images/4.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Created By
+        <a href="https://github.com" target="_blank">First name last name</a>
+      </p>
+    </footer>
+  </body>
+</html>

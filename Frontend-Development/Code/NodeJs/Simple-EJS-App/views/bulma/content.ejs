@@ -1,0 +1,13 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="block">
+      <p class="title"><%= listTitle %></p>
+    </div>
+
+    <!-- Use prettier-ignore to preserve the formatting -->
+    <!-- prettier-ignore -->
+    <% listItems.forEach((item) => { %>
+    <p class="subtitle"><%= item %></p>
+    <% }) %>
+  </div>
+</section>

@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const fileName = window.location.pathname.split("/").pop();
+  console.log(window.location.pathname);
   buildMenuTop(fileName);
   buildMenuSide(fileName);
 });

@@ -59,11 +59,20 @@ function buildMenuTop(fileName) {
     console.log(`${fileName?.length}`, menuTopItem);
     let link = "";
 
-    if (fileName == "index.html" && menuTopItem.label == " Home ") {
+    if (
+      (fileName == "" || fileName == "index.html") &&
+      menuTopItem.label == " Home "
+    ) {
       link = menuTopItem.link;
-    } else if (fileName == "index.html" && menuTopItem.label != " Home ") {
+    } else if (
+      (fileName == "" || fileName == "index.html") &&
+      menuTopItem.label != " Home "
+    ) {
       link = `./html/${menuTopItem.link}`;
-    } else if (fileName != "index.html" && menuTopItem.label == " Home ") {
+    } else if (
+      (fileName == "" || fileName != "index.html") &&
+      menuTopItem.label == " Home "
+    ) {
       link = `../${menuTopItem.link}`;
     } else {
       link = menuTopItem.link;

@@ -56,6 +56,7 @@ function buildMenuTop(fileName) {
   let innerHTML = "";
 
   menuTopItems.forEach((menuTopItem) => {
+    console.log(`${fileName?.length}`, menuTopItem);
     let link = "";
 
     if (fileName == "index.html" && menuTopItem.label == " Home ") {

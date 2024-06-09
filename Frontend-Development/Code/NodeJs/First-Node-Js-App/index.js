@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: First node js app
+
 console.log("Hello World!");
 
 const userObject = {

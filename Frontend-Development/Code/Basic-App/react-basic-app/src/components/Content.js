@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: Basic react app
+
 function Content(props) {
   return (
     <section className="section">

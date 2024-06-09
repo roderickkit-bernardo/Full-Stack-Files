@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: Basic react app
+
 import "bulma/css/bulma.min.css";
 import Hero from "./components/Hero";
 import Content from "./components/Content";

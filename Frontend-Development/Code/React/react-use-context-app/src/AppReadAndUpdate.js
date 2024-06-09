@@ -7,7 +7,7 @@ import { DataContext } from "./components/DataContext";
 
 import Level1 from "./components/Level1";
 
-function App() {
+function AppReadAndUpdate() {
   const [dataContext, setDataContext] = useState("Initial value...");
 
   return (
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppReadAndUpdate;

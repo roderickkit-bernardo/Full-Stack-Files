@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: First react app
+
 import logo from "./logo.svg";
 import "./App.css";
 

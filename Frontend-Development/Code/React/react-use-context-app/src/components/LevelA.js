@@ -1,13 +1,12 @@
-// import { useContext } from "react";
-// import { DataContext } from "./DataContext";
+// Developer: Roderick Bernardo
+// Purpose: useContext demo
+
 import LevelB from "./LevelB";
 
 function LevelA() {
-  // const dataContext = useContext(DataContext);
-
   return (
     <>
-      <h1>LevelA</h1>
+      <h1 className="p-4 text-center">LevelA</h1>
       <LevelB></LevelB>
     </>
   );

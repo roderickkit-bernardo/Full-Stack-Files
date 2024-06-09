@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: Basic react app
+
 function Hero(props) {
   return (
     <section className="hero has-background-dark">

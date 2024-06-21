@@ -1,0 +1,122 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: Fullstack Development Course Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Development Course Website</title>
+    <link href="../css/bulma.min.css" rel="stylesheet" />
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <a
+        role="button"
+        class="navbar-burger"
+        data-target="navMenu"
+        aria-label="menu"
+        aria-expanded="false"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-menu" id="navMenu">
+        <div id="menuTop" class="navbar-start is-size-5"></div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body has-background-light">
+        <div class="block">
+          <p class="is-size-2 has-text-centered">
+            Frontend Development Course Website
+          </p>
+        </div>
+        <div class="block">
+          <p class="is-size-5 has-text-centered">
+            Topics covered for the Frontend Development Course.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">Server Side JS</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <ul class="is-size-5">
+                  <li>Node JS</li>
+                  <li>Node Package Manager</li>
+                  <li>Express JS</li>
+                  <li>HTTP Method</li>
+                  <li>CSS Frameworks</li>
+                  <li>JS Templating Language</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">JS Frontend Frameworks</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <ul class="is-size-5">
+                  <li>JS Frontend Frameworks</li>
+                  <li>
+                    React
+                    <ul class="is-size-5">
+                      <li>ES6</li>
+                      <li>JSX</li>
+                      <li>Function Compoments</li>
+                      <li>Props</li>
+                      <li>Events</li>
+                      <li>Conditionals</li>
+                      <li>List</li>
+                      <li>Forms</li>
+                      <li>Router</li>
+                      <li>Hooks</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">App Deployment</p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <ul class="is-size-5">
+                  <li>Cloud Computing Services</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer"></footer>
+  </body>
+</html>

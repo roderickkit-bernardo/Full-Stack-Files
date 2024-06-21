@@ -1,5 +1,5 @@
 <!-- Developer: Roderick Bernardo -->
-<!-- Purpose: Frontend Development Course Website -->
+<!-- Purpose: Fullstack Development Course Website -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Frontend Development Course Website</title>
-    <link href="../css/bulma.min.css" rel="stylesheet" />
+    <link href="../../css/bulma.min.css" rel="stylesheet" />
     <link href="../css/custom.css" rel="stylesheet" />
     <script src="../js/script.js" defer></script>
   </head>
@@ -38,15 +38,7 @@
     <div class="columns">
       <div class="column">
         <aside class="pt-0 pl-2 menu sticky">
-          <ul class="menu-list is-size-5" id="menuSide">
-            <li><a>Node JS</a></li>
-            <li><a>Node Package Manager</a></li>
-            <li><a>Express JS</a></li>
-            <li><a>HTTP Method</a></li>
-            <li><a>CSS Frameworks</a></li>
-            <li><a>JS Templating Language</a></li>
-            <li><a>JS Modules</a></li>
-          </ul>
+          <ul class="menu-list is-size-5" id="menuSide"></ul>
         </aside>
       </div>
       <div class="column is-10">
@@ -726,83 +718,96 @@
                   servers.
                 </li>
               </ul>
+
+              <blockquote>
+                <p><b>HTTP Method List:</b></p>
+                <article class="message is-info">
+                  <p><b>GET:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        The GET method requests data from a specified resource.
+                      </li>
+                      <li>
+                        It should only retrieve data and not cause any other
+                        side effects.
+                      </li>
+                      <li>
+                        It is a safe and idempotent method, meaning that
+                        multiple identical requests should have the same effect
+                        as a single request.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>POST:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        The POST method submits data to be processed to a
+                        specified resource.
+                      </li>
+                      <li>
+                        It is often used to create new resources or to send data
+                        to a server for processing, such as submitting a form or
+                        uploading a file.
+                      </li>
+                      <li>
+                        Unlike GET, POST requests may have side effects on the
+                        server and are not idempotent.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>PUT:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        The PUT method is used to update a resource or create a
+                        new resource if it does not exist at the specified URL.
+                      </li>
+                      <li>
+                        It is idempotent, meaning that multiple identical
+                        requests should have the same effect as a single
+                        request.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>DELETE:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        The DELETE method is used to request the removal of a
+                        specified resource.
+                      </li>
+                      <li>
+                        It is idempotent, meaning that multiple identical
+                        requests should have the same effect as a single
+                        request.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  We are only covering 4 HTTP methods, here is a complete list
+                  of
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+                    target="_blank"
+                    >HTTP methods.</a
+                  >
+                </p>
+              </blockquote>
             </div>
-            <div class="box">
-              <h2 class="is-size-4">HTTP Method List</h2>
-              <ul>
-                <li>
-                  <h3 class="is-size-5">GET:</h3>
-                  <ul>
-                    <li>
-                      The GET method requests data from a specified resource.
-                    </li>
-                    <li>
-                      It should only retrieve data and not cause any other side
-                      effects.
-                    </li>
-                    <li>
-                      It is a safe and idempotent method, meaning that multiple
-                      identical requests should have the same effect as a single
-                      request.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h3 class="is-size-5">POST:</h3>
-                  <ul>
-                    <li>
-                      The POST method submits data to be processed to a
-                      specified resource.
-                    </li>
-                    <li>
-                      It is often used to create new resources or to send data
-                      to a server for processing, such as submitting a form or
-                      uploading a file.
-                    </li>
-                    <li>
-                      Unlike GET, POST requests may have side effects on the
-                      server and are not idempotent.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h3 class="is-size-5">PUT:</h3>
-                  <ul>
-                    <li>
-                      The PUT method is used to update a resource or create a
-                      new resource if it does not exist at the specified URL.
-                    </li>
-                    <li>
-                      It is idempotent, meaning that multiple identical requests
-                      should have the same effect as a single request.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h3 class="is-size-5">DELETE:</h3>
-                  <ul>
-                    <li>
-                      The DELETE method is used to request the removal of a
-                      specified resource.
-                    </li>
-                    <li>
-                      It is idempotent, meaning that multiple identical requests
-                      should have the same effect as a single request.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <blockquote>
-              <p>
-                We are only covering 4 HTTP methods, here is a complete list of
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
-                  target="_blank"
-                  >HTTP methods.</a
-                >
-              </p>
-            </blockquote>
             <div class="box">
               <h2 id="link5Element" class="is-size-4">CSS Frameworks</h2>
               <ul>

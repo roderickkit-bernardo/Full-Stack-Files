@@ -1,5 +1,31 @@
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 60px; /* Adjust as needed */
+/* 
+  Developer: Roderick Bernardo -->
+  Purpose: Fullstack Development Course Website
+*/
+
+.gradient {
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+}
+
+.largeFont {
+  font-size: 4rem;
+}
+
+.glow {
+  text-shadow: 0 0 5px #fff, 0 0 10px #8a2be2, 0 0 20px #8a2be2,
+    0 0 30px #8a2be2, 0 0 40px #8a2be2;
+}
+
+.glow:hover {
+  animation: glow 1s ease-in-out;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #8a2be2, 0 0 20px #8a2be2,
+      0 0 30px #8a2be2, 0 0 40px #8a2be2;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 15px #8a2be2, 0 0 25px #8a2be2,
+      0 0 35px #8a2be2, 0 0 45px #8a2be2;
+  }
 }

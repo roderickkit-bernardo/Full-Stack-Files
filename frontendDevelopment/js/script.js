@@ -3,6 +3,8 @@
   Purpose: Fullstack Development Course Website
 */
 
+document.title = "Frontend Development Course Website";
+
 const homeLabel = "Frontend Home";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -95,7 +97,7 @@ function buildMenuTop(fileName) {
 
 function buildFooter() {
   const footer = document.getElementById("footer");
-  footer.innerHTML = `<div class="content has-text-centered"><p><strong>Web App by:</strong><a href="https://github.com/roderickkit-bernardo/" target="_blank"> Roderick Bernardo</a>.</p></div>`;
+  footer.innerHTML = `<div class="content has-text-centered"><p><strong>${document.title} by:</strong><a href="https://github.com/roderickkit-bernardo/" target="_blank"> Roderick Bernardo</a>.</p></div>`;
 }
 
 const menuSideItemsMap = new Map();

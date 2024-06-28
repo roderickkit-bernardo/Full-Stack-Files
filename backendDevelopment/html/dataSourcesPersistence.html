@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Frontend Development Course Website</title>
+    <title></title>
     <link href="../../css/bulma.min.css" rel="stylesheet" />
     <link href="../css/custom.css" rel="stylesheet" />
     <script src="../js/script.js" defer></script>
@@ -45,9 +45,508 @@
         <section class="section">
           <div class="content">
             <h1 class="is-size-3">Data Sources / Persistence</h1>
-            <article class="message is-danger">
-              <div class="message-body">Content will available Week 3</div>
-            </article>
+            <div class="box">
+              <h2 id="link1Element" class="is-size-4">SQL Databases</h2>
+              <ul>
+                <li>
+                  SQL databases, short for Structured Query Language databases,
+                  are a type of relational database management system (RDBMS)
+                  that use SQL as their query language.
+                </li>
+              </ul>
+              <blockquote>
+                <p><b>Key aspects of SQL databases include:</b></p>
+                <article class="message is-info">
+                  <p><b>Tables:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        Tables are the core structures in a SQL database and
+                        consist of rows and columns where data is stored.
+                      </li>
+                      <li>
+                        Each table represents a specific type of data, such as
+                        customers, orders, or products.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Schema:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        A schema defines the structure of the database,
+                        including tables, columns, data types, and relationships
+                        between tables.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Primary Key:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        A unique identifier for each record in a table. It
+                        ensures that each row can be uniquely identified.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Foreign Key:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        A column that creates a link between two tables. It is
+                        used to maintain referential integrity between the
+                        tables.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>SQL Queries:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>SELECT:</b> Used to retrieve data from one or more
+                        tables.
+                      </li>
+                      <li>
+                        <b>INSERT:</b> Used to add new records to a table.
+                      </li>
+                      <li><b>UPDATE:</b> Used to modify existing records.</li>
+                      <li>
+                        <b>DELETE:</b> Used to remove records from a table.
+                      </li>
+                      <li>
+                        <b>JOIN:</b> Combines rows from two or more tables based
+                        on a related column between them.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Examples of SQL Databases:</b></p>
+                  <div class="message-body">
+                    <p><b>MySQL:</b></p>
+                    <ul>
+                      <li>
+                        Open-source database widely used in web applications.
+                      </li>
+                      <li>Known for its reliability and ease of use.</li>
+                      <li>
+                        Commonly used with PHP in the LAMP stack (Linux, Apache,
+                        MySQL, PHP).
+                      </li>
+                    </ul>
+                    <p><b>PostgreSQL:</b></p>
+                    <ul>
+                      <li>
+                        Advanced open-source database known for its robustness,
+                        extensibility, and standards compliance.
+                      </li>
+                      <li>
+                        Supports complex queries, foreign keys, triggers, and
+                        user-defined types.
+                      </li>
+                    </ul>
+                    <p><b>SQLite:</b></p>
+                    <ul>
+                      <li>A lightweight, embedded SQL database engine.</li>
+                      <li>
+                        Ideal for mobile apps, small to medium websites, and
+                        applications where simplicity and minimal setup are
+                        important.
+                      </li>
+                    </ul>
+                    <p><b>PostgreSQL:</b></p>
+                    <ul>
+                      <li>
+                        Advanced open-source database known for its robustness,
+                        extensibility, and standards compliance.
+                      </li>
+                      <li>
+                        Supports complex queries, foreign keys, triggers, and
+                        user-defined types.
+                      </li>
+                    </ul>
+                    <p><b>Microsoft SQL Server:</b></p>
+                    <ul>
+                      <li>
+                        A comprehensive, enterprise-grade database management
+                        system by Microsoft.
+                      </li>
+                      <li>
+                        Offers advanced features for security, performance, and
+                        scalability.
+                      </li>
+                      <li>
+                        Integrated with other Microsoft products and services.
+                      </li>
+                    </ul>
+                    <p><b>Oracle Database:</b></p>
+                    <ul>
+                      <li>
+                        A powerful and highly reliable enterprise-grade RDBMS.
+                      </li>
+                      <li>
+                        Known for its performance, scalability, and advanced
+                        features such as Real Application Clusters (RAC) and
+                        Active Data Guard.
+                      </li>
+                      <li>
+                        Integrated with other Microsoft products and services.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+                  is the Sql database used for this course.
+                </p>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link2Element" class="is-size-4">
+                SQL Object Relational Mapper
+              </h2>
+              <ul>
+                <li>
+                  An SQL Object Relational Mapper (ORM) is a tool that allows
+                  developers to interact with a database using an
+                  object-oriented paradigm instead of writing raw SQL queries.
+                </li>
+                <li>
+                  ORMs provide a high-level abstraction that maps database
+                  tables to classes, and rows to objects of those classes.
+                </li>
+                <li>
+                  This makes database operations more intuitive for developers
+                  who are familiar with object-oriented programming.
+                </li>
+              </ul>
+
+              <blockquote>
+                <p><b>SQL ORMs for different programming languages:</b></p>
+                <article class="message is-info">
+                  <p><b>Python:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>SQLAlchemy:</b> A powerful and flexible ORM that
+                        provides a full suite of enterprise-grade persistence
+                        patterns.
+                      </li>
+                      <li>
+                        <b>Django ORM:</b> The built-in ORM of the Django web
+                        framework, known for its simplicity and ease of use.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>JavaScript (Node.js):</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Sequelize:</b> A promise-based ORM for Node.js that
+                        supports multiple SQL dialects and provides a robust
+                        feature set.
+                      </li>
+
+                      <li>
+                        <b>TypeORM:</b> An ORM that supports both Active Record
+                        and Data Mapper patterns, written in TypeScript.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Java:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Hibernate:</b> A mature and widely used ORM that
+                        supports JPA (Java Persistence API) and provides
+                        advanced caching and performance features.
+                      </li>
+
+                      <li>
+                        <b>MyBatis:</b> Unlike traditional ORMs, MyBatis couples
+                        objects with stored procedures or SQL statements using
+                        XML or annotations.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <a href="https://sequelize.org/" target="_blank">Sequelize</a>
+                  is the ORM used for this course.
+                </p>
+              </blockquote>
+              <blockquote>
+                <p><b>Benefits of Using an ORM:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Productivity:</b> Developers can write less code
+                        compared to writing raw SQL, leading to faster
+                        development.
+                      </li>
+                      <li>
+                        <b>Maintainability:</b> The code is easier to maintain
+                        since it is cleaner and more readable.
+                      </li>
+                      <li>
+                        <b>Portability:</b> ORMs abstract away database-specific
+                        details, making it easier to switch between different
+                        database systems.
+                      </li>
+                      <li>
+                        <b>Security:</b> ORMs can help prevent SQL injection
+                        attacks by using parameterized queries.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link3Element" class="is-size-4">No SQL Datatases</h2>
+              <ul>
+                <li>
+                  Are designed to provide flexible, scalable, and
+                  high-performance data storage solutions that differ from the
+                  traditional relational (SQL) databases.
+                </li>
+                <li>
+                  They are particularly well-suited for handling unstructured or
+                  semi-structured data, large volumes of data, and applications
+                  requiring high throughput and low latency.
+                </li>
+              </ul>
+              <blockquote>
+                <p><b>Advantages of NoSQL Databases:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        Scalability: Designed to scale out by distributing data
+                        across multiple servers.
+                      </li>
+                      <li>
+                        Flexibility: Schema-less design allows for dynamic and
+                        evolving data models.
+                      </li>
+                      <li>
+                        Performance: Optimized for high read and write
+                        throughput with low latency.
+                      </li>
+                      <li>
+                        Big Data: Capable of handling large volumes of
+                        unstructured and semi-structured data.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>
+                  is the NoSql database used for this course.
+                </p>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link4Element" class="is-size-4">
+                No SQL Object Data Modelling
+              </h2>
+              <ul>
+                <li>
+                  Is similar to Object Relational Mapping (ORM) used in SQL
+                  databases, but it's tailored for NoSQL databases.
+                </li>
+                <li>
+                  ODMs map objects in your application to documents in a NoSQL
+                  database, allowing for more intuitive and structured
+                  interaction with the database.
+                </li>
+              </ul>
+
+              <blockquote>
+                <p><b>Key Features of ODMs for NoSQL Databases:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Schema Definition:</b> Define the structure of
+                        documents and collections using a schema.
+                      </li>
+                      <li>
+                        <b>Data Validation:</b> Ensure data integrity by
+                        validating data against the schema before saving.
+                      </li>
+                      <li>
+                        <b>CRUD Operations:</b> Simplified methods for creating,
+                        reading, updating, and deleting documents.
+                      </li>
+                      <li>
+                        <b>Query Building:</b> APIs to construct complex queries
+                        programmatically.
+                      </li>
+                      <li>
+                        <b>Middleware / Plugins:</b> Support for middleware and
+                        plugins to extend functionality.
+                      </li>
+                      <li>
+                        <b>Relationships:</b> Define and manage relationships
+                        between documents (e.g., references, embedded
+                        documents).
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p><b>Benefits of Using ODMs:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Ease of Use:</b> Simplifies database interactions by
+                        using familiar object-oriented paradigms.
+                      </li>
+                      <li>
+                        <b>Maintainability:</b> Promotes cleaner and more
+                        maintainable code.
+                      </li>
+                      <li>
+                        <b>Validation:</b> Ensures data integrity through schema
+                        validation.
+                      </li>
+                      <li>
+                        <b>Consistency:</b> Provides a consistent way to
+                        interact with the database, making it easier to manage
+                        changes.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <a href="https://mongoosejs.com/" target="_blank">Mongoose</a>
+                  is the ODM used for this course.
+                </p>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link5Element" class="is-size-4">Queues</h2>
+              <ul>
+                <li>
+                  Are fundamental data structures used extensively in computer
+                  science and software engineering to manage a collection of
+                  elements in a particular order.
+                </li>
+                <li>
+                  They follow the First-In-First-Out (FIFO) principle, where the
+                  first element added to the queue is the first one to be
+                  removed.
+                </li>
+                <li>
+                  Queues are essential for various scenarios, such as task
+                  scheduling, managing requests in web servers, handling
+                  asynchronous events.
+                </li>
+              </ul>
+
+              <blockquote>
+                <p><b>Applications of Queues:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Task Scheduling:</b> Managing tasks in operating
+                        systems, job scheduling in servers.
+                      </li>
+                      <li>
+                        <b>Message Queuing:</b> Handling communication between
+                        distributed systems (e.g., RabbitMQ, Kafka).
+                      </li>
+                      <li>
+                        <b>Breadth-First Search (BFS):</b> Traversing or
+                        searching tree/graph data structures.
+                      </li>
+                      <li>
+                        <b>Caching:</b> Implementing Least Recently Used (LRU)
+                        caches.
+                      </li>
+                      <li>
+                        <b>Load Balancing:</b> Distributing tasks across
+                        multiple servers.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p><b>Popular Queue Libraries and Services:</b></p>
+                <article class="message is-info">
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>RabbitMQ:</b> An open-source message broker that
+                        implements the Advanced Message Queuing Protocol (AMQP).
+                      </li>
+                      <li>
+                        <b>Apache Kafka:</b> A distributed event streaming
+                        platform capable of handling high-throughput and
+                        low-latency messaging.
+                      </li>
+                      <li>
+                        <b>Amazon SQS:</b> A fully managed message queuing
+                        service that enables decoupling and scaling of
+                        microservices, distributed systems, and serverless
+                        applications.
+                      </li>
+                      <li>
+                        <b>Redis:</b> An in-memory data structure store that
+                        supports list operations, which can be used to implement
+                        queues.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+              <blockquote>
+                <p>
+                  <a href="https://redis.io/" target="_blank">Redis</a> and
+                  <a href="https://www.rabbitmq.com/" target="_blank"
+                    >Rabbitmq</a
+                  >
+                  are the queues used for this course.
+                </p>
+              </blockquote>
+            </div>
           </div>
         </section>
       </div>

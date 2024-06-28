@@ -1,9 +1,12 @@
 // Developer: Roderick Bernardo
 // Purpose: Fullstack Development Course Website
 
+document.title = "Fullstack Development Course Website";
+
 function buidList() {
   const mainSection = document.getElementById("mainSection");
 
+  // Website configuration
   const listConfig = [
     {
       href: "./frontendDevelopment/index.html",

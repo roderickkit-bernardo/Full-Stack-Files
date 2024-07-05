@@ -24,7 +24,6 @@ function buidList() {
 }
 
 function buidListItem(listItemConfig) {
-  console.log("HI");
   const div = document.createElement("div");
   div.className = "block";
   const h1 = document.createElement("h1");

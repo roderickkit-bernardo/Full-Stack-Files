@@ -135,7 +135,6 @@ menuSideItemsMap.set("appDeployment.html", [
 ]);
 
 function buildMenuSide(fileName) {
-  console.log(fileName);
   if (menuSideItemsMap.has(fileName)) {
     let stickyHeaderHeight = document.querySelector(
       ".navbar.is-fixed-top"
@@ -145,7 +144,6 @@ function buildMenuSide(fileName) {
     const menuSide = document.getElementById("menuSide");
     let innerHTML = "";
     listItems.forEach((listItem) => {
-      console.log("HELL");
       innerHTML = `${innerHTML}<li><a>${listItem}</a></li>`;
     });
 

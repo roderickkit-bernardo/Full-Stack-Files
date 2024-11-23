@@ -1,0 +1,145 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: Express static app using tailwind css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Express static app using tailwind css</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Sign Up</h2>
+
+      <form action="#" method="POST" class="space-y-8">
+        <div>
+          <label for="nameName" class="block text-sm font-medium text-gray-700"
+            >User Name</label
+          >
+          <input
+            type="text"
+            id="nameName"
+            name="nameName"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <div>
+          <label
+            for="emailAddress"
+            class="block text-sm font-medium text-gray-700"
+            >Email Address</label
+          >
+          <input
+            type="emailAddress"
+            id="emailAddress"
+            name="emailAddress"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="province" class="block text-sm font-medium text-gray-700"
+            >Country</label
+          >
+          <select
+            id="province"
+            name="province"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+          >
+            <option value="" disabled selected>Select your province</option>
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+            <option value="NL">Newfoundland and Labrador</option>
+            <option value="NWT">Northwest Territories</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="NVT">Nunavut</option>
+            <option value="ON">Ontario</option>
+            <option value="PEI">Prince Edward Island</option>
+            <option value="QC">Quebec</option>
+            <option value="SK">Saskatchewan</option>
+            <option value="YK">Yukon</option>
+          </select>
+        </div>
+
+        <div>
+          <p class="block text-sm font-medium text-gray-700 mb-2">Gender</p>
+          <div class="flex items-center space-x-4">
+            <label class="flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                class="text-blue-600 focus:ring-blue-500"
+                required
+              />
+              <span class="ml-2 text-gray-700">Male</span>
+            </label>
+            <label class="flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                class="text-blue-600 focus:ring-blue-500"
+                required
+              />
+              <span class="ml-2 text-gray-700">Female</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="flex items-center">
+            <input
+              type="checkbox"
+              name="terms"
+              class="text-blue-600 focus:ring-blue-500"
+              required
+            />
+            <span class="ml-2 text-gray-700"
+              >I agree to the terms and conditions</span
+            >
+          </label>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition"
+          >
+            Create Account
+          </button>
+        </div>
+
+        <p class="text-center text-sm text-gray-600">
+          Already have an account?
+          <a href="#" class="text-blue-600 hover:underline">Log in</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

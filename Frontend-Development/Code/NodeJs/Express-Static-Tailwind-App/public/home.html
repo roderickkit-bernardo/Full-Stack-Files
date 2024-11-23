@@ -1,0 +1,81 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: Express static app using tailwind css
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Express static app using tailwind css</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar Start -->
+    <nav class="bg-white shadow">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <a href="#" class="text-xl font-bold text-blue-600">BrandName</a>
+        <div class="space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="bg-blue-600 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold">Welcome to Our Website</h1>
+        <p class="mt-4 text-lg">
+          We create amazing experiences for our customers.
+        </p>
+        <button
+          class="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-200"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Content Start -->
+    <section class="py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+          We offer a range of services to help your business grow and succeed in
+          the modern digital landscape.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Service 1</h3>
+            <p class="text-gray-600">Brief description of the service.</p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Service 2</h3>
+            <p class="text-gray-600">Brief description of the service.</p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Service 3</h3>
+            <p class="text-gray-600">Brief description of the service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content End -->
+
+    <!-- Footer End -->
+    <footer class="bg-gray-800 text-gray-400 py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 BrandName. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>

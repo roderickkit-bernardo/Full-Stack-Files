@@ -16,7 +16,20 @@ app.get("/json", (req, res) => {
 });
 
 app.get("/html", (req, res) => {
-  const htmlObject = `<!doctypehtml><meta charset=utf-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Simple HTML</title><h1>Simple HTML</h1>`;
+  const htmlObject = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple HTML" />
+    <title>Simple HTML</title>
+  </head>
+  <body>
+    <h1>Simple HTML</h1>
+  </body>
+</html>`;
+
   res.send(htmlObject);
 });
 

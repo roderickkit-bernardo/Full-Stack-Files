@@ -32,17 +32,6 @@ class User {
   }
 }
 
-// const user = new User(
-//   "roderick.bernardo",
-//   "roderick.bernardo@me.com",
-//   "111111111",
-//   false
-// );
-
-// console.log(user);
-// user.login();
-// console.log(user);
-
 class Student extends User {
   courses;
 
@@ -52,6 +41,29 @@ class Student extends User {
     console.log("Student contructor is called.");
   }
 }
+
+class Phd extends Student {
+  thesis;
+
+  constructor(userName, email, id, state, courses, thesis) {
+    super(userName, email, id, state, courses);
+    this.thesis = thesis;
+    console.log("Phd contructor is called.");
+  }
+}
+
+const user = new User(
+  "roderick.bernardo",
+  "roderick.bernardo@me.com",
+  "111111111",
+  false
+);
+
+console.log(user);
+user.login();
+console.log(user);
+user.logout();
+console.log(user);
 
 const courses = [
   { code: "PSY101", name: "College Psychology" },
@@ -67,6 +79,16 @@ const student = new Student(
 );
 
 console.log(student);
+
+const phd = new Phd("steve.jobs", "steve.jobs@apple.com", 111, true, courses, {
+  title: "title of the thesis",
+  abstract: "abstract of the thesis",
+  paragraph: [
+    { docId: "Paragraph 1", docContent: "Content of the thesis", docPage: "1" },
+  ],
+});
+
+console.log(phd);
 
 class Employee extends User {
   deparment;

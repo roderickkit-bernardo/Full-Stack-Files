@@ -27,16 +27,3 @@ console.log(carInfo);
 const carInfos = [];
 carInfos.push(carInfo);
 console.log(carInfos);
-
-const ceoNames = [
-  { firstName: "Elon", lastName: "Musk" },
-  { firstName: "Bill", lastName: "Gates" },
-];
-
-console.log("ceoNames:", ceoNames);
-
-const formattedCeoNames = ceoNames.map((ceoName, index) => {
-  return `<p>${ceoName.lastName}, ${ceoName.firstName}, ${index}</p>`;
-});
-
-console.log("formattedCeoNames:", formattedCeoNames);

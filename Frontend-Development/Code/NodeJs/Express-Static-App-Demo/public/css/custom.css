@@ -1,0 +1,52 @@
+.headerFlexContainer {
+  display: flex;
+  justify-items: center;
+  width: 100%;
+}
+
+.headerFlexContainer > div {
+  align-self: center;
+}
+
+.headerLogoStyle {
+  margin: 0;
+  width: 75px;
+}
+
+.headerTextStyle {
+  margin-left: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.navItems {
+  text-align: right;
+}
+
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid gray;
+  text-align: right;
+}
+
+input {
+  width: 100%;
+}
+
+.imageGalleryFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imageGalleryFlexContainer > div {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+}
+
+.imageGalleryFlexContainer > div > img {
+  object-fit: cover;
+  height: 100%;
+}

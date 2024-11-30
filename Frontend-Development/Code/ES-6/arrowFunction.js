@@ -15,6 +15,7 @@ arrowFunction = (param) => {
 
 arrowFunction("JS");
 
+// Immediately Invoked Function Expressions
 (() => {
   console.log("Arrow IIFE Without param.... []");
 })();

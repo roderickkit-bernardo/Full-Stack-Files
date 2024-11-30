@@ -1,13 +1,13 @@
 // Developer: Roderick Bernardo
 // Purpose: Destructuring demo
 
-// // Array destructuring - Positioning matters
-// const numbers = [1, 2, 3];
-// const [first, second, third] = numbers;
-// // Same as above less compact
-// // const first = numbers[0];
-// // const second = numbers[1];
-// // const third = numbers[2];
+// Array destructuring - Positioning matters
+const numbers = [1, 2, 3];
+const [first, second, third] = numbers;
+// Same as above less compact
+// const first = numbers[0];
+// const second = numbers[1];
+// const third = numbers[2];
 
 // console.log(first);
 // console.log(second);

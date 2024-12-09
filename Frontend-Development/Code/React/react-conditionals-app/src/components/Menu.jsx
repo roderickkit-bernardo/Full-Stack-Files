@@ -15,27 +15,27 @@ import WeekendMenu from "./WeekendMenu";
 //   }
 // }
 
-// Using a ternary operator to return a component
-function Menu() {
-  return (
-    <>
-      {new Date().getDay() <= 5 ? (
-        <WeekdayMenu></WeekdayMenu>
-      ) : (
-        <WeekendMenu></WeekendMenu>
-      )}
-    </>
-  );
-}
-
-// Using an && to return a compoment
+// // Using a ternary operator to return a component
 // function Menu() {
 //   return (
 //     <>
-//       {new Date().getDay() <= 5 && <WeekdayMenu></WeekdayMenu>}
-//       {new Date().getDay() > 5 && <WeekendMenu></WeekendMenu>}
+//       {new Date().getDay() <= 5 ? (
+//         <WeekdayMenu></WeekdayMenu>
+//       ) : (
+//         <WeekendMenu></WeekendMenu>
+//       )}
 //     </>
 //   );
 // }
+
+// Using an && to return a compoment
+function Menu() {
+  return (
+    <>
+      {new Date().getDay() <= 5 && <WeekdayMenu></WeekdayMenu>}
+      {new Date().getDay() > 5 && <WeekendMenu></WeekendMenu>}
+    </>
+  );
+}
 
 export default Menu;

@@ -63,8 +63,13 @@ async function verifyUserNameAndPassword(userName, password) {
   return verifyUserNameAndPasswordResponse;
 }
 
+async function hashPassword(plainPassword) {
+  return await PasswordHasherCommonJS.hashPassword(plainPassword);
+}
+
 // Export the functions
 module.exports = {
   verifyUserName,
   verifyUserNameAndPassword,
+  hashPassword,
 };

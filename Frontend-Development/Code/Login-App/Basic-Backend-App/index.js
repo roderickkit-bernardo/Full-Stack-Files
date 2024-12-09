@@ -17,6 +17,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/hashPassword/:plainPassword", (req, res) => {
+  Users.hashPassword(req.params.plainPassword).then((hashPasswordResponse) => {
+    res.send(hashPasswordResponse);
+  });
+});
+
 app.get("/verifyUserName/:userName", (req, res) => {
   res.send(Users.verifyUserName(req.params.userName));
 });

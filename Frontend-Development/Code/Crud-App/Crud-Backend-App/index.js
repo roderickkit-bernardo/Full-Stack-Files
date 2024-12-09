@@ -22,27 +22,57 @@ app.use(express.urlencoded({ extended: true }));
 
 // Create
 app.post("/", (req, res) => {
-  res.send(crud.createItem(req.body));
+  const createItemResult = crud.createItem(req.body);
+  console.log("[POST - Method]");
+  console.log("[Request]");
+  console.log(req.body);
+  console.log("[Response]");
+  console.log(createItemResult);
+  res.send(createItemResult);
 });
 
 // Read all albums
 app.get("/", (req, res) => {
-  res.send(crud.readItems());
+  const readItemsResult = crud.readItems();
+  console.log("[GET - Method]");
+  console.log("[Request]");
+  console.log("/");
+  console.log("[Response]");
+  console.log(readItemsResult);
+  res.send(readItemsResult);
 });
 
 // Read one album
 app.get("/:id", (req, res) => {
-  res.send(crud.readItems(req.params.id));
+  const readItemsResult = crud.readItems(req.params.id);
+  console.log("[GET - Method]");
+  console.log("[Request]");
+  console.log("/" + req.params.id);
+  console.log("[Response]");
+  console.log(readItemsResult);
+  res.send(readItemsResult);
 });
 
 // Update
 app.put("/", (req, res) => {
-  res.send(crud.updateItem(req.body));
+  const updateItemResult = crud.updateItem(req.body);
+  console.log("[PUT - Method]");
+  console.log("[Request]");
+  console.log(req.body);
+  console.log("[Response]");
+  console.log(updateItemResult);
+  res.send(updateItemResult);
 });
 
 // Delete
 app.delete("/", (req, res) => {
-  res.send(crud.deleteItem(req.body.id));
+  const deleteItemResult = crud.deleteItem(req.body.id);
+  console.log("[DELETE - Method]");
+  console.log("[Request]");
+  console.log(req.body);
+  console.log("[Response]");
+  console.log(deleteItemResult);
+  res.send(deleteItemResult);
 });
 
 app.get("*", (req, res) => {

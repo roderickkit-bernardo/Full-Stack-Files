@@ -5,15 +5,23 @@ const Users = require("./lib/Users");
 const cors = require("cors");
 const express = require("express");
 const app = express();
+
 // Load .env file
 require("dotenv").config();
 // Use the .env file to set the following
 const PORT = parseInt(process.env.PORT);
 const APP_NAME = process.env.APP_NAME;
 
+// Required Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get("/hashPassword/:plainPassword", (req, res) => {
+  Users.hashPassword(req.params.plainPassword).then((hashPasswordResponse) => {
+    res.send(hashPasswordResponse);
+  });
+});
 
 app.get("/verifyUserName/:userName", (req, res) => {
   res.send(Users.verifyUserName(req.params.userName));
@@ -32,5 +40,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`${APP_NAME} listening on port ${PORT}`);
+  console.log(`${APP_NAME} listening on PORT ${PORT}`);
 });

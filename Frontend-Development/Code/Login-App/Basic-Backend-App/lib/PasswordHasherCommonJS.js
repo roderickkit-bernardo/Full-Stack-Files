@@ -34,6 +34,7 @@ async function verifyPassword(plainPassword, hashedPassword) {
       hashedPassword
     );
   } catch (error) {
+    console.log(error);
     verifyPasswordResponse.status = "failiure";
   } finally {
     return verifyPasswordResponse;

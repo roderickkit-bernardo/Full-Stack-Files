@@ -1,0 +1,122 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: CRUD demo ejs
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Album-App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="<%= data.form.id %>" action="" method="<%= data.form.method %>">
+      <section class="section">
+        <div class="container">
+          <div class="box">
+            <!-- prettier-ignore -->
+            <% data.form.fields.forEach((field) => { %>
+            <div class="field">
+              <label for="<%= field.forIdName %>" class="label"
+                ><%= field.label %></label
+              >
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="<%= field.forIdName %>"
+                  id="<%= field.forIdName %>"
+                  placeholder="<%= field.placeholder %>"
+                />
+              </div>
+            </div>
+            <%}) %>
+            <div class="field is-grouped">
+              <!-- prettier-ignore -->
+              <% data.form.buttons.forEach((button) => { %>
+              <div class="control">
+                <button class="<%= button.class %>" name="<%= button.name %>">
+                  <%= button.label %>
+                </button>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+
+          <div class="box">
+            <table class="table mx-auto">
+              <thead>
+                <tr>
+                  <!-- prettier-ignore -->
+                  <% data.tableHeaders.forEach((tableHeader) => { %>
+                  <th><%= tableHeader %></th>
+                  <% }) %>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <div id="modal-update" class="modal">
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+        <form id="albumFormUpdate" action="" method="POST">
+          <section class="section">
+            <div class="container">
+              <div class="box">
+                <input
+                  class="input"
+                  type="hidden"
+                  name="idUpdate"
+                  id="idUpdate"
+                />
+                <!-- prettier-ignore -->
+                <% data.form.fields.forEach((field) => { %>
+                <div class="field">
+                  <label for="<%= field.forIdName %>Update" class="label"
+                    ><%= field.label %></label
+                  >
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      name="<%= field.forIdName %>Update"
+                      id="<%= field.forIdName %>Update"
+                      placeholder="<%= field.placeholder %>"
+                    />
+                  </div>
+                </div>
+                <% }) %>
+                <div class="field is-grouped">
+                  <!-- prettier-ignore -->
+                  <% data.form.buttons.forEach((button) => { %>
+                  <div class="control">
+                    <button
+                      class="<%= button.class %>"
+                      name="<%= button.name %>"
+                    >
+                      <%= button.label %>
+                    </button>
+                  </div>
+                  <% }) %>
+                </div>
+              </div>
+            </div>
+          </section>
+        </form>
+      </div>
+
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>

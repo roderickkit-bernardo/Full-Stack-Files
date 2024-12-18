@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React props demo
+
 function MainContent(props) {
   return (
     <div class="mainContent">

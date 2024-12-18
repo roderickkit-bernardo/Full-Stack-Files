@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React props demo
+
 function Header(props) {
   return (
     <header>

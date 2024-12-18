@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: CRUD module used by the app
+
 const UUIDUtilsCommonJS = require("./UUIDUtilsCommonJS");
 
 let albums = [];

@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: Express Microservice JWT user authentication
+
 const express = require("express");
 const app = express();
 // Load .env file

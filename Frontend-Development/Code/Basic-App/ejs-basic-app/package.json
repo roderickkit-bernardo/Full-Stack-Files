@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2"
   },
-  "description": "Demo Express and EJS app."
+  "description": "Demo Express and EJS app.",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }

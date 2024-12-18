@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React events demo
+
 function ChangeEvent() {
   return (
     <>

@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React props demo
+
 // Using default values
 function Footer({
   footerData = `© 2024 Simple Page Layout. All rights reserved. From Footer.jsx::default value.`,

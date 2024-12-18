@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React component demo
+
 function Content() {
   return (
     <section className="hero is-primary">
@@ -21,4 +24,4 @@ function Content() {
   );
 }
 
-export default Content;
+export { Content };

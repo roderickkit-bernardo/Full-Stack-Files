@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React component demo
+
 function Header() {
   return (
     <nav

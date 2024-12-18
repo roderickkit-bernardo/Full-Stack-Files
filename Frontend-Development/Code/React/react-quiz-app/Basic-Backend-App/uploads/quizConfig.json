@@ -1,0 +1,52 @@
+{
+  "title": "___Canadian Provinces Capital Cities___",
+  "description": "This quiz is about the capitals cities of canadian provinces. The passing mark is 80%.",
+  "passingCriteria": 80,
+  "questionAndAnswers": [
+    {
+      "question": "What is the capital city of Ontario?",
+      "answers": [
+        { "text": "Toronto", "isCorrect": 1 },
+        { "text": "Brampton", "isCorrect": 0 },
+        { "text": "Scarborough", "isCorrect": 0 },
+        { "text": "Ajax", "isCorrect": 0 }
+      ]
+    },
+    {
+      "question": "What is the capital city of Quebec?",
+      "answers": [
+        { "text": "Montreal", "isCorrect": 0 },
+        { "text": "Quebec City", "isCorrect": 1 },
+        { "text": "Laval", "isCorrect": 0 },
+        { "text": "Gatineau", "isCorrect": 0 }
+      ]
+    },
+    {
+      "question": "What is the capital city of Manitoba?",
+      "answers": [
+        { "text": "Brandon", "isCorrect": 0 },
+        { "text": "Dauphin", "isCorrect": 0 },
+        { "text": "Selkirk", "isCorrect": 0 },
+        { "text": "Winnipeg", "isCorrect": 1 }
+      ]
+    },
+    {
+      "question": "What is the capital city of British Columbia?",
+      "answers": [
+        { "text": "Nanaimo", "isCorrect": 0 },
+        { "text": "Victoria", "isCorrect": 1 },
+        { "text": "Coquitlam", "isCorrect": 0 },
+        { "text": "Vancouver", "isCorrect": 0 }
+      ]
+    },
+    {
+      "question": "What is the capital city of Alberta?",
+      "answers": [
+        { "text": "Medicine Hat", "isCorrect": 0 },
+        { "text": "Reed Deer", "isCorrect": 0 },
+        { "text": "Edmonton", "isCorrect": 1 },
+        { "text": "Calgary", "isCorrect": 0 }
+      ]
+    }
+  ]
+}

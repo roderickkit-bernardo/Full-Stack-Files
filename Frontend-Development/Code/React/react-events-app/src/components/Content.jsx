@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React events demo
+
 import ClickEvent from "./ClickEvent";
 import ChangeEvent from "./ChangeEvent";
 

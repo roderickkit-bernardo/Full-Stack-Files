@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React events demo
+
 function ClickEvent() {
   return (
     <div class="is-flex is-justify-content-center buttons">

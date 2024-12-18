@@ -1,3 +1,6 @@
+// Developer: Roderick Bernardo
+// Purpose: React props demo
+
 import "./css/styles.css";
 import Header from "./components/Header";
 import Nav from "./components/Nav";

@@ -1,0 +1,28 @@
+/*
+Express JS Boilerplate
+
+Initialize a Node js app:
+npm init -y
+
+Install Typescript:
+npm install typescript -D
+npm install @types/node -D
+
+Initialize tsconfig.json:
+npx tsc --init
+
+Modify tsconfig.json:
+Uncomment "outDir" and set it to "./build"
+Uncomment "removeComments": true
+
+Modify package.json and overwrite:
+"scripts": {
+  "build": "tsc",
+  "start": "node ./build/index"
+}
+
+Install dotenv:
+npm install dotenv
+
+Create a .env file in the root of your project and enter the following.
+*/

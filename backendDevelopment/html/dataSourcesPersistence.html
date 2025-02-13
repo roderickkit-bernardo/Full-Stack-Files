@@ -219,7 +219,398 @@
             </div>
 
             <div class="box">
-              <h2 id="link2Element" class="is-size-4">
+              <h2 id="link2Element" class="is-size-4">SQL</h2>
+              <ul>
+                <li>
+                  SQL (Structured Query Language) is a standard language used to
+                  interact with relational databases. It allows you to create,
+                  read, update, and delete data (CRUD operations), as well as
+                  manage database structures.
+                </li>
+              </ul>
+
+              <blockquote>
+                <p><b>Key Features of SQL</b></p>
+                <ul>
+                  <li>
+                    <b>Data Querying: </b>Retrieve data using SELECT statements.
+                  </li>
+
+                  <li>
+                    <b>Data Manipulation: </b>Insert, update, and delete data
+                    (INSERT, UPDATE, DELETE).
+                  </li>
+
+                  <li>
+                    <b>Schema Definition: </b>Define database structures (CREATE
+                    TABLE, ALTER TABLE).
+                  </li>
+
+                  <li>
+                    <b>Data Control: </b>Manage access permissions (GRANT,
+                    REVOKE).
+                  </li>
+
+                  <li>
+                    <b>Transaction Management: </b>Ensure data integrity
+                    (COMMIT, ROLLBACK).
+                  </li>
+                </ul>
+              </blockquote>
+
+              <blockquote>
+                <p><b>SQL syntax examples:</b></p>
+                <article class="message is-info">
+                  <p><b>Database Operations:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Create a database:</b><br />
+                        <code class="has-text-weight-bold"
+                          >CREATE DATABASE my_database;</code
+                        ><br />
+                        <code class="has-text-weight-bold"
+                          >CREATE DATABASE IF NOT EXISTS my_database;</code
+                        >
+                      </li>
+                      <li>
+                        <b>Use a database:</b><br />
+                        <code class="has-text-weight-bold"
+                          >USE my_database;</code
+                        >
+                      </li>
+                      <li>
+                        <b>Drop a database:</b><br />
+                        <code class="has-text-weight-bold"
+                          >DROP DATABASE my_database;</code
+                        ><br />
+                        <code class="has-text-weight-bold"
+                          >DROP DATABASE IF EXISTS my_database;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Table Operations:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Show tables:</b><br />
+                        <code class="has-text-weight-bold"
+                          >CREATE TABLE users (<br />
+                          id INT AUTO_INCREMENT PRIMARY KEY,<br />
+                          name VARCHAR(100) NOT NULL,<br />
+                          email VARCHAR(255) UNIQUE NOT NULL,<br />
+                          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+                        </code>
+                      </li>
+                      <li>
+                        <b>Show tables:</b><br />
+                        <code class="has-text-weight-bold">SHOW TABLES;</code>
+                      </li>
+                      <li>
+                        <b>Describe a table structure:</b><br />
+                        <code class="has-text-weight-bold">DESC users;</code>
+                      </li>
+                      <li>
+                        <b>Drop a table:</b><br />
+                        <code class="has-text-weight-bold"
+                          >DROP TABLE users;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Data Types:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Numeric:</b><br />
+                        <table class="table is-bordered table is-striped">
+                          <tbody>
+                            <tr>
+                              <td>Data Type</td>
+                              <td>Storage</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>TINYINT</td>
+                              <td>1 byte</td>
+                              <td>
+                                Range: -128 to 127 (signed) or 0 to 255
+                                (unsigned)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>SMALLINT</td>
+                              <td>2 bytes</td>
+                              <td>
+                                Range: -32,768 to 32,767 (signed) or 0 to 65,535
+                                (unsigned)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>MEDIUMINT</td>
+                              <td>3 bytes</td>
+                              <td>Range: -8,388,608 to 8,388,607 (signed)</td>
+                            </tr>
+                            <tr>
+                              <td>INT (INTEGER)</td>
+                              <td>4 bytes</td>
+                              <td>
+                                Range: -2,147,483,648 to 2,147,483,647 (signed)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>BIGINT</td>
+                              <td>8 bytes</td>
+                              <td>Range: Very large numbers (e.g., for IDs)</td>
+                            </tr>
+                            <tr>
+                              <td>DECIMAL (NUMERIC)</td>
+                              <td>Varies</td>
+                              <td>
+                                Exact fixed-point precision (e.g., DECIMAL(10,2)
+                                for money)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>FLOAT</td>
+                              <td>4 bytes</td>
+                              <td>
+                                Approximate floating-point (single precision)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>DOUBLE (REAL)</td>
+                              <td>8 bytes</td>
+                              <td>
+                                Approximate floating-point (double precision)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>BIT</td>
+                              <td>Varies</td>
+                              <td>
+                                Stores binary values (e.g., BIT(8) for 8-bit
+                                binary data)
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+
+                      <li>
+                        <b>String:</b><br />
+                        <table class="table is-bordered table is-striped">
+                          <tbody>
+                            <tr>
+                              <td>Data Type</td>
+                              <td>Storage</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>CHAR(n)</td>
+                              <td>Fixed n bytes</td>
+                              <td>Fixed-length string (1-255 chars)</td>
+                            </tr>
+                            <tr>
+                              <td>VARCHAR(n)</td>
+                              <td>Varies</td>
+                              <td>
+                                Variable-length string (1-65,535 chars, depends
+                                on row format)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                TEXT (TINYTEXT, TEXT, MEDIUMTEXT, LONGTEXT)
+                              </td>
+                              <td>Varies</td>
+                              <td>Large text storage</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                BLOB (TINYBLOB, BLOB, MEDIUMBLOB, LONGBLOB)
+                              </td>
+                              <td>Varies</td>
+                              <td>
+                                Binary Large Objects (for images, files, etc.)
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>ENUM('val1', 'val2', ...)</td>
+                              <td>1-2 bytes</td>
+                              <td>String with predefined values</td>
+                            </tr>
+                            <tr>
+                              <td>SET('val1', 'val2', ...)</td>
+                              <td>1-8 bytes</td>
+                              <td>Multiple predefined values</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+
+                      <li>
+                        <b>Data and Time:</b><br />
+                        <table class="table is-bordered table is-striped">
+                          <tbody>
+                            <tr>
+                              <td>Data Type</td>
+                              <td>Storage</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>DATE</td>
+                              <td>3 bytes</td>
+                              <td>Format: YYYY-MM-DD</td>
+                            </tr>
+                            <tr>
+                              <td>DATETIME(n)</td>
+                              <td>8 bytes</td>
+                              <td>Format: YYYY-MM-DD HH:MI:SS</td>
+                            </tr>
+                            <tr>
+                              <td>TIMESTAMP</td>
+                              <td>4 bytes</td>
+                              <td>Unix timestamp, auto-updated</td>
+                            </tr>
+                            <tr>
+                              <td>TIME</td>
+                              <td>3 bytes</td>
+                              <td>Format: HH:MI:SS</td>
+                            </tr>
+                            <tr>
+                              <td>YEAR</td>
+                              <td>1 byte</td>
+                              <td>Format: YYYY</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+
+                      <li>
+                        <b>JSON:</b><br />
+                        <table class="table is-bordered table is-striped">
+                          <tbody>
+                            <tr>
+                              <td>Data Type</td>
+                              <td>Storage</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>JSON</td>
+                              <td>Varies</td>
+                              <td>Stores JSON-formatted data</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Data Manipulation (DML):</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Insert data:</b><br />
+                        <code class="has-text-weight-bold"
+                          >INSERT INTO users (name, email) VALUES ('John Doe',
+                          'john@example.com');</code
+                        >
+                      </li>
+                      <li>
+                        <b>Select data:</b><br />
+                        <code class="has-text-weight-bold"
+                          >SELECT * FROM users;</code
+                        >
+                      </li>
+                      <li>
+                        <b>Select with conditions:</b><br />
+                        <code class="has-text-weight-bold"
+                          >SELECT * FROM users WHERE email =
+                          'john@example.com';</code
+                        >
+                      </li>
+                      <li>
+                        <b>Update data:</b><br />
+                        <code class="has-text-weight-bold"
+                          >UPDATE users SET name = 'Jane Doe' WHERE id =
+                          1;</code
+                        >
+                      </li>
+                      <li>
+                        <b>Delete data:</b><br />
+                        <code class="has-text-weight-bold"
+                          >DELETE FROM users WHERE id = 1;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Joins:</b></p>
+                  <div class="message-body">
+                    <img src="../images/joins.png" />
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Indexes:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Create an index:</b><br />
+                        <code class="has-text-weight-bold"
+                          >CREATE INDEX idx_email ON users(email);</code
+                        >
+                      </li>
+                      <li>
+                        <b>Drop an index:</b><br />
+                        <code class="has-text-weight-bold"
+                          >DROP INDEX idx_email ON users;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Transactions:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Commit a transaction:</b><br />
+                        <code class="has-text-weight-bold"
+                          >START TRANSACTION;<br />
+                          UPDATE users SET name = 'Alice' WHERE id = 2;<br />
+                          COMMIT;</code
+                        >
+                      </li>
+                      <li>
+                        <b>Rollback a transaction:</b><br />
+                        <code class="has-text-weight-bold"
+                          >START TRANSACTION;<br />
+                          UPDATE users SET name = 'Alice' WHERE id = 2;<br />
+                          ROLLBACK;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link3Element" class="is-size-4">
                 SQL Object Relational Mapper
               </h2>
               <img src="../images/orm.webp" />
@@ -331,7 +722,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link3Element" class="is-size-4">No SQL Datatases</h2>
+              <h2 id="link4Element" class="is-size-4">No SQL Datatases</h2>
               <img src="../images/nosql.webp" />
               <ul>
                 <li>
@@ -379,7 +770,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link4Element" class="is-size-4">
+              <h2 id="link5Element" class="is-size-4">
                 No SQL Object Data Modelling
               </h2>
               <img src="../images/odm.jpg" />
@@ -464,7 +855,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link5Element" class="is-size-4">Queues</h2>
+              <h2 id="link6Element" class="is-size-4">Queues</h2>
               <img src="../images/queues.webp" />
               <ul>
                 <li>

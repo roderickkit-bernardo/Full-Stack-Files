@@ -110,6 +110,7 @@ menuSideItemsMap.set("backendConcepts.html", [
 menuSideItemsMap.set("dataSourcesPersistence.html", [
   "SQL Databases",
   "SQL",
+  "Database Design",
   "SQL Object Relational Mapper",
   "No SQL Datatases",
   "No SQL Object Data Modelling",

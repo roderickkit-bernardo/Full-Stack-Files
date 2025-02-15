@@ -99,6 +99,20 @@
                 </article>
 
                 <article class="message is-info">
+                  <p><b>Composite Key:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        A composite key is a primary key or unique key that
+                        consists of multiple columns. It ensures that the
+                        combination of values in the specified columns is unique
+                        across all rows.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
                   <p><b>Foreign Key:</b></p>
                   <div class="message-body">
                     <ul>
@@ -557,6 +571,129 @@
                 </article>
 
                 <article class="message is-info">
+                  <p><b>Constraints:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>PRIMARY KEY</b> - Ensures a column (or combination of
+                        columns) uniquely identifies each row. Automatically
+                        applies UNIQUE and NOT NULL constraints. Each table can
+                        have only one or more primary key.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Products (<br />
+                          id INT PRIMARY KEY,<br />
+                          name VARCHAR(100) NOT NULL);</code
+                        ><br /><br />
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE orders ( <br />order_id INT,<br />
+                          product_id INT,<br />
+                          quantity INT,<br />
+                          PRIMARY KEY (order_id, product_id));</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>FOREIGN KEY</b> - Establishes a relationship between
+                        two tables. Ensures referential integrity by restricting
+                        invalid data entries.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Orders (<br />
+                          order_id INT PRIMARY KEY,<br />
+                          product_id INT,<br />
+                          FOREIGN KEY (product_id) REFERENCES
+                          Products(id));</code
+                        ><br />
+                        Supports <b>ON DELETE CASCADE</b> or
+                        <b>ON DELETE SET NULL</b>.
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>UNIQUE</b> - Ensures all values in a column are
+                        distinct. Unlike PRIMARY KEY, multiple UNIQUE
+                        constraints can exist per table.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Users (<br />
+                          user_id INT PRIMARY KEY,<br />
+                          email VARCHAR(255) UNIQUE );</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>NOT NULL</b> - Prevents a column from storing NULL
+                        values.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Products (<br />
+                          id INT PRIMARY KEY,<br />
+                          name VARCHAR(100) NOT NULL);</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>CHECK </b> - Ensures a column satisfies a
+                        condition.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Products (<br />
+                          id INT PRIMARY KEY,<br />
+                          price DECIMAL(10,2) CHECK (price > 0) );</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>DEFAULT</b> - Assigns a default value if no value is
+                        provided.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Orders (<br />
+                          id INT PRIMARY KEY,<br />
+                          status VARCHAR(20) DEFAULT 'Pending' );</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>AUTO_INCREMENT</b> - Automatically generates a unique
+                        number for each row.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Users (<br />
+                          id INT AUTO_INCREMENT PRIMARY KEY,<br />
+                          name VARCHAR(100) NOT NULL );</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>ENUM</b> - Restricts values to a predefined list.<br />
+
+                        <code class="has-text-weight-bold">
+                          CREATE TABLE Employees (<br />
+                          id INT PRIMARY KEY,<br />
+                          role ENUM('Admin', 'Manager', 'Staff') NOT NULL
+                          );</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
                   <p><b>Joins:</b></p>
                   <div class="message-body">
                     <img src="../images/joins.png" />
@@ -610,7 +747,229 @@
             </div>
 
             <div class="box">
-              <h2 id="link3Element" class="is-size-4">
+              <h2 id="link3Element" class="is-size-4">Database Design</h2>
+              <ul>
+                <li>
+                  Database design is the process of structuring and organizing
+                  data to ensure efficiency, consistency, and scalability. It
+                  involves defining tables, relationships, constraints, and
+                  indexes to optimize data storage and retrieval. Key steps
+                  include:
+                </li>
+              </ul>
+
+              <blockquote>
+                <p><b>Database Design Steps:</b></p>
+                <ul>
+                  <li>
+                    <b>Requirement Analysis: </b>Understanding data needs.
+                  </li>
+
+                  <li>
+                    <b>Conceptual Design: </b>Creating an entity-relationship
+                    diagram (ERD).
+                  </li>
+
+                  <li>
+                    <b>Logical Design: </b> Defining tables, columns, data
+                    types, and relationships.
+                  </li>
+
+                  <li>
+                    <b>Normalization: </b>Reducing redundancy by structuring
+                    data into related tables.
+                  </li>
+
+                  <li>
+                    <b>Physical Design: </b>Optimizing performance with
+                    indexing, partitioning, and storage strategies.
+                  </li>
+
+                  <li>
+                    <b>Implementation and Testing: </b>Creating the database,
+                    inserting data, and validating queries.
+                  </li>
+                </ul>
+              </blockquote>
+
+              <blockquote>
+                <p><b>What is an Entity?</b></p>
+                <article class="message is-info">
+                  <p>
+                    An entity in a database represents a real-world object or
+                    concept that is stored as a table. Each entity typically has
+                    attributes (columns) and instances (rows).
+                  </p>
+                  <div class="message-body">
+                    <p>For example, in an e-commerce application:</p>
+                    <ul>
+                      <li>
+                        A <b>Product entity</b> could have attributes like id,
+                        name, and price.
+                      </li>
+                      <li>
+                        A <b>Customer entity</b> could have attributes like id,
+                        name, and email.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+
+              <blockquote>
+                <p><b>What is an Entity Relationship?</b></p>
+                <article class="message is-info">
+                  <p>
+                    Refers to a conceptual model that represents data and its
+                    relationships within a system. It is commonly used in
+                    database design to visually map how entities (objects)
+                    relate to each other.
+                  </p>
+                  <div class="message-body">
+                    <p>Types of Entity Relationship:</p>
+                    <ul>
+                      <li><b>One-to-One</b> (e.g., a User has one Profile)</li>
+                      <li>
+                        <b>One-to-Many</b> (e.g., a Customer has many Orders)
+                      </li>
+                      <li>
+                        <b> Many-to-Many</b> (e.g., Students enrolled in
+                        multiple Courses)
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+
+              <blockquote>
+                <p><b>What is Normalization?</b></p>
+                <article class="message is-info">
+                  <p>
+                    Normalization in databases is the process of organizing data
+                    to reduce redundancy and improve data integrity. It involves
+                    structuring tables to ensure that each piece of data is
+                    stored in only one place, which minimizes anomalies during
+                    insert, update, and delete operations.
+                  </p>
+                  <img src="../images/normalized-vs-denormalized.jpg" />
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Pros of Normalization:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>Eliminates Data Redundancy</b> - Reduces storage
+                        space by avoiding duplicate data across tables.
+                      </li>
+                      <li>
+                        <b>Ensures Data Integrity</b> - Changes made to data in
+                        one place reflect everywhere, reducing inconsistencies.
+                      </li>
+                      <li>
+                        <b>Improves Data Consistency</b> - Since data is stored
+                        in only one place, there’s no risk of conflicting
+                        information.
+                      </li>
+                      <li>
+                        <b>Easier to Maintain</b> - Updating, deleting, and
+                        inserting data is simpler and less error-prone.
+                      </li>
+                      <li>
+                        <b>Better Scalability</b> - Structured data makes it
+                        easier to scale databases as the application grows.
+                      </li>
+                      <li>
+                        <b>Reduces Anomalies</b> - Prevents insertion, update,
+                        and deletion anomalies, making the database more
+                        reliable.
+                      </li>
+                      <li>
+                        <b>Improved Query Optimization (in some cases)</b> -
+                        Normalized structures can leverage indexes effectively,
+                        improving certain queries.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>Cons of Normalization:</b></p>
+                  <div class="message-body">
+                    <ul>
+                      <li>
+                        <b>More Complex Queries</b> - Requires multiple joins
+                        across tables, making queries more complex and
+                        potentially slower.
+                      </li>
+
+                      <li>
+                        <b>Increased Query Execution Time</b> - Joins between
+                        tables can lead to performance overhead, especially for
+                        large datasets.
+                      </li>
+
+                      <li>
+                        <b>Difficult to Design and Maintain</b> - Requires
+                        careful planning, especially for higher normal forms
+                        (3NF, BCNF, etc.).
+                      </li>
+
+                      <li>
+                        <b>Extra Foreign Keys</b> - Increased number of foreign
+                        keys can lead to additional constraints and overhead.
+                      </li>
+
+                      <li>
+                        <b>Performance Trade-offs in Read-Heavy Applications</b>
+                        - Applications that require frequent read operations may
+                        suffer due to excessive joins.
+                      </li>
+
+                      <li>
+                        <b>Denormalization May Be Required for Performance</b> -
+                        In some cases, denormalization is needed to improve read
+                        performance, requiring extra storage.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
+                  <p><b>When to Normalize or Denormalize?</b></p>
+                  <div class="message-body">
+                    <p><b>Normalize when:</b></p>
+                    <ul>
+                      <li>Data consistency and integrity are a priority.</li>
+                      <li>
+                        The database needs to be scalable and maintainable.
+                      </li>
+                      <li>
+                        The application performs a balanced mix of reads and
+                        writes.
+                      </li>
+                    </ul>
+
+                    <p><b>Denormalize when:</b></p>
+                    <ul>
+                      <li>
+                        Performance is a concern, and read operations dominate.
+                      </li>
+                      <li>
+                        The application is analytics-heavy, requiring fewer
+                        joins for faster queries.
+                      </li>
+                      <li>
+                        >Data redundancy is acceptable in exchange for speed.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </blockquote>
+            </div>
+
+            <div class="box">
+              <h2 id="link4Element" class="is-size-4">
                 SQL Object Relational Mapper
               </h2>
               <img src="../images/orm.webp" />
@@ -722,7 +1081,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link4Element" class="is-size-4">No SQL Datatases</h2>
+              <h2 id="link5Element" class="is-size-4">No SQL Datatases</h2>
               <img src="../images/nosql.webp" />
               <ul>
                 <li>
@@ -770,7 +1129,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link5Element" class="is-size-4">
+              <h2 id="link6Element" class="is-size-4">
                 No SQL Object Data Modelling
               </h2>
               <img src="../images/odm.jpg" />
@@ -855,7 +1214,7 @@
             </div>
 
             <div class="box">
-              <h2 id="link6Element" class="is-size-4">Queues</h2>
+              <h2 id="link7Element" class="is-size-4">Queues</h2>
               <img src="../images/queues.webp" />
               <ul>
                 <li>

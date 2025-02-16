@@ -162,17 +162,6 @@
                         MySQL, PHP).
                       </li>
                     </ul>
-                    <p><b>PostgreSQL:</b></p>
-                    <ul>
-                      <li>
-                        Advanced open-source database known for its robustness,
-                        extensibility, and standards compliance.
-                      </li>
-                      <li>
-                        Supports complex queries, foreign keys, triggers, and
-                        user-defined types.
-                      </li>
-                    </ul>
                     <p><b>SQLite:</b></p>
                     <ul>
                       <li>A lightweight, embedded SQL database engine.</li>
@@ -571,6 +560,153 @@
                 </article>
 
                 <article class="message is-info">
+                  <p><b>WHERE clause:</b></p>
+                  <div class="message-body">
+                    <p>
+                      The WHERE clause in SQL is used to filter records in a
+                      query based on specified conditions. It is commonly used
+                      in SELECT, UPDATE, and DELETE statements to retrieve or
+                      modify specific rows.
+                    </p>
+                    <ul>
+                      <li>
+                        <b>Filtering by a Single Condition</b> - Retrieves all
+                        products where the price is greater than 100.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM products<br />
+                          WHERE price > 100;</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using Multiple Conditions (AND)</b> - Returns
+                        customers from New York who are older than 30.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM customers<br />
+                          WHERE city = 'New York' AND age > 30;</code
+                        ><br />
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using Multiple Conditions (OR)</b> - Retrieves orders
+                        that are either pending or processing.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM orders<br />
+                          WHERE status = 'Pending' OR status =
+                          'Processing';</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using Comparison Operators</b><br />
+
+                        <table class="table is-bordered table is-striped">
+                          <tbody>
+                            <tr>
+                              <td>Operator</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>=</td>
+                              <td>Equal to</td>
+                            </tr>
+                            <tr>
+                              <td>!= or &lt;&gt;</td>
+                              <td>Not equal to</td>
+                            </tr>
+                            <tr>
+                              <td>></td>
+                              <td>Greater than</td>
+                            </tr>
+                            <tr>
+                              <td>&lt;</td>
+                              <td>Less than</td>
+                            </tr>
+                            <tr>
+                              <td>&gt;=</td>
+                              <td>Greater than or equal to</td>
+                            </tr>
+                            <tr>
+                              <td>&lt;=</td>
+                              <td>Less than or equal to</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using LIKE for Pattern Matching</b> - Finds users
+                        whose name starts with "J".<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM users<br />
+                          WHERE name LIKE 'J%';</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using IN to Match Multiple Values</b> - Finds
+                        products in the specified categories.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM products WHERE category IN<br />
+                          ('Electronics', 'Clothing', 'Furniture');</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b>Using BETWEEN for Ranges</b> - Finds sales amounts
+                        between 500 and 1000.<br />
+
+                        <code class="has-text-weight-bold"
+                          >SELECT * FROM sales<br />
+                          WHERE amount BETWEEN 500 AND 1000;</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b> Using IS NULL</b> - Finds employees without an
+                        assigned department.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM employees<br />
+                          WHERE department IS NULL;</code
+                        >
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <b> Using IS NOT NULL</b> - Finds employees with an
+                        assigned department.<br />
+
+                        <code class="has-text-weight-bold">
+                          SELECT * FROM employees<br />
+                          WHERE department IS NOT NULL;</code
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="message is-info">
                   <p><b>Constraints:</b></p>
                   <div class="message-body">
                     <ul>
@@ -647,7 +783,7 @@
                         <code class="has-text-weight-bold">
                           CREATE TABLE Products (<br />
                           id INT PRIMARY KEY,<br />
-                          price DECIMAL(10,2) CHECK (price > 0) );</code
+                          price DECIMAL(10,2) CHECK (price > 0));</code
                         >
                       </li>
                     </ul>
@@ -660,7 +796,7 @@
                         <code class="has-text-weight-bold">
                           CREATE TABLE Orders (<br />
                           id INT PRIMARY KEY,<br />
-                          status VARCHAR(20) DEFAULT 'Pending' );</code
+                          status VARCHAR(20) DEFAULT 'Pending');</code
                         >
                       </li>
                     </ul>

@@ -1,0 +1,12 @@
+[
+  {
+    "userName": "bill.gates",
+    "email": "bill.gates@microsoft.com",
+    "createdAt": { "$date": "2024-06-17T00:00:00Z" }
+  },
+  {
+    "userName": "elon.musk",
+    "email": "elon.musk@tesla.com",
+    "createdAt": { "$date": "2024-06-17T00:00:00Z" }
+  }
+]

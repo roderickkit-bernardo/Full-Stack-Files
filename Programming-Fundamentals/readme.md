@@ -1,7 +1,7 @@
-> # Course Notes
->
-> ## Marks Breakdown
->
+# Course Notes
+
+## Marks Breakdown
+
 > | Item                              | Total     |
 > | --------------------------------- | --------- |
 > | 6 Question or Comment of the week | 6 Marks   |
@@ -9,9 +9,9 @@
 > | 6 Labs                            | 48 Marks  |
 > | 1 Final Project                   | 34 Marks  |
 > | Total                             | 100 Marks |
->
-> ## Links used for this course
->
+
+## Links used for this course
+
 > [**VSCode**](https://code.visualstudio.com/Download)
 >
 > [**Node.js**](https://nodejs.org/en/download/prebuilt-installer)

@@ -1,0 +1,67 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: Audio Video and Script demo -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tag Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h1 {
+        color: purple;
+      }
+
+      h2 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Audio and Video</h1>
+
+    <h2>Audio with default settings</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio -->
+    <audio autoplay controls>
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video with default settings</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video -->
+    <video controls width="500">
+      <source src="video.mp4" />
+    </video>
+
+    <h2>Embedding Youtube videos - Using IFrames</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe -->
+    <iframe
+      width="460"
+      height="250"
+      src="https://www.youtube.com/embed/7g7kP_Trp0g?rel=0"
+    >
+    </iframe>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script -->
+    <script>
+      const currentDate = new Date();
+
+      // Get the current hour (0-23)
+      const currentHour = currentDate.getHours();
+
+      // Define the morning threshold (you can adjust this according to your definition of morning)
+      const morningThreshold = 12; // For example, considering morning until noon (12 PM)
+
+      let message = "Good Afternoon!";
+
+      if (currentHour < morningThreshold) {
+        message = "Good Morning!";
+      }
+
+      alert(message);
+      console.log(message);
+    </script>
+  </body>
+</html>

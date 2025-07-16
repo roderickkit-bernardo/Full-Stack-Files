@@ -6,7 +6,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Tag Practice</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -14,7 +13,9 @@
     <h1>Forms</h1>
 
     <h2>Form with GET</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="GET">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
+    <form action="https://localhost:3000" method="GET">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
       Username: <br />
       <input type="text" name="userName" /> <br /><br />
       Password: <br />
@@ -23,7 +24,7 @@
     </form>
 
     <h2>Form with POST</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       Username: <br />
       <input type="text" name="userName" />
       <br /><br />
@@ -33,11 +34,12 @@
     </form>
 
     <h2>Form with checkbox</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <input type="checkbox" name="banana" id="banana" checked />
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label -->
       <label for="banana">Banana</label>
       <br />
-      <input type="checkbox" name="apple" id="apple" />
+      <input type="checkbox" name="apple" id="apple" checked />
       <label for="apple">Apple</label>
       <br />
       <input type="checkbox" name="orange" id="orange" />
@@ -47,7 +49,7 @@
     </form>
 
     <h2>Form with radio button</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <input type="radio" name="fruits" value="banana" id="banana" checked />
       <label for="banana">Banana</label>
       <br />
@@ -61,16 +63,18 @@
     </form>
 
     <h2>Form with text area</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <label for="reviews">Amazon item 123 review:</label><br />
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea -->
       <textarea name="reviews" id="reviews" cols="50" rows="10"></textarea>
       <br /><br />
       <input type="submit" name="submit" />
     </form>
 
     <h2>Form with drop down menu</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <p>Toronto Teams</p>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select -->
       <select name="torontoTeams">
         <option value="Argos">Argos</option>
         <option value="Blue Jays">Blue Jays</option>
@@ -82,7 +86,7 @@
     </form>
 
     <h2>Form with list box</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <p>Toronto Teams</p>
       <select name="torontoTeams" size="3" multiple>
         <option value="Argos">Argos</option>
@@ -95,9 +99,11 @@
     </form>
 
     <h2>Form with fieldset and legend</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset -->
     <fieldset>
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend -->
       <legend>Toronto Teams</legend>
-      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+      <form action="https://localhost:3000" method="POST">
         <p>Choose a Toronto team from the list</p>
         <select name="torontoTeams" size="3" multiple>
           <option value="Argos">Argos</option>
@@ -111,7 +117,7 @@
     </fieldset>
 
     <h2>Form with date picker</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <label for="birthday">Birthday</label> <br />
       <br />
       <input type="date" name="birthday" id="birthday" />
@@ -120,7 +126,7 @@
     </form>
 
     <h2>Form with color picker</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <label for="color">Favorite color</label> <br />
       <br />
       <input type="color" name="color" id="color" />
@@ -129,7 +135,7 @@
     </form>
 
     <h2>Form with number input</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <label for="number">Choose a number from 1 to 5</label> <br />
       <br />
       <input type="number" name="number" id="number" min="1" max="5" />
@@ -138,7 +144,7 @@
     </form>
 
     <h2>Form with range</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <label for="range">Choose a number from 1 to 5</label> <br />
       <br />
       <input type="range" name="range" id="range" value="3" min="1" max="5" />
@@ -147,10 +153,10 @@
     </form>
 
     <h2>Form with combo box</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       <p>Choose a Toronto team from the list</p>
       <input name="torontoTeams" list="torontoTeams" />
-
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist -->
       <datalist id="torontoTeams">
         <option value="Argos">Argos</option>
         <option value="Blue Jays">Blue Jays</option>
@@ -162,7 +168,7 @@
     </form>
 
     <h2>Form with specialized text</h2>
-    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+    <form action="https://localhost:3000" method="POST">
       Enter your telephone:
       <input type="tel" name="tel" placeholder="(###) - ### - ####" />
       <br /><br />

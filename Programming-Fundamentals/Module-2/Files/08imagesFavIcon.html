@@ -7,13 +7,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tag Practice</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link -->
     <link rel="stylesheet" href="style.css" />
+    <!-- https://favicon.io -->
     <link rel="icon" href="favicon-16x16.png" />
   </head>
   <body>
     <h1>Image</h1>
 
     <h2>Image actual size</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img -->
     <img src="https://picsum.photos/200/300" alt="Random image" />
 
     <h2>Image width and height set</h2>
@@ -25,6 +28,8 @@
     />
 
     <h2>Image width set</h2>
+    <!-- Careful when setting the height and width, ensure to keep the aspect ratio -->
+    <!-- Or either set the width or height only -->
     <img src="https://picsum.photos/200" width="200" alt="Random image" />
 
     <h2>Image height set</h2>
@@ -32,6 +37,9 @@
 
     <h2>Image relative path: ./images/image.jpg</h2>
     <img src="./images/image.jpg" alt='This image has "escaped char"' />
+
+    <h2>Image relative path: ../image.jpg</h2>
+    <img src="../image.jpg" alt='This image has "escaped char"' />
 
     <h2>See the favicon on the top of the browser tab!</h2>
   </body>

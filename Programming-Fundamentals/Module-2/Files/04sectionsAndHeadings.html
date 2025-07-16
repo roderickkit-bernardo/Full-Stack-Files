@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/Heading_Elements -->
     <h1>Main Heading 1</h1>
 
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section -->
     <section>
       <h2>Sub Heading 2</h2>
       <p>Sub Heading 2 description</p>
@@ -39,17 +41,32 @@
 
     <hr />
 
-    <h1>Web development</h1>
-
     <section>
-      <h2>HTML</h2>
-      <p>Enter HTML description here...</p>
+      <h1>Web development</h1>
 
-      <h2>CSS</h2>
-      <p>Enter CSS description here...</p>
-
-      <h2>JavaScript</h2>
-      <p>Enter JavScript description here...</p>
+      <section>
+        <h2>HTML</h2>
+        <p>Enter HTML description here...</p>
+      </section>
+      <section>
+        <h2>CSS</h2>
+        <p>Enter CSS description here...</p>
+      </section>
+      <section>
+        <h2>JavaScript</h2>
+        <p>Enter JavScript description here...</p>
+      </section>
     </section>
+
+    <!-- If data level is beyond 6 -->
+    <h1>Domain: Eukarya</h1>
+    <h2>Kingdom: Animalia</h2>
+    <h3>Phylum: Chordata</h3>
+    <h4>Class: Mammalia</h4>
+    <h5>Order: Primates</h5>
+    <h6>Family: Hominidae</h6>
+    <!-- Beyond <h6>, use role and aria-level -->
+    <div role="heading" aria-level="7"><em>Genus: Homo</em></div>
+    <div role="heading" aria-level="8"><em>Species: Homo sapiens</em></div>
   </body>
 </html>

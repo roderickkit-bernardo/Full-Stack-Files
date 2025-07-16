@@ -9,10 +9,12 @@ body {
 
 .tableBorder {
   border: 1px solid #000;
-  border-collapse: collapse;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse */
+  /* border-collapse: collapse; */
+  /* or */
+  border-collapse: separate;
 }
 
-.tableBorder tr,
 .tableBorder th,
 .tableBorder td {
   border: 1px solid #000;
@@ -33,7 +35,7 @@ body {
 }
 
 .headerCustom {
-  background-color: #f0f0f0;
+  background-color: #cccccc;
   padding: 10px;
   text-align: center;
 }

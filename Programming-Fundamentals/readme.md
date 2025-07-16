@@ -1,4 +1,16 @@
-# Links used for this program
+# Course Notes
+
+## Marks Breakdown
+
+| Item                              | Total     |
+| --------------------------------- | --------- |
+| 6 Question or Comment of the week | 6 Marks   |
+| 4 Quizzes                         | 12 Marks  |
+| 6 Labs                            | 48 Marks  |
+| 1 Final Project                   | 34 Marks  |
+| Total                             | 100 Marks |
+
+## Links used for this course
 
 [**VSCode**](https://code.visualstudio.com/Download)
 
@@ -19,3 +31,5 @@
 [**Mozilla Developer**](https://developer.mozilla.org/en-US)
 
 [**W3Schools**](https://www.w3schools.com)
+
+[**HTML Living Standard (WHATWG)**](https://html.spec.whatwg.org/multipage)

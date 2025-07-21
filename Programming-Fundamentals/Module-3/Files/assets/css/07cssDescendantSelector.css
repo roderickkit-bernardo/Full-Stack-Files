@@ -1,0 +1,25 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS descendant selector demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Matches strong elements inside h1 elements */
+/* h1 is the parent */
+h1 strong {
+  color: dodgerblue;
+}
+
+/* Matches strong elements inside ul elements */
+/* ul is the parent */
+ul strong {
+  color: darkmagenta;
+}

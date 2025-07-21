@@ -1,0 +1,17 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS conflict resolution
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: green;
+}

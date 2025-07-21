@@ -1,0 +1,27 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS background image demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/16cssBackground.png");
+  /* 
+    This value instructs the browser to scale the background image as large as possible
+    so that the background area is completely covered by the background image 
+  */
+  background-size: cover;
+  /* Prevents the background image from repeating itself */
+  background-repeat: no-repeat;
+  /* Prevents the background image from scrolling */
+  background-attachment: fixed;
+}
+
+h1 {
+  background-color: salmon;
+}

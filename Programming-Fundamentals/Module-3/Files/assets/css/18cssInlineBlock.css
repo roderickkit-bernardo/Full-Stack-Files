@@ -1,0 +1,35 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS inline block demo 
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  background-color: wheat;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.block-element {
+  background-color: #f700ff;
+  margin: 10px;
+}
+
+/* Transform a block element to display like an inline element */
+.inline-block-element {
+  /* https://developer.mozilla.org/docs/Web/CSS/display */
+  display: inline-block;
+  background-color: #8800ff;
+  margin: 10px;
+}

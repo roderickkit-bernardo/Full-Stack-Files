@@ -1,0 +1,82 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS font properties demo
+*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+  /* https://developer.mozilla.org/docs/Web/CSS/font-weight */
+  font-weight: 700;
+  /* https://developer.mozilla.org/docs/Web/CSS/font-style */
+  font-style: italic;
+}
+
+/* Feel free to modify */
+/* Font properties */
+.customFont {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-style: italic;
+  /* https://developer.mozilla.org/docs/Web/CSS/text-transform */
+  text-transform: uppercase;
+}
+
+.customFont1 {
+  color: blue;
+  /* https://developer.mozilla.org/docs/Web/CSS/font-size */
+  font-size: xx-large;
+}
+
+.customFont2 {
+  color: blueviolet;
+  font-size: x-large;
+}
+
+.customFont3 {
+  color: brown;
+  font-size: larger;
+}
+
+.customFont4 {
+  color: red;
+  font-size: large;
+}
+
+.customFont5 {
+  color: salmon;
+  font-size: medium;
+}
+
+.customFont6 {
+  color: seagreen;
+  font-size: small;
+}
+
+.customFont7 {
+  color: maroon;
+  font-size: smaller;
+}

@@ -1,0 +1,33 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS variables demo
+*/
+
+:root {
+  /* Declared 3 css variables */
+  --backgroundColor: white;
+  --foregroundColor: black;
+  --borderColor: gray;
+}
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Use var(--name-of-variable) to access the value */
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor);
+}
+
+.customButton {
+  /* Use var(--name-of-variable) to access the value */
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor);
+  border: 2px solid var(--borderColor);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

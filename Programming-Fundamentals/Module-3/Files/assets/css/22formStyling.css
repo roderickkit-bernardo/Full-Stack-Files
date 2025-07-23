@@ -1,0 +1,62 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Form stlying using attribute selectors
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This will match input elements with type="text" */
+input[type="text"] {
+  font-size: 16px; /* Text size*/
+  color: #333; /* Text color */
+  /* Border styling */
+  border: 1px solid #ccc; /* Border color and thickness */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px; /* Padding inside the input */
+  height: 30px;
+  /* https://developer.mozilla.org/docs/Web/CSS/box-shadow */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow */
+}
+
+/* This will match input elements with type="radio" and type="checkbox" */
+input[type="radio"],
+input[type="checkbox"] {
+  /* Border styling */
+  border: 1px solid #ccc; /* Border color and thickness */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px; /* Padding inside the input */
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow */
+}
+
+/* Focus hover class */
+input:hover {
+  border-color: chartreuse; /* Border color on hover */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on hover */
+}
+
+/* Focus pseudo class */
+input:focus {
+  border-color: purple; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+  outline: none; /* Remove default outline (optional) */
+}
+
+/* This will match input elements with type="submit" */
+input[type="submit"] {
+  /* Border styling */
+  border: 1px solid #ccc; /* Border color and thickness */
+  background-color: #f9f9f9; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px; /* Padding inside the input */
+}

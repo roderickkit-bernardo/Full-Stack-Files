@@ -14,98 +14,92 @@
 
     <h2>Form with GET</h2>
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
-    <form action="https://localhost:3000" method="GET">
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
-      Username: <br />
-      <input type="text" name="userName" /> <br /><br />
-      Password: <br />
-      <input type="password" name="password" /> <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="GET">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
+        Username: <br />
+        <input
+          type="text"
+          name="userName"
+          placeholder="Please enter your username"
+          required
+        />
+        <br /><br />
+        Password: <br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Please enter your password"
+          required
+        />
+        <br /><br />
+        <input type="submit" name="submit" />
+        <input type="reset" value="Reset" />
+      </form>
+    </div>
 
     <h2>Form with POST</h2>
-    <form action="https://localhost:3000" method="POST">
-      Username: <br />
-      <input type="text" name="userName" />
-      <br /><br />
-      Password: <br />
-      <input type="password" name="password" /> <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        Username: <br />
+        <input type="text" name="userName" required />
+        <br /><br />
+        Password: <br />
+        <input type="password" name="password" required /> <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with checkbox</h2>
-    <form action="https://localhost:3000" method="POST">
-      <input type="checkbox" name="banana" id="banana" checked />
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label -->
-      <label for="banana">Banana</label>
-      <br />
-      <input type="checkbox" name="apple" id="apple" checked />
-      <label for="apple">Apple</label>
-      <br />
-      <input type="checkbox" name="orange" id="orange" />
-      <label for="orange">Orange</label>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <input type="checkbox" name="banana" id="banana" checked />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label -->
+        <label for="banana">Banana</label>
+        <br />
+        <input type="checkbox" name="apple" id="apple" checked />
+        <label for="apple">Apple</label>
+        <br />
+        <input type="checkbox" name="orange" id="orange" />
+        <label for="orange">Orange</label>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with radio button</h2>
-    <form action="https://localhost:3000" method="POST">
-      <input type="radio" name="fruits" value="banana" id="banana" checked />
-      <label for="banana">Banana</label>
-      <br />
-      <input type="radio" name="fruits" value="apple" id="apple" />
-      <label for="apple">Apple</label>
-      <br />
-      <input type="radio" name="fruits" value="orange" id="orange" />
-      <label for="orange">Orange</label>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <input type="radio" name="fruits" value="banana" id="banana" checked />
+        <label for="banana">Banana</label>
+        <br />
+        <input type="radio" name="fruits" value="apple" id="apple" />
+        <label for="apple">Apple</label>
+        <br />
+        <input type="radio" name="fruits" value="orange" id="orange" />
+        <label for="orange">Orange</label>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with text area</h2>
-    <form action="https://localhost:3000" method="POST">
-      <label for="reviews">Amazon item 123 review:</label><br />
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea -->
-      <textarea name="reviews" id="reviews" cols="50" rows="10"></textarea>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <label for="reviews">Amazon item 123 review:</label><br />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/textarea -->
+        <textarea name="reviews" id="reviews" cols="50" rows="10"></textarea>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with drop down menu</h2>
-    <form action="https://localhost:3000" method="POST">
-      <p>Toronto Teams</p>
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select -->
-      <select name="torontoTeams">
-        <option value="Argos">Argos</option>
-        <option value="Blue Jays">Blue Jays</option>
-        <option value="Leafs">Leafs</option>
-        <option value="Raptors">Raptors</option>
-      </select>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
-
-    <h2>Form with list box</h2>
-    <form action="https://localhost:3000" method="POST">
-      <p>Toronto Teams</p>
-      <select name="torontoTeams" size="3" multiple>
-        <option value="Argos">Argos</option>
-        <option value="Blue Jays">Blue Jays</option>
-        <option value="Leafs">Leafs</option>
-        <option value="Raptors">Raptors</option>
-      </select>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
-
-    <h2>Form with fieldset and legend</h2>
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset -->
-    <fieldset>
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend -->
-      <legend>Toronto Teams</legend>
-      <form action="https://localhost:3000" method="POST">
-        <p>Choose a Toronto team from the list</p>
-        <select name="torontoTeams" size="3" multiple>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <p>Toronto Teams</p>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select -->
+        <select name="torontoTeams">
           <option value="Argos">Argos</option>
           <option value="Blue Jays">Blue Jays</option>
           <option value="Leafs">Leafs</option>
@@ -114,68 +108,176 @@
         <br /><br />
         <input type="submit" name="submit" />
       </form>
-    </fieldset>
+    </div>
+
+    <h2>Form with list box</h2>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <p>Toronto Teams</p>
+        <select name="torontoTeams" size="4" multiple>
+          <option value="Argos">Argos</option>
+          <option value="Blue Jays">Blue Jays</option>
+          <option value="Leafs">Leafs</option>
+          <option value="Raptors">Raptors</option>
+        </select>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
+
+    <h2>Form with fieldset and legend</h2>
+    <div class="formDiv">
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset -->
+      <fieldset>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend -->
+        <legend>Toronto Teams</legend>
+        <form action="http://localhost:3000" method="POST">
+          <p>Choose a Toronto team from the list</p>
+          <select name="torontoTeams" size="4" multiple>
+            <option value="Argos">Argos</option>
+            <option value="Blue Jays">Blue Jays</option>
+            <option value="Leafs">Leafs</option>
+            <option value="Raptors">Raptors</option>
+          </select>
+          <br /><br />
+          <input type="submit" name="submit" />
+        </form>
+      </fieldset>
+    </div>
 
     <h2>Form with date picker</h2>
-    <form action="https://localhost:3000" method="POST">
-      <label for="birthday">Birthday</label> <br />
-      <br />
-      <input type="date" name="birthday" id="birthday" />
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <label for="birthDay">Birthday</label> <br />
+        <br />
+        <input type="date" name="birthDay" id="birthDay" />
+        <br /><br />
+        <label for="birthdayTime">Birthday and time</label> <br />
+        <br />
+        <input type="datetime-local" name="birthDayTime" id="birthDayTime" />
+        <br /><br />
+        <label for="birthDayMonth">Birth Month</label> <br />
+        <br />
+        <input type="month" name="birthMonth" id="birthMonth" />
+        <br /><br />
+        <label for="birthWeek">Birth Week</label> <br />
+        <br />
+        <input type="week" name="birthWeek" id="birthWeek" />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with color picker</h2>
-    <form action="https://localhost:3000" method="POST">
-      <label for="color">Favorite color</label> <br />
-      <br />
-      <input type="color" name="color" id="color" />
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <label for="color">Favorite color</label> <br />
+        <br />
+        <input type="color" name="color" id="color" />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with number input</h2>
-    <form action="https://localhost:3000" method="POST">
-      <label for="number">Choose a number from 1 to 5</label> <br />
-      <br />
-      <input type="number" name="number" id="number" min="1" max="5" />
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <label for="number">Choose a number from 1 to 5</label> <br />
+        <br />
+        <input type="number" name="number" id="number" min="1" max="5" />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with range</h2>
-    <form action="https://localhost:3000" method="POST">
-      <label for="range">Choose a number from 1 to 5</label> <br />
-      <br />
-      <input type="range" name="range" id="range" value="3" min="1" max="5" />
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <label for="range">Choose a number from 1 to 5</label> <br />
+        <br />
+        <input type="range" name="range" id="range" value="3" min="1" max="5" />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with combo box</h2>
-    <form action="https://localhost:3000" method="POST">
-      <p>Choose a Toronto team from the list</p>
-      <input name="torontoTeams" list="torontoTeams" />
-      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist -->
-      <datalist id="torontoTeams">
-        <option value="Argos">Argos</option>
-        <option value="Blue Jays">Blue Jays</option>
-        <option value="Leafs">Leafs</option>
-        <option value="Raptors">Raptors</option>
-      </datalist>
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        <p>Choose a Toronto team from the list</p>
+        <input name="torontoTeams" list="torontoTeams" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/datalist -->
+        <datalist id="torontoTeams">
+          <option value="Argos">Argos</option>
+          <option value="Blue Jays">Blue Jays</option>
+          <option value="Leafs">Leafs</option>
+          <option value="Raptors">Raptors</option>
+        </datalist>
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
 
     <h2>Form with specialized text</h2>
-    <form action="https://localhost:3000" method="POST">
-      Enter your telephone:
-      <input type="tel" name="tel" placeholder="(###) - ### - ####" />
-      <br /><br />
-      Enter your email:
-      <input type="email" name="email" placeholder="username@emaildomain.com" />
-      <br /><br />
-      <input type="submit" name="submit" />
-    </form>
+    <div class="formDiv">
+      <form action="http://localhost:3000" method="POST">
+        Enter your telephone:
+        <input
+          type="tel"
+          name="tel"
+          placeholder="(###)-###-####"
+          pattern="\([0-9]{3}\)-[0-9]{3}-[0-9]{4}"
+        />
+        <br /><br />
+        Enter your email:
+        <input
+          type="email"
+          name="email"
+          placeholder="username@emaildomain.com"
+        />
+        <br /><br />
+        Enter your url:
+        <input
+          type="url"
+          name="url"
+          placeholder="https://example.com"
+          pattern="https://.*"
+        />
+        <br /><br />
+        Search:
+        <input type="search" name="search" />
+        <br /><br />
+        <input type="submit" name="submit" />
+      </form>
+    </div>
+
+    <h2>Form with file upload and hidden input</h2>
+    <div class="formDiv">
+      <form
+        action="http://localhost:3000/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <!-- Any input that you want to send but not visible to the user -->
+        <!-- But this is visible when viewed as source -->
+        <input type="hidden" name="sessionId" value="0123456789" />
+        <label for="myFile">Upload your file:</label><br />
+        <input
+          type="file"
+          id="myFile"
+          name="myFile"
+          accept=".pdf,.doc,.docx"
+          required
+        />
+        <br /><br />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <h2>Button input type</h2>
+    <div class="formDiv">
+      <!-- You need JS to make it functional -->
+      <input type="button" name="button" value="Button" />
+    </div>
   </body>
 </html>

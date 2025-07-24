@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>Child Iframe</h3>
+    <p>
+      <!-- _top: The topmost browsing context. To be specific, this means the "highest" context that's an ancestor of the current one. 
+           If no ancestors, behaves as _self. -->
+      <a href="https://example.com" target="_top"
+        >Go to example.com target=&quot;_top&quot;</a
+      ><br />
+      <!-- _parent: The parent browsing context of the current one. 
+           If no parent, behaves as _self. -->
+      <a href="https://example.com" target="_parent"
+        >Go to example.com target=&quot;_parent&quot;</a
+      >
+    </p>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  background-color: #ddd;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  background-color: steelblue;
+  color: white;
+  padding: 20px;
+  /* Can take up to 1 unit of the available width */
+  flex-grow: 1;
+}
+
+.item.large {
+  /* Grows twice as much as the others */
+  flex-grow: 2;
+  background: darkorange;
+}
+
+.itemShrink {
+  background-color: steelblue;
+  color: white;
+  padding: 20px;
+  /* Can grow 1x and shrink 1x and minimum width would be 400 */
+  flex: 1 1 200px;
+}
+
+.itemShrink.small {
+  /* Can grow 1x and shrink 2x and minimum width would be 400 */
+  flex: 1 2 200px;
+  background-color: mediumseagreen;
+}

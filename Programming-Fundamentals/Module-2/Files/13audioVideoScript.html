@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Tag Practice</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <style>
       h1 {
         color: purple;
@@ -26,14 +26,14 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio -->
     <!-- autoplay is blocked by modern browsers -->
     <audio controls muted loop>
-      <source src="audio.mp3" type="audio/mpeg" />
+      <source src="./audio.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
     <h2>Video with default settings</h2>
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video -->
     <video controls width="500">
-      <source src="video.mp4" />
+      <source src="./video.mp4" />
     </video>
 
     <h2>Embedding Youtube videos - Using IFrames</h2>
@@ -54,13 +54,12 @@
       const currentHour = currentDate.getHours();
       console.log(currentHour);
 
-      // Define the morning threshold (you can adjust this according to your definition of morning)
-      const morningThreshold = 12; // For example, considering morning until noon (12 PM)
+      let message = "Good Evening";
 
-      let message = "Good Afternoon!";
-
-      if (currentHour < morningThreshold) {
+      if (currentHour >= 0 && currentHour <= 12) {
         message = "Good Morning!";
+      } else if (currentHour > 12 && currentHour < 6) {
+        message = "Good Afternoon";
       }
 
       alert(message);

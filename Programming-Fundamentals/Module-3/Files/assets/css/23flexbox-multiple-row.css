@@ -1,0 +1,81 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS declaration types
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
+  overflow: hidden;
+  display: flex;
+
+  /* https://developer.mozilla.org/docs/Web/CSS/flex-direction */
+  /* Sets the main axis direction. */
+  /* row | row-reverse | column | column-reverse */
+  flex-direction: row;
+
+  /* https://developer.mozilla.org/docs/Web/CSS/justify-content */
+  /* Controls alignment along the main axis (left-to-right in row). */
+  /* Controls alignment along the main axis (right-to-left in row-reverse). */
+  /* Controls alignment along the main axis (top-to-bottom in column). */
+  /* Controls alignment along the main axis (bottom-to-top in column-reverse). */
+  /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+  justify-content: flex-start;
+
+  /* https://developer.mozilla.org/docs/Web/CSS/align-items */
+  /* Controls alignment along the cross axis (top-to-bottom in row). */
+  /* flex-start | flex-end | center | stretch */
+  /* No effect on multiple rows like this page */
+  /* align-items: flex-start; */
+
+  /* https://developer.mozilla.org/docs/Web/CSS/flex-wrap */
+  /* By default, items are in one line. Use flex-wrap to allow items to wrap onto multiple lines. */
+  /* nowrap | wrap | wrap-reverse */
+  flex-wrap: wrap;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/align-content */
+  /* Aligns rows when there's wrapping, works like align-items, but for "multiple lines". */
+  /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+  align-content: flex-start;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
+  /* Space between rows or columns */
+  gap: 5px;
+
+  background-color: #3d0156;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+
+  padding: 20px;
+  margin: 10px;
+  background-color: rgb(180, 70, 175);
+  color: white;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow */
+  /* Defines how much a flex item grows relative to others. */
+  /* flex-grow: 1; */
+
+  /* https://developer.mozilla.org/docs/Web/CSS/flex-shrink */
+  /* Defines how much an item shrinks if needed. */
+  /* flex-shrink: 1; */
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis */
+  /* Sets the initial size before space is distributed. */
+  /* flex-basis: 200px; */
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  /* A shorthand for, flex: <flex-grow> <flex-shrink> <flex-basis>; */
+  /* flex: 1 1 200px; */
+}

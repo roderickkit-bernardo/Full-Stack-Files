@@ -1,0 +1,33 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Flexbox layout demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+        Declaration block composed of one or more 
+        Property: Value;
+      */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  font-size: 2em;
+}
+
+.sidebar {
+  width: 200px;
+  background: #444;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+}

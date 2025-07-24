@@ -1,0 +1,32 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Flexbox growth demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+        Declaration block composed of one or more 
+        Property: Value;
+      */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  /* Each card grow and shirk proportionally to the other items on the same row with a minimum size of 200 px */
+  flex: 1 1 200px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 2em;
+}

@@ -1,0 +1,111 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Random User demo
+*/
+
+/* Universal selector */
+* {
+  /* The width and height you set on an element include the padding and border */
+  /* This means the total width will always be the same */
+  /* For example: box-sizing: content-box */
+  /* If you have an element with this style: */
+  /* width: 200px; padding: 20px; border: 5px solid; */
+  /* Total width = 200 (content) + 40 (padding left + right) + 10 (border left + right) = 250px */
+  /* But: box-sizing: border-box */
+  /* Total is 200 px; the content is adjusted */
+  box-sizing: border-box;
+  /* This resets default margin and padding that browsers add to elements */
+  margin: 0;
+  padding: 0;
+}
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Use flexbox to center the content vertically and horizontally */
+.centerVericalHorizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+.subContainer {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+  margin: 10px auto;
+}
+
+.circularImageDiv {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+.circularImageDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.circularImageDiv img:hover {
+  filter: brightness(80%); /* Darken on hover */
+}
+
+.infoDiv {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.infoTitle {
+  font-size: 20px;
+  color: gray;
+}
+
+.infoValue {
+  font-size: 40px;
+  color: black;
+}
+
+.iconDivFlex {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconDivFlex img {
+  width: 50px;
+}
+
+.iconDivFlex div {
+  border: 4px solid white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.iconDivFlex div:hover {
+  border-top: 4px solid gray;
+}

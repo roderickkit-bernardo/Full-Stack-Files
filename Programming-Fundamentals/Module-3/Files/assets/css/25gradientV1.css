@@ -1,0 +1,81 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Color gradient demo
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  text-align: center;
+  padding: 50px;
+}
+
+.customGradient1 {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+  /* Directions: */
+  /* to top | to bottom | to left | to right | to top left | to top right | to bottom left | to bottom right */
+  /* background-image: linear-gradient(to top, white, black); */
+  /* Angles: */
+  /* 0deg to 360deg, which starts from bottom to top clockwise */
+  /* Then a list of start and stop colors */
+  background-image: linear-gradient(to right, white, gray, black);
+
+  /* You can change the colors to any other hexadecimal or named colors */
+  color: black; /* Text color */
+}
+
+.customGradient2 {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+  /* Directions: */
+  /* to top | to bottom | to left | to right | to top left | to top right | to bottom left | to bottom right */
+  /* background-image: linear-gradient(to top, white, black); */
+  /* Angles: */
+  /* 0deg to 360deg, which starts from bottom to top clockwise */
+  /* Then a list of start and stop colors */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 223),
+    rgb(189, 127, 255),
+    rgb(131, 127, 255)
+  );
+
+  /* You can change the colors to any other hexadecimal or named colors */
+  color: black; /* Text color */
+}
+
+.customGradient2 {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+  /* Directions: */
+  /* to top | to bottom | to left | to right | to top left | to top right | to bottom left | to bottom right */
+  /* background-image: linear-gradient(to top, white, black); */
+  /* Angles: */
+  /* 0deg to 360deg, which starts from bottom to top clockwise */
+  /* Then a list of start and stop colors */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 127, 223),
+    rgb(189, 127, 255),
+    rgb(131, 127, 255)
+  );
+
+  /* You can change the colors to any other hexadecimal or named colors */
+  color: black; /* Text color */
+}
+
+.customGradient3 {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+  /* Directions: */
+  /* to top | to bottom | to left | to right | to top left | to top right | to bottom left | to bottom right */
+  /* background-image: linear-gradient(to top, white, black); */
+  /* Angles: */
+  /* 0deg to 360deg, which starts from bottom to top clockwise */
+  /* Then a list of start and stop colors */
+  background-image: linear-gradient(to right, red, green, yellow);
+
+  /* You can change the colors to any other hexadecimal or named colors */
+  color: black; /* Text color */
+}

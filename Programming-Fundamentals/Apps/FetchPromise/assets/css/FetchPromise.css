@@ -1,0 +1,86 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Fetch Promise demo
+*/
+
+/* Universal selector */
+* {
+  /* The width and height you set on an element include the padding and border */
+  /* This means the total width will always be the same */
+  /* For example: box-sizing: content-box */
+  /* If you have an element with this style: */
+  /* width: 200px; padding: 20px; border: 5px solid; */
+  /* Total width = 200 (content) + 40 (padding left + right) + 10 (border left + right) = 250px */
+  /* But: box-sizing: border-box */
+  /* Total is 200 px; the content is adjusted */
+  box-sizing: border-box;
+  /* This resets default margin and padding that browsers add to elements */
+  margin: 0;
+  padding: 0;
+}
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.container {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px gray;
+  width: 75%;
+}
+
+.subContainer {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.imageTd {
+  text-align: center;
+  width: 50px;
+}
+
+input[type="number"] {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+table {
+  border: 1px solid #000;
+  border-collapse: collapse; /* Merge the borders */
+  margin: 0 auto;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* even rows */
+/* :nth-child is a pseudo selector */
+tr:nth-child(even) {
+  background-color: white; /* Background color of the table row */
+}
+
+/* odd rows */
+/* :nth-child is a pseudo selector */
+tr:nth-child(odd) {
+  background-color: lightgrey; /* Background color of the table row */
+}
+
+td img {
+  width: 20px;
+}

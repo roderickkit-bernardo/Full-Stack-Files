@@ -1,0 +1,50 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS Colors demo 
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-color */
+  /* Using name */
+  background-color: gray;
+  font-size: 1.5rem;
+}
+
+div {
+  /* Using name */
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.style0 {
+  /* Using name */
+  background-color: black;
+}
+
+.style1 {
+  /* Using rgb */
+  background-color: rgb(0, 0, 0);
+}
+
+.style2 {
+  /* Using rgb with transparency*/
+  background-color: rgb(0, 0, 0, 1);
+}
+
+.style3 {
+  /* Using hex */
+  background-color: #000000;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl */
+.style4 {
+  /* hsl */
+  background-color: hsl(0, 0%, 0%);
+}
+
+.style5 {
+  /* hsla */
+  background-color: hsl(0, 0%, 0%, 1);
+}

@@ -1,0 +1,44 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: nav bar demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+      Declaration block composed of one or more 
+      Property: Value;
+    */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 0px;
+}
+
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.brand {
+  color: #000;
+  text-decoration: none;
+}

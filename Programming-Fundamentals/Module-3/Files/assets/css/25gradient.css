@@ -1,0 +1,27 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: Color gradient demo
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-image */
+  /* Directions: */
+  /* to top | to bottom | to left | to right | to top left | to top right | to bottom left | to bottom right */
+  /* background-image: linear-gradient(to top, white, black); */
+  /* Angles: */
+  /* 0deg to 360deg, which starts from bottom to top clockwise */
+  /* Then a list of start and stop colors */
+  background-image: linear-gradient(0deg, white, black);
+
+  /* You can change the colors to any other hexadecimal or named colors */
+  font-family: Arial, sans-serif;
+  color: #fff; /* Text color */
+}
+
+.content {
+  text-align: center;
+  padding: 100px;
+}

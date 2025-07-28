@@ -33,3 +33,7 @@
 > [**W3Schools**](https://www.w3schools.com)
 >
 > [**HTML Living Standard (WHATWG)**](https://html.spec.whatwg.org/multipage)
+>
+> [**Starbucks Canada**](https://www.starbucks.ca) vs [**Starbucks Japan**](https://www.starbucks.co.jp)
+>
+> [**Rakuten Canada**](https://www.rakuten.ca) vs [**Rakuten Japan**](https://www.rakuten.co.jp)

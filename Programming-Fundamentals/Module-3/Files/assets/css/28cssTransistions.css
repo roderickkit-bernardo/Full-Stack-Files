@@ -1,0 +1,91 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS Transition demo 
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.singleTransition {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* List all the attributees to transition */
+  /* attribute name, time in seconds, and transition type */
+  /* linear | ease | ease-in | ease-in-out | ease-out */
+  transition: width 2s linear;
+}
+
+.singleTransition:hover {
+  width: 300px;
+}
+
+.multipleTransition {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* List all the attributees to transition */
+  /* attribute name, time in seconds, and transition type */
+  /* linear | ease | ease-in | ease-in-out | ease-out */
+  transition: width 2s ease, height 2s ease, background-color 2s ease;
+}
+
+.multipleTransition:hover {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+
+.singleTransitionTransformation {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* List all the attributees to transition */
+  /* attribute name, time in seconds, and transition type */
+  /* linear | ease | ease-in | ease-in-out | ease-out */
+  transition: transform 2s;
+}
+
+.singleTransitionTransformation:hover {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+  transform: rotate(720deg);
+  /* transform: translate(-20px, -20px); */
+  /* transform: scale(2); */
+  /* Can also be combined */
+  /* transform: rotate(720deg) translate(-20px, -20px) scale(2); */
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease {
+  /* Increases in velocity towards the middle of the transition, slowing back down at the end. */
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.transition-delay {
+  cursor: pointer;
+  transition-delay: 2s;
+}

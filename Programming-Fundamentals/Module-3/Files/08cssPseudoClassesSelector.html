@@ -10,12 +10,12 @@
     <!-- Link to a stylesheet file -->
     <!-- href value is the location of the file -->
     <!-- Can be absolute or relative -->
-    <link rel="stylesheet" href="./assets/css/08cssPseudoSelector.css" />
+    <link rel="stylesheet" href="./assets/css/08cssPseudoClassesSelector.css" />
   </head>
   <body>
     <button class="button">Move your mouse over me!</button>
 
-    <p>Table with alternating backgrounds using nth-child()</p>
+    <h1>Table with alternating backgrounds using nth-child()</h1>
     <table>
       <tr>
         <th>Emoji Name</th>
@@ -38,5 +38,21 @@
         <td class="emojiContainer">🐕‍🦺</td>
       </tr>
     </table>
+
+    <h1>nth-child() can be used on any element</h1>
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div>
+
+    <h1>nth-child() can be used on any class</h1>
+    <ol>
+      <li class="alternateStyle">ITEM ...</li>
+      <li class="alternateStyle">ITEM ...</li>
+      <li class="alternateStyle">ITEM ...</li>
+      <li class="alternateStyle">ITEM ...</li>
+    </ol>
   </body>
 </html>

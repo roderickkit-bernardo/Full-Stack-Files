@@ -1,6 +1,6 @@
 /*
   Developer: Roderick Bernardo
-  Purpose: CSS inheritance demo 
+  Purpose: CSS conflict resolution
 */
 
 /* body is the selector */
@@ -10,5 +10,8 @@ body {
     Property: Value;
   */
   font-family: Arial, Helvetica, sans-serif;
-  color: green;
+}
+
+p {
+  color: blue;
 }

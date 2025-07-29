@@ -66,6 +66,38 @@ tr:nth-child(odd) {
   color: lightgrey; /* Font color */
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/* even rows */
+/* :nth-child is a pseudo selector */
+p:nth-child(even) {
+  background-color: lightgrey; /* Background color of the table row */
+  color: darkslategrey; /* Font color */
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/* odd rows */
+/* :nth-child is a pseudo selector */
+p:nth-child(odd) {
+  background-color: darkslategrey; /* Background color of the table row */
+  color: lightgrey; /* Font color */
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/* even rows */
+/* :nth-child is a pseudo selector */
+.alternateStyle:nth-child(even) {
+  background-color: lightgrey; /* Background color of the table row */
+  color: darkslategrey; /* Font color */
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+/* odd rows */
+/* :nth-child is a pseudo selector */
+.alternateStyle:nth-child(odd) {
+  background-color: darkslategrey; /* Background color of the table row */
+  color: lightgrey; /* Font color */
+}
+
 .emojiContainer {
   text-align: center; /* Center the text */
   font-size: 1.5em; /* 1.5 the of default font */

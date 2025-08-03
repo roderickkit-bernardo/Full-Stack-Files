@@ -1,0 +1,48 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS Animation demo 
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Using from and to with translate */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.myBox {
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  background-color: blueviolet;
+  animation-name: slideIn, fadeIn;
+  animation-duration: 2s, 2s;
+  animation-timing-function: linear, ease-in;
+  animation-delay: 0s, 0s;
+  animation-iteration-count: 1, 1;
+  /* https://developer.mozilla.org/docs/Web/CSS/animation-fill-mode */
+  animation-fill-mode: forwards, forwards;
+  /* Shortcut */
+  /* animation: slideIn 2s linear 0s 1 forwards, fadeIn 2s ease-in 0s 1 forwards; */
+}

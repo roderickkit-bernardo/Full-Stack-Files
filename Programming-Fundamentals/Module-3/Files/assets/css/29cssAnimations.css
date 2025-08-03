@@ -1,0 +1,204 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS Animation demo 
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes */
+
+/* colorAnimationFromToKF is the name assigned to the defined keyframe animation */
+/* Using from and to */
+@keyframes colorAnimationFromToKF {
+  from {
+    background-color: pink;
+  }
+  to {
+    background-color: purple;
+  }
+}
+
+.colorAnimationFromTo {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  /* https://developer.mozilla.org/docs/Web/CSS/animation-name */
+  /* colorAnimationFromToKF is the keyframe defined previously */
+  /* This is how you connect an animation to a style */
+  animation-name: colorAnimationFromToKF;
+  /* https://developer.mozilla.org/docs/Web/CSS/animation-duration */
+  animation-duration: 4s;
+}
+
+/* colorAnimationPercentageKF is the name assigned to the defined keyframe animation */
+/* Using percentages */
+@keyframes colorAnimationPercentageKF {
+  0% {
+    background-color: pink;
+    /* https://developer.mozilla.org/docs/Web/CSS/left */
+    left: 0px;
+    /* https://developer.mozilla.org/docs/Web/CSS/top */
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: red;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: purple;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.colorAnimationPercentage {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  /* https://developer.mozilla.org/docs/Web/CSS/position */
+  position: relative;
+  /* colorAnimationPercentageKF is the keyframe defined previously */
+  /* This is how you connect an animation to a style */
+  animation-name: colorAnimationPercentageKF;
+  animation-duration: 4s;
+}
+
+.colorAnimationPercentageWidthDelay {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: relative;
+  /* colorAnimationPercentageKF is the keyframe defined previously */
+  /* This is how you connect an animation to a style */
+  animation-name: colorAnimationPercentageKF;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+.colorAnimationFromToXTimes {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  animation-name: colorAnimationFromToKF;
+  animation-duration: 4s;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count */
+  animation-iteration-count: 3;
+}
+
+.colorAnimationFromToInfinite {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  animation-name: colorAnimationFromToKF;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* colorAnimationPercentageLTRKF is the name assigned to the defined keyframe animation */
+/* Using percentages */
+
+@keyframes colorAnimationPercentageLTRKF {
+  0% {
+    background-color: pink;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    left: 400px;
+    top: 0px;
+  }
+  75% {
+    background-color: red;
+    left: 600px;
+    top: 0px;
+  }
+  100% {
+    background-color: purple;
+    left: 800px;
+    top: 0px;
+  }
+}
+
+.colorAnimationFromToLTR {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: relative;
+  /* colorAnimationPercentageLTRKF is the keyframe defined previously */
+  /* This is how you connect an animation to a style */
+  animation-name: colorAnimationPercentageLTRKF;
+  animation-duration: 4s;
+}
+
+.animation-direction-normal {
+  animation-direction: normal;
+}
+
+.animation-direction-reverse {
+  animation-direction: reverse;
+}
+
+.animation-direction-alternate {
+  animation-direction: alternate;
+}
+
+.animation-direction-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+
+.animation-timing-function-linear {
+  animation-timing-function: linear;
+}
+
+.animation-timing-function-ease {
+  animation-timing-function: ease;
+}
+
+.animation-timing-function-ease-in {
+  animation-timing-function: ease-in;
+}
+
+.animation-timing-function-ease-out {
+  animation-timing-function: ease-out;
+}
+
+.animation-timing-function-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.shortHand {
+  /*
+  animation-name: colorAnimationPercentageLTRKF;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  */
+  /* Same as above */
+  animation: colorAnimationPercentageLTRKF 5s linear 2s infinite alternate;
+}

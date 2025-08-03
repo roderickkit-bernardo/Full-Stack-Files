@@ -1,0 +1,87 @@
+<!-- Developer: Roderick Bernardo -->
+<!-- Purpose: CSS Animation demo -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Practice</title>
+    <!-- Link to a stylesheet file -->
+    <!-- href value is the location of the file -->
+    <!-- Can be absolute or relative -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/29cssAnimations.css"
+    />
+  </head>
+  <body>
+    <h1>
+      CSS Animation - When an animation is finished, it goes back to its
+      original style, unless the iteration count is infinite.
+    </h1>
+
+    <!-- Uncomment the divs to see the animation -->
+
+    <h2>Using key frames from and to.</h2>
+    <!-- <div class="colorAnimationFromTo"></div> -->
+
+    <h2>
+      Using key frames percentage - changes the background color and position.
+    </h2>
+    <!-- <div class="colorAnimationPercentage"></div> -->
+
+    <h2>
+      Using key frames percentage - changes the background color and position
+      with 2 second delay.
+    </h2>
+    <!-- <div class="colorAnimationPercentageWidthDelay"></div> -->
+
+    <h2>Using key frames from and to that would execute 3 times.</h2>
+    <!-- <div class="colorAnimationFromToXTimes"></div> -->
+
+    <h2>
+      Using key frames from and to that would execute infinite number of times.
+    </h2>
+    <!-- <div class="colorAnimationFromToInfinite"></div> -->
+
+    <h2>
+      Using key frames percentage - changes the background color and position
+      with different animation direction.
+    </h2>
+    <p>animation-direction:normal</p>
+    <!-- <div class="colorAnimationFromToLTR animation-direction-normal"></div> -->
+    <p>animation-direction:reverse</p>
+    <!-- <div class="colorAnimationFromToLTR animation-direction-reverse"></div> -->
+    <p>animation-direction:alternate</p>
+    <!-- <div class="colorAnimationFromToLTR animation-direction-alternate"></div> -->
+    <p>animation-direction:alternate-reverse</p>
+    <!-- <div
+      class="colorAnimationFromToLTR animation-direction-alternate-reverse"
+    ></div> -->
+
+    <h2>
+      Using key frames percentage - changes the background color and position
+      with different animation timing.
+    </h2>
+    <p>animation-timing-function: linear</p>
+    <!-- <div class="colorAnimationFromToLTR animation-timing-function-linear"></div> -->
+    <p>animation-timing-function: ease</p>
+    <!-- <div class="colorAnimationFromToLTR animation-timing-function-ease"></div> -->
+    <p>animation-timing-function: ease-in</p>
+    <!-- <div
+      class="colorAnimationFromToLTR animation-timing-function-ease-in"
+    ></div> -->
+    <p>animation-timing-function: ease-out</p>
+    <!-- <div
+      class="colorAnimationFromToLTR animation-timing-function-ease-out"
+    ></div> -->
+
+    <h2>
+      Using key frames percentage short hand - changes the background color and
+      position.
+    </h2>
+    <!-- <div class="colorAnimationFromToInfinite shortHand"></div> -->
+  </body>
+</html>

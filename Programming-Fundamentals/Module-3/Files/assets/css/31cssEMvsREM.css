@@ -1,0 +1,40 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS declaration types
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.remBox {
+  /* Default browser root font size 16px */
+  font-size: 1rem;
+  /* Default browser root font size 16px */
+  margin: 1rem;
+  /* Default browser root font size 16px */
+  padding: 1rem;
+  background-color: #ffe2cc;
+  border-radius: 10px;
+}
+
+.emParent {
+  font-size: 20px;
+  /* Try this */
+  /* padding: 20px; */
+  background-color: #ccffd1;
+  border-radius: 10px;
+}
+
+.emChild {
+  font-size: 1em; /* Because parent font-size: 20px */
+  margin: 1rem; /* Because parent font-size: 20px */
+  padding: 1em; /* Because parent font-size: 20px */
+  background-color: #f1ccff;
+  border-radius: 10px;
+}

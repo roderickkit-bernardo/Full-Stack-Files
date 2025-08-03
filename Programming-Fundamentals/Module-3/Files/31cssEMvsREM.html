@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Practice</title>
+    <!-- Link to a stylesheet file -->
+    <!-- href value is the location of the file -->
+    <!-- Can be absolute or relative -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/31cssEMvsREM.css"
+    />
+  </head>
+  <body>
+    <h1>REM vs EM</h1>
+
+    <div class="remBox">
+      <h2>REM</h2>
+      <p>Font-size: 1rem or 16px</p>
+      <p>Padding: 1rem or 16px</p>
+      <p>Margin: 1rem or 16px</p>
+    </div>
+
+    <div class="emParent">
+      <h2>EM Parent</h2>
+      <p>Font-size: 20px</p>
+      <div class="emChild">
+        <h2>EM Child</h2>
+        <p>Font-size: 1em or 20px</p>
+        <p>Padding: 1em or 20px</p>
+        <p>Margin: 1em or 20px</p>
+      </div>
+    </div>
+  </body>
+</html>

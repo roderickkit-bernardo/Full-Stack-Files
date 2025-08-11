@@ -14,11 +14,15 @@
 > 6 Question / Comment / Answer of the week => 6 Marks
 
 ## Weekly Topics
-> Introduction to Web Programming
-> Introduction to HTML
-> Introduction to CSS
-> Introduction to JavaScript
-> JavaScript in the Browser
+> - Introduction to Web Programming
+>
+> - Introduction to HTML
+>
+> - Introduction to CSS
+>
+> - Introduction to JavaScript
+>
+> - JavaScript in the Browser
 
 ## Links used for this course
 

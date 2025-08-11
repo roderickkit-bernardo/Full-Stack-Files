@@ -20,7 +20,7 @@ body {
   padding: 0px;
 }
 
-.center-box {
+.centerBox {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,24 @@
+/*
+  Developer: Roderick Bernardo
+  Purpose: CSS change css file demo
+*/
+
+/* body is the selector */
+body {
+  /* 
+    Declaration block composed of one or more 
+    Property: Value;
+  */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.customButton {
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

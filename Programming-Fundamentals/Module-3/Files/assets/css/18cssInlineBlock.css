@@ -12,6 +12,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Block Elements - Take up the full width of their container and start on a new line. 
+Can set width, height, margin, and padding. 
+Used for Layout containers and main content areas. */
+/* Examples: <div>, <p>, <h1>, <section> */
+
+/* Inline Elements - Flow with text, only take up as much width as needed. 
+Cannot set width or height, it is ignored. 
+Vertical margin / padding may not work as expected. 
+Used for Text formatting and links within content. */
+/* Examples: <span>, <a>, <em>, <strong> */
+
+/* Inline-Block Elements - Flow inline (side by side) but can have specific dimensions. 
+Can set width, height, margin, and padding like block elements. 
+Combines inline flow with block-level control. Used for Buttons, navigation items, image galleries, and form elements. */
+
 div {
   background-color: wheat;
   color: white;

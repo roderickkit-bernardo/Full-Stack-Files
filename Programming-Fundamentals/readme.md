@@ -10,6 +10,16 @@
 > | 1 Final Project                   | 34 Marks  |
 > | Total                             | 100 Marks |
 
+## Bonus
+> 6 Question / Comment / Answer of the week => 6 Marks
+
+## Weekly Topics
+> Introduction to Web Programming
+> Introduction to HTML
+> Introduction to CSS
+> Introduction to JavaScript
+> JavaScript in the Browser
+
 ## Links used for this course
 
 > [**VSCode**](https://code.visualstudio.com/Download)

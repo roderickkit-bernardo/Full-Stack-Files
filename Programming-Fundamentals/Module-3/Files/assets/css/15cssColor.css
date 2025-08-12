@@ -12,12 +12,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div {
+  padding: 10px;
+  background-color: lightyellow;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+ol {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
 .colorName {
-  color: pink;
+  color: red;
 }
 
 .rgb {
-  color: rgb(255, 192, 203);
+  color: rgb(255, 0, 0);
 }
 
 /* This definition of rbga black with 50% transparency */
@@ -26,11 +38,11 @@ body {
 }
 
 .hex {
-  color: #ffc0cb;
+  color: #ff0000;
 }
 
 .hsl {
-  color: hsl(350, 100%, 88%);
+  color: hsl(0, 100%, 50%);
 }
 
 /* This definition of hsla black with 50% transparency */

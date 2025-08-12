@@ -28,12 +28,14 @@ body {
   /* Controls alignment along the main axis (top-to-bottom in column). */
   /* Controls alignment along the main axis (bottom-to-top in column-reverse). */
   /* flex-start | flex-end | center | space-between | space-around | space-evenly */
-  justify-content: space-start;
+  justify-content: flex-start;
 
   /* https://developer.mozilla.org/docs/Web/CSS/align-items */
   /* Controls alignment along the cross axis (top-to-bottom in row). */
   /* flex-start | flex-end | center | stretch */
-  align-items: start;
+  align-items: flex-start;
+  /* Uncomment the height to see the result */
+  /* height: 400px; */
 
   /* https://developer.mozilla.org/docs/Web/CSS/flex-wrap */
   /* By default, items are in one line. Use flex-wrap to allow items to wrap onto multiple lines. */

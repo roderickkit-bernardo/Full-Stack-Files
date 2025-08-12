@@ -33,29 +33,40 @@ body {
   grid-template-areas:
     "header header header header"
     "nav main main aside"
-    "nav main main aside"
+    "nav  main main aside"
     "footer footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/minmax */
+  /* Same units */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* More control */
+  /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(
+      0,
+      1fr
+    ); */
 }
 
 header {
   grid-area: header;
   background: #ff0000;
+  overflow-wrap: break-word;
 }
 
 nav {
   grid-area: nav;
   background: #ff6f00;
+  overflow-wrap: break-word;
 }
 
 main {
   grid-area: main;
   background: #ffea00;
+  overflow-wrap: break-word;
 }
 
 aside {
   grid-area: aside;
   background: #5eff00;
+  overflow-wrap: break-word;
 }
 
 footer {

@@ -48,3 +48,10 @@ div {
   background-color: #8800ff;
   margin: 10px;
 }
+
+.inline-element {
+  /* https://developer.mozilla.org/docs/Web/CSS/display */
+  display: inline;
+  background-color: #006eff;
+  margin: 10px;
+}

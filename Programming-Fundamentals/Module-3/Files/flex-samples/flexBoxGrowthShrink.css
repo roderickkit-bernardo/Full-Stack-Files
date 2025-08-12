@@ -34,12 +34,18 @@ body {
   background-color: steelblue;
   color: white;
   padding: 20px;
-  /* Can grow 1x and shrink 1x and minimum width would be 400 */
+  /* Can grow 1x and shrink 1x and minimum width would be 200 */
   flex: 1 1 200px;
 }
 
 .itemShrink.small {
-  /* Can grow 1x and shrink 2x and minimum width would be 400 */
+  /* Long form */
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
+  /* flex-basis: 200px; */
+
+  /* Can grow 1x and shrink 2x and minimum width would be 200 */
+  /* Shorcut */
   flex: 1 2 200px;
   background-color: mediumseagreen;
 }

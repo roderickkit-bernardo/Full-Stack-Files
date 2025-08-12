@@ -7,11 +7,9 @@ function changeTheme() {
     getComputedStyle(root).getPropertyValue("--backgroundColor");
   const foregroundColorValue =
     getComputedStyle(root).getPropertyValue("--foregroundColor");
-
   // Just switch the color code
   root.style.setProperty("--backgroundColor", foregroundColorValue);
   root.style.setProperty("--foregroundColor", backgroundColorValue);
-
   const themeButton = document.getElementById("themeButton");
   console.log(themeButton.innerText);
   if (themeButton.innerText == "Light Theme") {

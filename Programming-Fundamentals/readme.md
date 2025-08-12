@@ -51,3 +51,7 @@
 > [**Starbucks Canada**](https://www.starbucks.ca) vs [**Starbucks Japan**](https://www.starbucks.co.jp)
 >
 > [**Rakuten Canada**](https://www.rakuten.ca) vs [**Rakuten Japan**](https://www.rakuten.co.jp)
+>
+> [**Paint / Color Dropper Tool**](https://chromewebstore.google.com/detail/color-dropper/cbagleaaaocejmdeichhdkmjebpljckh)
+
+

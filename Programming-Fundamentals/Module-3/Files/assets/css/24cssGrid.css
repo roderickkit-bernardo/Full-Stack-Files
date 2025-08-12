@@ -28,13 +28,16 @@ body {
   display: grid;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
   /* 2 equal columns */
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  /* Or */
+  /* grid-template-columns: repeat(2, 1fr); */
 
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows */
   /* 2 rows */
-  /* grid-template-rows: 1fr 1fr; */
-  grid-template-rows: repeat(2, 1fr);
+  /* When you want explicit control */
+  /* grid-template-rows: 1fr 2fr; */
+  /* grid-template-rows: 100px 200px; */
+  /* grid-template-rows: repeat(2, 100); */
 
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap */
   /* row-gap: 10px; */
@@ -45,6 +48,8 @@ body {
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
   /* Shortcut for row-gap and column-gap */
   gap: 10px;
+  /* row and column gap */
+  /* gap: 10px 10px; */
 }
 
 /* > div means immediate child  */

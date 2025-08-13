@@ -11,9 +11,11 @@
 > | Total                             | 100 Marks |
 
 ## Bonus
+
 > 6 Question / Comment / Answer of the week => 6 Marks
 
 ## Weekly Topics
+
 > - Introduction to Web Programming
 >
 > - Introduction to HTML
@@ -53,5 +55,5 @@
 > [**Rakuten Canada**](https://www.rakuten.ca) vs [**Rakuten Japan**](https://www.rakuten.co.jp)
 >
 > [**Paint / Color Dropper Tool**](https://chromewebstore.google.com/detail/color-dropper/cbagleaaaocejmdeichhdkmjebpljckh)
-
-
+>
+> [**WCAG Color Contrast Checker**](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf)

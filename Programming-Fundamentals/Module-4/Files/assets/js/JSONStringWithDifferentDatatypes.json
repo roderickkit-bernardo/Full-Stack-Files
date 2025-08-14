@@ -1,0 +1,11 @@
+{
+  "name": "Bill Gates",
+  "age": 60,
+  "address": { "city": "New York", "zipCode": 123456 },
+  "emailAddress": [
+    { "workEmail": "bill.gates@microsoft.com" },
+    { "personalEmail": "bill.gates@me.com" }
+  ],
+  "activeEmployee": false,
+  "salary": 1
+}

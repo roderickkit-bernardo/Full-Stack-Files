@@ -18,20 +18,20 @@
 //     firstName: "Nick",
 //     lastName: "Bilton",
 //   },
-
-// Define a method
+//
+//   // Define a method
 //   getAuthorNameV1() {
 //     return this.author.firstName + " " + this.author.lastName;
 //   },
-
-// Define a method as function expression
+//
+//   // Define a method as function expression
 //   getAuthorNameV2: function () {
 //     return this.author.firstName + " " + this.author.lastName;
 //   },
 // };
 
 // console.log(`Object structure:`, book);
-// Properties can be access via dot and property name notation
+// Properties can be accessed via dot and property name notation
 // console.log(`book.title`, book.title);
 // console.log(`book.published`, book.published);
 
@@ -46,9 +46,9 @@
 // console.log(`book.getAuthorNameV2()`, book.getAuthorNameV2());
 
 // accessor property using get and set
-// let rectangle = {
+// let square = {
 //   width: 5,
-//   height: 8,
+//   height: 5,
 
 //   get area() {
 //     console.log("get area() is called...");
@@ -63,10 +63,11 @@
 //   },
 // };
 
-// let area = rectangle.area; // Calling getter returns 40
+// let area = square.area; // Calling getter returns 25
 // console.log(area);
-// rectangle.area = 100; // Calling setter sets width and height to 10
-// console.log(`rectangle.width`, rectangle.width); // 10
+// square.area = 100; // Calling setter sets width and height to 10
+// console.log(`square.width`, square.width); // 10
+// console.log(`square.height`, square.height); // 10
 
 // Passing by copy
 // let number = 1;

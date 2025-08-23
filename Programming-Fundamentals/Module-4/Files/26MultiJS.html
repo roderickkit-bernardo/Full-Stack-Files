@@ -1,0 +1,30 @@
+<!-- 
+  Developer: Roderick Bernardo
+  Purpose: JSON.parse() and JSON.stringify() Demo
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Demo</title>
+    <link rel="stylesheet" href="./assets/css/bulma.css" />
+    <!-- Order of the script matters since this is treated globally -->
+    <script defer src="./assets/js/26MultiJS-v1.js"></script>
+    <script defer src="./assets/js/26MultiJS-v2.js"></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Multi JS demo</h1>
+      </div>
+    </section>
+    <script>
+      // Make sure that the HTML is fully loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        v2();
+      });
+    </script>
+  </body>
+</html>

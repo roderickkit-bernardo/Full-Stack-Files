@@ -23,8 +23,8 @@
 
 // Function without a return but with parameters
 // function displayName(firstName, lastName) {
-//   console.log(firstName + ", " + lastName);
-//   console.log(lastName + ", " + firstName);
+//   console.log("Casual:", firstName + " " + lastName);
+//   console.log("Formal:", lastName + ", " + firstName);
 // }
 
 // Function call
@@ -41,6 +41,12 @@
 // function addNumbers(a, b) {
 //   const sum = a + b;
 //   return sum;
+// }
+
+// Or
+
+// function addNumbers(a, b) {
+//   return a + b;
 // }
 
 // Function call

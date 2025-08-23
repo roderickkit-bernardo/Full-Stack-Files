@@ -111,5 +111,7 @@
 
 // console.log("petName Type: " + typeof petName + " petName Value: " + petName);
 
-// let name = prompt("What is your name?");
-// console.log(name);
+// Assign a value via JS prompt
+// let namePrompt = prompt("What is your name?");
+// alert(namePrompt);
+// console.log(namePrompt);

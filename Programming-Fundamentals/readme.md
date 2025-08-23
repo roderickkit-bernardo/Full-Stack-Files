@@ -57,3 +57,5 @@
 > [**Paint / Color Dropper Tool**](https://chromewebstore.google.com/detail/color-dropper/cbagleaaaocejmdeichhdkmjebpljckh)
 >
 > [**WCAG Color Contrast Checker**](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf)
+>
+> [**Sort Visualizer**](https://www.youtube.com/watch?v=kPRA0W1kECg&t=91s)

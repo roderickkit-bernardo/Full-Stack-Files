@@ -10,7 +10,7 @@
 // node <name_of_js_file>
 
 // Logic using if exclusively is not efficient since all of the conditions will be checked
-// let numberOfCourses = 2;
+// let numberOfCourses = 3;
 
 // if (numberOfCourses >= 3) {
 //   console.log(
@@ -26,8 +26,7 @@
 //   );
 // }
 
-// Logic using if else, better because it will only execute
-// one code block
+// Logic using if else, better because it will only execute one code block
 // if (numberOfCourses >= 3) {
 //   console.log(
 //     "Condition: numberOfCourses >= 3",
@@ -73,9 +72,10 @@
 // console.log(`"zoo" >= "zoo"`, "zoo" >= "zoo"); // true
 
 // const birthYear = 1959;
-// console.log("Nested logic Birth year " + birthYear + " is:");
 
 // Nested logic is hard to read and maintain
+// console.log("Nested logic Birth year " + birthYear + " is:");
+
 // if (birthYear >= 2010) {
 //   console.log("Alpha");
 // } else {
@@ -98,9 +98,9 @@
 //   }
 // }
 
+// Non Nested logic is easy to read and maintain
 // console.log("Non Nested logic Birth year " + birthYear + " is:");
 
-// Non Nested logic is easy to read and maintain
 // if (birthYear >= 2010) {
 //   console.log("Alpha");
 // } else if (birthYear >= 1997) {
@@ -115,6 +115,9 @@
 //   console.log("Not assigned");
 // }
 
+// BOOLEAN logic
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators
+
 // All conditions need to be true
 // console.log(`true && true`, true && true); // true
 // console.log(`true && false`, true && false); // false
@@ -127,10 +130,11 @@
 // console.log(`false || true`, false || true); // true
 // console.log(`false || false`, false || false); // false
 
-// Truthy
-// console.log("Truthy");
 // const myObject = {};
 // const myArray = [];
+
+// Truthy
+// console.log("Truthy");
 
 // if (32) {
 //   console.log(`32 is`, true);
@@ -158,6 +162,7 @@
 
 // Falsy
 // console.log("Falsy");
+
 // if (0) {
 //   console.log(true);
 // } else {
@@ -189,10 +194,23 @@
 // }
 
 // Ternary - Is like a short for of if and else
+
 // const food = "meat";
 // let vegan = food == "non-meat" ? true : false;
-
 // console.log("You chose food: " + food + " then you are vegan: " + vegan);
+
+// switch is similar to if and else with some nuances
+
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
 
 // const carMake = "Kia";
 

@@ -9,8 +9,9 @@ const jsonObject = JSON.parse(jsonString);
 console.log(
   `jsonObject type: ${typeof jsonObject} jsonObject value: ${jsonObject.user}`
 );
+
 console.log(
-  `jsonObject type: ${typeof jsonObject} jsonObject value: ${JSON.stringify(
+  `jsonObject type: ${typeof JSON.stringify(
     jsonObject
-  )}`
+  )} jsonObject value: ${JSON.stringify(jsonObject)}`
 );

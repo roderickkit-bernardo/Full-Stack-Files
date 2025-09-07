@@ -41,8 +41,9 @@
 // console.log(`stringToReplace.replace("SEARCH", "search") ${stringToReplace}`);
 
 // Other String functions
-// let s = "";
-// s = "As you wish.";
+let s = "";
+s = "As you wish.";
+
 // console.log(s);
 
 // console.log(`s.substr(3, 3):`, s.substr(3, 3)); // "you"
@@ -52,6 +53,7 @@
 // console.log(`s.substring(3):`, s.substring(3)); // "you wish." (2nd index optional)
 
 // let tokens = s.split(" "); // ["As", "you", "wish."]
+
 // console.log(`tokens:`, tokens);
 // for (let token of tokens) {
 //   console.log(`token:`, token);
@@ -74,7 +76,7 @@
 // result = x + " * " + y + " = " + x * y;
 // console.log(`x + " * " + y + " = " + x * y:`, result);
 
-// // Using template literals
+// Using template literals
 // result = `${x} * ${y} = ${x * y}`;
 // console.log(`\${x} * \${y} = \${x * y}:`, result);
 
@@ -82,3 +84,11 @@
 // const tokens = record.split(";");
 
 // console.log(tokens);
+
+// for (let token of tokens) {
+//   console.log(token);
+// }
+
+// tokens.forEach((value, index) => {
+//   console.log(value);
+// });

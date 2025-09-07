@@ -16,6 +16,7 @@
 // console.log(`new Date(1000)`, oneSecPastEpoch);
 
 // Feb 22, 1732
+// Month is zero index [0 to 11] == [1 - 12]
 // let georgeBirthday = new Date(1732, 1, 22);
 // console.log(`new Date(1732, 1, 22)`, georgeBirthday);
 
@@ -79,8 +80,8 @@
 // console.log(`day.getSeconds()`, day.getSeconds());
 
 // year, month, day, hours, minutes
-// day = new Date(2016, 0, 30, 5, 20);
-// console.log(`new Date(2016, 0, 30, 5, 20)`, day.getTime()); // 1454152800000
-// day.setTime(1454153700000); // Sat Jan 30 2016 05:35:00 GMT-0600
-// console.log(`day.setTime(1454153700000)`);
-// console.log("day.getTime()", day.getTime());
+day = new Date(2016, 0, 30, 5, 20);
+console.log(`new Date(2016, 0, 30, 5, 20)`, day.getTime()); // 1454152800000
+day.setTime(1454153700000); // Sat Jan 30 2016 05:35:00 GMT-0600
+console.log(`day.setTime(1454153700000)`);
+console.log("day.getTime()", day.getTime());

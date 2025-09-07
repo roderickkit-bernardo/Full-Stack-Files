@@ -44,6 +44,10 @@
 // console.log(stateCapitalsKeys); // AR,CO,NM
 // console.log(stateCapitalsKeys.length); // 3
 
+// for (let i = 0; i < stateCapitalsKeys.length; i++) {
+//   console.log(stateCapitalsMap[stateCapitalsKeys[i]]);
+// }
+
 // Evaluates true
 // if ("NM" in stateCapitalsMap) {
 //   console.log("NM exists");
@@ -88,6 +92,14 @@
 // console.log("After:", canadianProvinces.get("ON"));
 
 // console.log(`All provinces:`);
+// for (let canadianProvince of canadianProvinces) {
+//   console.log(canadianProvince);
+//   console.log(
+//     `provinceCode: ${canadianProvince[0]} is provinceName:`,
+//     canadianProvince[1]
+//   );
+// }
+
 // for (let [provinceCode, provinceName] of canadianProvinces) {
 //   console.log(`provinceCode: ${provinceCode} is provinceName:`, provinceName);
 // }

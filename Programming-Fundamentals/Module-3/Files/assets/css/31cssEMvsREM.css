@@ -33,7 +33,7 @@ body {
 
 .emChild {
   font-size: 1em; /* Because parent font-size: 20px */
-  margin: 1rem; /* Because parent font-size: 20px */
+  margin: 1em; /* Because parent font-size: 20px */
   padding: 1em; /* Because parent font-size: 20px */
   background-color: #f1ccff;
   border-radius: 10px;

@@ -200,5 +200,6 @@ body {
   animation-direction: alternate;
   */
   /* Same as above */
+  /* Keyframe Duration Timing Delay Iteration Count Direction */
   animation: colorAnimationPercentageLTRKF 5s linear 2s infinite alternate;
 }
